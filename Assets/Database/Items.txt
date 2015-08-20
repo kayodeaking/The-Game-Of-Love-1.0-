@@ -1,0 +1,90 @@
+A+ Blood Pack
+250
+50
+Blah Blah Blah
+-----------------------
+Pheremone
+250
+50
+Blah Blah Blah
+-----------------------
+B+ Blood Pack
+500
+150
+Blah Blah Blah
+-----------------------
+Love Molecule
+500
+150
+Blah Blah Blah
+-----------------------
+AB+ Blood Pack
+1000
+500
+Blah Blah Blah
+-----------------------
+Love Dust
+1000
+500
+Blah Blah Blah
+-----------------------
+O- Blood Pack
+1500
+1000
+Blah Blah Blah
+-----------------------
+Love Potion #9
+1500
+1000
+Blah Blah Blah
+-----------------------
+Heart Pump
+2000
+3
+Blah Blah Blah
+-----------------------
+Air Kiss
+2000
+3
+Blah Blah Blah
+-----------------------
+Adrenaline
+2000
+3
+Blah Blah Blah
+-----------------------
+Nutrition Pill
+2000
+3
+Blah Blah Blah
+-----------------------
+Rage
+2500
+6
+Blah Blah Blah
+-----------------------
+Full Kiss
+2500
+6
+Blah Blah Blah
+-----------------------
+Epinephrine Pill
+2500
+6
+Blah Blah Blah
+-----------------------
+Heart Armor
+2500
+6
+Blah Blah Blah
+-----------------------
+Power Kiss
+5000
+10
+Blah Blah Blah
+-----------------------
+Love Armor
+5000
+10
+Blah Blah Blah
+-----------------------

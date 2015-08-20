@@ -1,0 +1,90 @@
+Weapon 1
+1000
+
+Blah Blah Blah
+-----------------------
+Weapon 2
+1000
+
+Blah Blah Blah
+-----------------------
+Weapon 3
+1000
+
+Blah Blah Blah
+-----------------------
+Weapon 4
+2000
+
+Blah Blah Blah
+-----------------------
+Weapon 5
+2000
+
+Blah Blah Blah
+-----------------------
+Weapon 6
+2000
+
+Blah Blah Blah
+-----------------------
+Weapon 7
+3000
+
+Blah Blah Blah
+-----------------------
+Weapon 8
+3000
+
+Blah Blah Blah
+-----------------------
+Weapon 9
+3000
+
+Blah Blah Blah
+-----------------------
+Weapon 10
+4000
+
+Blah Blah Blah
+-----------------------
+Weapon 11
+4000
+
+Blah Blah Blah
+-----------------------
+Weapon 12
+4000
+
+Blah Blah Blah
+-----------------------
+Weapon 13
+5000
+
+Blah Blah Blah
+-----------------------
+Weapon 14
+5000
+
+Blah Blah Blah
+-----------------------
+Weapon 15
+5000
+
+Blah Blah Blah
+-----------------------
+Weapon 16
+6000
+
+Blah Blah Blah
+-----------------------
+Weapon 17
+6000
+
+Blah Blah Blah
+-----------------------
+Weapon 18
+6000
+
+Blah Blah Blah
+-----------------------
