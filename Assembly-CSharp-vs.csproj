@@ -52,7 +52,6 @@
      <Compile Include="Assets\LevelChoice.cs" />
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\MyHearts.cs" />
-     <Compile Include="Assets\Pass.cs" />
      <None Include="Assets\Database\Weapons.txt" />
      <None Include="Assets\Database\Letters.txt" />
      <None Include="Assets\Database\Items.txt" />

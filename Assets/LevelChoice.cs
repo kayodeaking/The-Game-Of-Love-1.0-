@@ -6,6 +6,9 @@ public class LevelChoice : MonoBehaviour
 
 	Rect windowRec = new Rect ((Screen.width * 0), (Screen.height * 0), Screen.width, Screen.height);
 	string title;
+
+	public static int unlockLevel = 1;
+
 	int toolBarInt = 0;
 	string[] toolBarString = new string[] {
 		"Chapter 1",

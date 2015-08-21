@@ -27,36 +27,36 @@ public class HeartCondition : MonoBehaviour
 	public static int love;
 	public static int pace;
 
-	int unlockNextEquip = 0;
-	int unlockNextInv = 0;
-	int letterFound = 0;
+	public static int unlockNextEquip;
+	public static int unlockNextInv;
+	public static int letterFound;
 
-	int slashSkill1;
-	int slashSkill2;
-	int slashSkill3;
-	int slashSkill4;
-	int slashSkill5;
-	int slashSkill6;
-	int slashSkill7;
-	int slashSkill8;
+	public static int slashSkill1;
+	public static int slashSkill2;
+	public static int slashSkill3;
+	public static int slashSkill4;
+	public static int slashSkill5;
+	public static int slashSkill6;
+	public static int slashSkill7;
+	public static int slashSkill8;
 
-	int blastSkill1;
-	int blastSkill2;
-	int blastSkill3;
-	int blastSkill4;
-	int blastSkill5;
-	int blastSkill6;
-	int blastSkill7;
-	int blastSkill8;
-	int blastSkill9;
-	int blastSkill10;
+	public static int blastSkill1;
+	public static int blastSkill2;
+	public static int blastSkill3;
+	public static int blastSkill4;
+	public static int blastSkill5;
+	public static int blastSkill6;
+	public static int blastSkill7;
+	public static int blastSkill8;
+	public static int blastSkill9;
+	public static int blastSkill10;
 
-	int buffSkill1;
-	int buffSkill2;
-	int buffSkill3;
-	int buffSkill4;
-	int buffSkill5;
-	int buffSkill6;
+	public static int buffSkill1;
+	public static int buffSkill2;
+	public static int buffSkill3;
+	public static int buffSkill4;
+	public static int buffSkill5;
+	public static int buffSkill6;
 
 	bool openGui;
 
@@ -75,7 +75,7 @@ public class HeartCondition : MonoBehaviour
 		windowRec = GUI.Window (2, windowRec, BackWin, "Heart Condition");
 
 		if (openGui == true) {
-			miniWindowRec = GUI.Window (5, miniWindowRec, TinyWin, "Heart Condition");
+			miniWindowRec = GUI.Window (5, miniWindowRec, TinyWin, "Letters");
 		}
 	}
 

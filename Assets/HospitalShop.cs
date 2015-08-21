@@ -6,9 +6,11 @@ public class HospitalShop : MonoBehaviour
 {
 
 	private Rect windowRec = new Rect ((Screen.width * 0), (Screen.height * 0), Screen.width, Screen.height);
+	private Rect miniWindowRec = new Rect ((Screen.width / 2) - 150, (Screen.height / 2) - 150, 300, 300);
 	Vector2 scrollViewPos = Vector2.zero;
 
 	int shopChoice = 0;
+	public static int currNotes = 5000;
 	int totalNotes;
 	
 	string descriptValue;
@@ -44,6 +46,7 @@ public class HospitalShop : MonoBehaviour
 	int slot5Price;
 
 	bool allFull = false;
+	bool openGui;
 	// Use this for initialization
 	void Start ()
 	{
@@ -59,6 +62,10 @@ public class HospitalShop : MonoBehaviour
 	void OnGUI ()
 	{
 		windowRec = GUI.Window (3, windowRec, BackWin, "Hospital Shop");
+
+		if (openGui == true) {
+			miniWindowRec = GUI.Window (6, miniWindowRec, TinyWin, "Confirmed");
+		}
 	}
 
 	void BackWin (int windowID)
@@ -389,9 +396,38 @@ public class HospitalShop : MonoBehaviour
 		GUI.Box (new Rect (((windowRec.width / 2) * 1.5f) - 5, (windowRec.height / 2) + 30, (windowRec.width / 4), (windowRec.height / 2) - 40), "Buy/No");
 
 		if (GUI.Button (new Rect ((((windowRec.width / 2) * 1.75f) - 80), (windowRec.height) - 43, (windowRec.width / 8), (windowRec.height / 8) - 50), "Buy")) {
+			openGui = true;
 		}
 	}
-	
+
+	void TinyWin(int windowID) {
+
+		string message;
+		if (currNotes >= totalNotes) {
+			message = "Congratulations, The items you have purchased have been added to you inventory.";
+			GUI.Label (new Rect((miniWindowRec.width*0) + 15, (miniWindowRec.height*0) + 75, miniWindowRec.width - 15, miniWindowRec.height - 25),
+			           "1) " + slot1Info + " LN: " + slot1Price + " x " + slot1Quantity + "\n" +
+			           "2) " + slot2Info + " LN: " + slot2Price + " x " + slot2Quantity + "\n" +
+			           "3) " + slot3Info + " LN: " + slot3Price + " x " + slot3Quantity + "\n" +
+			           "4) " + slot4Info + " LN: " + slot4Price + " x " + slot4Quantity + "\n" +
+			           "5) " + slot5Info + " LN: " + slot5Price + " x " + slot5Quantity + "\n");
+			if (GUI.Button (new Rect ((miniWindowRec.width * 0) + 15, miniWindowRec.height - 55, miniWindowRec.width - 30, 25), "Thank You")) {
+				openGui = false;
+				if(currNotes >= totalNotes) {
+					currNotes -= totalNotes;
+				}
+			}
+			
+		} else {
+			message = "Sorry, it seems you do not have enough Love notes to purchase this item.";
+		}
+
+		GUI.Label (new Rect((miniWindowRec.width*0) + 15, (miniWindowRec.height*0) + 25, miniWindowRec.width - 15, 50), message); 
+		if (GUI.Button (new Rect ((miniWindowRec.width * 0) + 15, miniWindowRec.height - 30, miniWindowRec.width - 30, 25), "Change Purchase")) {
+			openGui = false;
+		}
+	}
+
 	void CheckSlots (bool status, string name, int price)
 	{
 		
