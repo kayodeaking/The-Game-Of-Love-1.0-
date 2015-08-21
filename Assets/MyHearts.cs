@@ -8,7 +8,66 @@ public class MyHearts : MonoBehaviour {
 
 	public static bool saving = false;
 	public static bool loading = false;
+	
+	int pace;
+	int exp;
+	int blood;
+	int love;
+	int loveNotes;
+	string emo;
+	int time;
+	string key;
+	int statPoints;
+	int skillPoints;
+	int strPoints;
+	int pumpLow;
+	int pumpHigh;
+	int intPoints;
+	int loveLow;
+	int loveHigh;
+	int dexPoints;
+	int cardioLow;
+	int cardioHigh;
+	int lukPoints;
+	int shellLow;
+	int shellHigh;
 
+	int BP;
+	int LP;
+
+	int unlockLevel;
+	int unlockNextEquip;
+	int unlockNextInv;
+	int letterFound;
+	
+	int slashSkill1;
+	int slashSkill2;
+	int slashSkill3;
+	int slashSkill4;
+	int slashSkill5;
+	int slashSkill6;
+	int slashSkill7;
+	int slashSkill8;
+	
+	int blastSkill1;
+	int blastSkill2;
+	int blastSkill3;
+	int blastSkill4;
+	int blastSkill5;
+	int blastSkill6;
+	int blastSkill7;
+	int blastSkill8;
+	int blastSkill9;
+	int blastSkill10;
+	
+	int buffSkill1;
+	int buffSkill2;
+	int buffSkill3;
+	int buffSkill4;
+	int buffSkill5;
+	int buffSkill6;
+
+	int letter;
 
 	int toolBarInt = 0;
 	string[] toolBarString = new string[] {
@@ -18,7 +77,7 @@ public class MyHearts : MonoBehaviour {
 	};
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -32,6 +91,8 @@ public class MyHearts : MonoBehaviour {
 	}
 
 	void BackWin(int windowID){
+
+		ReadInfo ();
 
 		//Tool bar
 		Rect toolBarRect = new Rect ((windowRec.width / 2) - 192, (windowRec.height - 75), 375, 50);
@@ -60,7 +121,7 @@ public class MyHearts : MonoBehaviour {
 			if(saving) {
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Save")){
 					using (StreamWriter writeFile = new StreamWriter (Application.dataPath + "/Database/Heart1.txt")) {
-						StoreInfo ();	
+						StoreInfo (writeFile);	
 					}
 				}
 			}
@@ -89,6 +150,7 @@ public class MyHearts : MonoBehaviour {
 			if(saving) {
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Save")) {
 					using (StreamWriter writeFile = new StreamWriter (Application.dataPath + "/Database/Heart2.txt")) {
+						StoreInfo (writeFile);
 					}
 				}
 			}
@@ -116,6 +178,7 @@ public class MyHearts : MonoBehaviour {
 			if(saving) {
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Save")) {
 					using (StreamWriter writeFile = new StreamWriter (Application.dataPath + "/Database/Heart3.txt")) {
+						StoreInfo (writeFile);
 					}
 				}
 			}
@@ -142,7 +205,14 @@ public class MyHearts : MonoBehaviour {
 		}
 	}
 
-	void StoreInfo () {
+	void ReadInfo(){
+		//using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart3.txt")) {
+			//string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart3.txt");
+		//}
+	}
+
+	void StoreInfo (StreamWriter writeFile) {
+		writeFile.WriteLine ("HI");
 	}
 
 	void LoadInfo() {
