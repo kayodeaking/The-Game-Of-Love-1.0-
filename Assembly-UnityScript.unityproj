@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{33FF0DE4-E5A5-FBF9-79E6-689DB6CEA421}</ProjectGuid>
+	<ProjectGuid>{752FF0E9-9E40-A172-CD77-F3ACEE89E337}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,13 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Database\GameItemStorage.cs" />
-     <Compile Include="Assets\HeartCondition.cs" />
-     <Compile Include="Assets\HeartsInfo.cs" />
-     <Compile Include="Assets\HospitalShop.cs" />
-     <Compile Include="Assets\LevelChoice.cs" />
-     <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\MyHearts.cs" />
+     <Compile Include="Assets\Database\NewBehaviourScript1.js" />
      <None Include="Assets\Database\Armor.txt" />
      <None Include="Assets\Database\Weapons.txt" />
      <None Include="Assets\Database\Letters.txt" />

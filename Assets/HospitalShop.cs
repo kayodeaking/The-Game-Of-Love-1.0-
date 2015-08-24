@@ -90,6 +90,9 @@ public class HospitalShop : MonoBehaviour
 		if (GUI.Button (new Rect (20, screenTop + 160, width * 2, height), "Special")) {
 			shopChoice = 3;
 		}
+		if (GUI.Button (new Rect (125, screenTop + 40, width * 2, height), "Armor")) {
+			shopChoice = 4;
+		}
 		if (GUI.Button (new Rect (20, screenTop + 220, width * 2, height), "Exit")) {
 			shopChoice = 0;
 			Application.LoadLevel (1);
@@ -110,6 +113,9 @@ public class HospitalShop : MonoBehaviour
 		}
 		if (shopChoice == 3) {
 			BuySpecial ();
+		}
+		if (shopChoice == 4) {
+			BuyArmor ();
 		}
 		GUI.EndScrollView ();
 	}
@@ -177,6 +183,36 @@ public class HospitalShop : MonoBehaviour
 	void BuySpecial () {
 
 		string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Special.txt");
+		int spotCount = 1;
+		int line = 1;
+		string[] info = new string[4];
+		int rowCount = 0;
+		
+		for (int i = 0; i < fileInfo.Length; i++) {
+			if(line == 1){
+				info[0] = fileInfo[i]; 
+			}else if(line == 2){
+				info[1] = fileInfo[i]; 
+			}else if(line == 3){
+				info[2] = fileInfo[i]; 
+			}else if(line == 4){
+				info[3] = fileInfo[i]; 
+			}else{
+				DisplayItemInfo (info, spotCount, rowCount);				
+				if(spotCount >= 3){
+					spotCount = 0;
+					rowCount++;
+				}
+				spotCount++;
+				line = 0;
+			}
+			line++;
+		}
+	}
+
+	void BuyArmor (){
+
+		string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Armor.txt");
 		int spotCount = 1;
 		int line = 1;
 		string[] info = new string[4];
@@ -415,6 +451,11 @@ public class HospitalShop : MonoBehaviour
 				openGui = false;
 				if(currNotes >= totalNotes) {
 					currNotes -= totalNotes;
+					GameItemStorage.Slot1(slot1Info, slot1Quantity);
+					GameItemStorage.Slot2(slot2Info, slot2Quantity);
+					GameItemStorage.Slot3(slot3Info, slot3Quantity);
+					GameItemStorage.Slot4(slot4Info, slot4Quantity);
+					GameItemStorage.Slot5(slot5Info, slot5Quantity);
 				}
 			}
 			
