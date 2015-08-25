@@ -14,6 +14,7 @@ public class HospitalShop : MonoBehaviour
 	int totalNotes;
 	
 	string descriptValue;
+	string[] itemeffect = new string[10];
 
 	string slot1Info;
 	bool slot1Empty = true;
@@ -80,7 +81,8 @@ public class HospitalShop : MonoBehaviour
 		int width = 50;
 		int height = 50;
 
-		GUI.Box (new Rect (5, 20, screenMid, heightHalf), "Choices");
+		Rect choiceBox = new Rect (5, 20, screenMid, heightHalf);
+		GUI.Box (choiceBox, "Choices");
 		if (GUI.Button (new Rect (20, screenTop + 40, width * 2, height), "Items")) {
 			shopChoice = 1;
 		}
@@ -97,7 +99,9 @@ public class HospitalShop : MonoBehaviour
 			shopChoice = 0;
 			Application.LoadLevel (1);
 		}
-		Description (descriptValue);
+
+		GUI.Label (new Rect (choiceBox.width/2, choiceBox.height, width + 150, height), "Love Notes: " + currNotes); 
+		Description (descriptValue, itemeffect);
 
 		ShoppingList ();
 
@@ -125,19 +129,23 @@ public class HospitalShop : MonoBehaviour
 		string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Items.txt");
 		int spotCount = 1;
 		int line = 1;
-		string[] info = new string[4];
+		string[] info = new string[6];
 		int rowCount = 0;
 
 		for (int i = 0; i < fileInfo.Length; i++) {
 			if(line == 1){
 				info[0] = fileInfo[i]; 
-			}else if(line == 2){
+			} else if(line == 2){
 				info[1] = fileInfo[i]; 
-			}else if(line == 3){
+			} else if(line == 3){
 				info[2] = fileInfo[i]; 
-			}else if(line == 4){
+			} else if(line == 4){
 				info[3] = fileInfo[i]; 
-			}else{
+			} else if (line == 5) {
+				info[4] = fileInfo[i];
+			} else if (line == 6){
+				info[5] = fileInfo[i];
+			} else{
 				DisplayItemInfo (info, spotCount, rowCount);				
 				if(spotCount >= 3){
 					spotCount = 0;
@@ -155,19 +163,23 @@ public class HospitalShop : MonoBehaviour
 		string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Weapons.txt");
 		int spotCount = 1;
 		int line = 1;
-		string[] info = new string[4];
+		string[] info = new string[6];
 		int rowCount = 0;
 		
 		for (int i = 0; i < fileInfo.Length; i++) {
 			if(line == 1){
 				info[0] = fileInfo[i]; 
-			}else if(line == 2){
+			} else if(line == 2){
 				info[1] = fileInfo[i]; 
-			}else if(line == 3){
+			} else if(line == 3){
 				info[2] = fileInfo[i]; 
-			}else if(line == 4){
+			} else if(line == 4){
 				info[3] = fileInfo[i]; 
-			}else{
+			} else if (line == 5) {
+				info[4] = fileInfo[i];
+			} else if (line == 6){
+				info[5] = fileInfo[i];
+			} else{
 				DisplayItemInfo (info, spotCount, rowCount);				
 				if(spotCount >= 3){
 					spotCount = 0;
@@ -185,19 +197,23 @@ public class HospitalShop : MonoBehaviour
 		string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Special.txt");
 		int spotCount = 1;
 		int line = 1;
-		string[] info = new string[4];
+		string[] info = new string[6];
 		int rowCount = 0;
 		
 		for (int i = 0; i < fileInfo.Length; i++) {
 			if(line == 1){
 				info[0] = fileInfo[i]; 
-			}else if(line == 2){
+			} else if(line == 2){
 				info[1] = fileInfo[i]; 
-			}else if(line == 3){
+			} else if(line == 3){
 				info[2] = fileInfo[i]; 
-			}else if(line == 4){
+			} else if(line == 4){
 				info[3] = fileInfo[i]; 
-			}else{
+			} else if(line == 5) {
+				info[4] = fileInfo[i];
+			} else if (line == 6){
+				info[5] = fileInfo[i];
+			} else{
 				DisplayItemInfo (info, spotCount, rowCount);				
 				if(spotCount >= 3){
 					spotCount = 0;
@@ -215,19 +231,23 @@ public class HospitalShop : MonoBehaviour
 		string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Armor.txt");
 		int spotCount = 1;
 		int line = 1;
-		string[] info = new string[4];
+		string[] info = new string[6];
 		int rowCount = 0;
 		
 		for (int i = 0; i < fileInfo.Length; i++) {
 			if(line == 1){
 				info[0] = fileInfo[i]; 
-			}else if(line == 2){
+			} else if(line == 2){
 				info[1] = fileInfo[i]; 
-			}else if(line == 3){
+			} else if(line == 3){
 				info[2] = fileInfo[i]; 
-			}else if(line == 4){
+			} else if(line == 4){
 				info[3] = fileInfo[i]; 
-			}else{
+			} else if (line == 5){
+				info[4] = fileInfo[i];
+			} else if (line == 6){
+				info[5] = fileInfo[i];
+			} else{
 				DisplayItemInfo (info, spotCount, rowCount);				
 				if(spotCount >= 3){
 					spotCount = 0;
@@ -246,6 +266,9 @@ public class HospitalShop : MonoBehaviour
 			if (GUI.Button (new Rect (75, (50 + (90*rowCount)), 200, 50), info[0])) {
 				if(allFull == false) {
 					descriptValue = info[3];
+					itemeffect[0] = info[4];
+					itemeffect[1] = info[2];
+					itemeffect[2] = info[5];
 					totalNotes += int.Parse (info[1]);
 					CheckSlots (false, info[0], int.Parse (info[1]));
 				}
@@ -256,6 +279,9 @@ public class HospitalShop : MonoBehaviour
 			if (GUI.Button (new Rect (285, (50 + (90*rowCount)), 200, 50), info[0])) {
 				if(allFull == false) {
 					descriptValue = info[3];
+					itemeffect[0] = info[4];
+					itemeffect[1] = info[2];
+					itemeffect[2] = info[5];
 					totalNotes += int.Parse (info[1]);
 					CheckSlots (false, info[0], int.Parse(info[1]));
 				}
@@ -266,6 +292,9 @@ public class HospitalShop : MonoBehaviour
 			if (GUI.Button (new Rect (495, (50 + (90*rowCount)), 200, 50), info[0])) {
 				if(allFull == false) {
 					descriptValue = info[3];
+					itemeffect[0] = info[4];
+					itemeffect[1] = info[2];
+					itemeffect[2] = info[5];
 					totalNotes += int.Parse (info[1]);
 					CheckSlots (false, info[0], int.Parse(info[1]));
 				}
@@ -441,12 +470,46 @@ public class HospitalShop : MonoBehaviour
 		string message;
 		if (currNotes >= totalNotes) {
 			message = "Congratulations, The items you have purchased have been added to you inventory.";
-			GUI.Label (new Rect((miniWindowRec.width*0) + 15, (miniWindowRec.height*0) + 75, miniWindowRec.width - 15, miniWindowRec.height - 25),
-			           "1) " + slot1Info + " LN: " + slot1Price + " x " + slot1Quantity + "\n" +
-			           "2) " + slot2Info + " LN: " + slot2Price + " x " + slot2Quantity + "\n" +
-			           "3) " + slot3Info + " LN: " + slot3Price + " x " + slot3Quantity + "\n" +
-			           "4) " + slot4Info + " LN: " + slot4Price + " x " + slot4Quantity + "\n" +
-			           "5) " + slot5Info + " LN: " + slot5Price + " x " + slot5Quantity + "\n");
+
+			string shopList;
+			string spot1;
+			string spot2;
+			string spot3;
+			string spot4;
+			string spot5;
+
+			if(slot1Full == false) {
+				spot1 = "1) <Empty Slot>" + "\n";
+			} else {
+				spot1 = "1) " + slot1Info + " LN: " + slot1Price + " x " + slot1Quantity + "\n";
+			}
+
+			if(slot2Full == false) {
+				spot2 = "2) <Empty Slot>" + "\n";
+			} else {
+				spot2 = "2) " + slot2Info + " LN: " + slot2Price + " x " + slot2Quantity + "\n";
+			}
+
+			if(slot3Full == false) {
+				spot3 = "3) <Empty Slot>" + "\n";
+			} else {
+				spot3 = "3) " + slot3Info + " LN: " + slot3Price + " x " + slot3Quantity + "\n";
+			}
+
+			if(slot4Full == false) {
+				spot4 = "4) <Empty Slot>" + "\n";
+			} else {
+				spot4 = "4) " + slot4Info + " LN: " + slot4Price + " x " + slot4Quantity + "\n";
+			}
+
+			if(slot5Full == false) {
+				spot5 = "5) <Empty Slot>" + "\n";
+			} else {
+				spot5 = "5) " + slot5Info + " LN: " + slot5Price + " x " + slot5Quantity + "\n";
+			}
+			shopList = spot1 + spot2 + spot3 + spot4 + spot5;
+
+			GUI.Label (new Rect((miniWindowRec.width*0) + 15, (miniWindowRec.height*0) + 75, miniWindowRec.width - 15, miniWindowRec.height - 25), shopList);
 			if (GUI.Button (new Rect ((miniWindowRec.width * 0) + 15, miniWindowRec.height - 55, miniWindowRec.width - 30, 25), "Thank You")) {
 				openGui = false;
 				if(currNotes >= totalNotes) {
@@ -508,9 +571,21 @@ public class HospitalShop : MonoBehaviour
 		
 	}
 	
-	void Description (string info)
+	void Description (string info, string[] effect)
 	{
-		GUI.Box (new Rect ((windowRec.width / 2) + 10, 20, (windowRec.width / 2) - 15, (windowRec.height / 2)), "Description");
-		GUI.Label (new Rect ((windowRec.width / 2) + 50, 50, (windowRec.width / 2) - 35, (windowRec.height / 2)), " " + info);
+		Rect compareBox = new Rect ((windowRec.width / 2) + 10, 20, (windowRec.width / 2) - 15, (windowRec.height / 2));
+		Rect infoLbl = new Rect (compareBox.width + 50, (compareBox.height * 0) + 50, (compareBox.width) - 50, compareBox.height - 200);
+		Rect effectLbl = new Rect (compareBox.width + 50, infoLbl.height + 50, infoLbl.width, compareBox.height);
+		GUI.Box (compareBox, "Comparisons");
+		if ((slot1Full == true) || (slot2Full == true) || (slot3Full == true) || (slot4Full == true) || (slot5Full == true)) {
+			GUI.Label (infoLbl, info);
+			if (effect [2] != "-") {
+				GUI.Label (effectLbl, "This item has: \n\n" + effect [0] + effect [1] + "\n" + effect [2] + effect [1]);
+			} else {
+				GUI.Label (effectLbl, "This item has: \n\n" + effect [0] + effect [1]);
+			}
+		} else {
+			GUI.Label (infoLbl, "You have yet to select an item");
+		}
 	}
 }

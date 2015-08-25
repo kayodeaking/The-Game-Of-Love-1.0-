@@ -135,17 +135,18 @@ public class MyHearts : MonoBehaviour {
 		}
 
 		if (toolBarInt == 1) {
-			GUI.Box (new Rect (screenMid / 2, screenTop + 75, screenMid - 15, windowRec.height - 155), "Heart 1");
+			GUI.Box (new Rect (screenMid / 2, screenTop + 75, screenMid - 15, windowRec.height - 155), "Heart 2");
 			GUI.Box (new Rect ((screenMid / 2) + 10, (screenTop + 75) + 20, width + 150, height + 150), "Pic");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 20, width + 150, height), "Pace: " + "25");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 55, width + 150, height), "Love Notes: " + "10000");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 85, width + 150, height), "Emotion: " + "Happiness");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 120, width + 50, height), "Blood Level: ");
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 20, width + 150, height), "Pace: " + pace);
+			GUI.Label (new Rect ((screenMid / 2) + 290, (screenTop + 75) + 20, width + 150, height), "Exp to Next Lv: " + exp);
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 55, width + 150, height), "Love Notes: " + loveNotes);
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 85, width + 150, height), "Emotion: " + emo);
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 120, width + 50, height), "Blood Level: " + blood);
 			GUI.Box (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 140, width + 100, height / 2), "Place holder");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 170, width + 50, height), "Love Level: ");
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 170, width + 50, height), "Love Level: " + love);
 			GUI.Box (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 190, width + 100, height / 2), "Place holder");
-			GUI.Label (new Rect ((screenMid / 2) + 370, (screenTop + 75) + 20, width + 150, height), "Time Played: " + "00:00");
-			GUI.Label (new Rect ((screenMid / 2) + 370, (screenTop + 75) + 55, width + 150, height), "Key: " + "Weapon 1");
+			GUI.Label (new Rect ((screenMid / 2) + 420, (screenTop + 75) + 20, width + 150, height), "Time Played: " + time);
+			GUI.Label (new Rect ((screenMid / 2) + 370, (screenTop + 75) + 55, width + 150, height), "Key: " + key);
 			if(saving) {
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Save")) {
 					using (StreamWriter writeFile = new StreamWriter (Application.dataPath + "/Database/Heart2.txt")) {
@@ -157,6 +158,7 @@ public class MyHearts : MonoBehaviour {
 			if(loading){
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Continue")) {
 					using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart2.txt")) {
+						LoadInfo();
 					}
 				}
 			}
@@ -166,15 +168,16 @@ public class MyHearts : MonoBehaviour {
 		if (toolBarInt == 2) {
 			GUI.Box (new Rect (screenMid / 2, screenTop + 75, screenMid - 15, windowRec.height - 155), "Heart 1");
 			GUI.Box (new Rect ((screenMid / 2) + 10, (screenTop + 75) + 20, width + 150, height + 150), "Pic");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 20, width + 150, height), "Pace: " + "25");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 55, width + 150, height), "Love Notes: " + "10000");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 85, width + 150, height), "Emotion: " + "Happiness");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 120, width + 50, height), "Blood Level: ");
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 20, width + 150, height), "Pace: " + pace);
+			GUI.Label (new Rect ((screenMid / 2) + 290, (screenTop + 75) + 20, width + 150, height), "Exp to Next Lv: " + exp);
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 55, width + 150, height), "Love Notes: " + loveNotes);
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 85, width + 150, height), "Emotion: " + emo);
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 120, width + 50, height), "Blood Level: " + blood);
 			GUI.Box (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 140, width + 100, height / 2), "Place holder");
-			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 170, width + 50, height), "Love Level: ");
+			GUI.Label (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 170, width + 50, height), "Love Level: " + love);
 			GUI.Box (new Rect ((screenMid / 2) + 220, (screenTop + 75) + 190, width + 100, height / 2), "Place holder");
-			GUI.Label (new Rect ((screenMid / 2) + 370, (screenTop + 75) + 20, width + 150, height), "Time Played: " + "00:00");
-			GUI.Label (new Rect ((screenMid / 2) + 370, (screenTop + 75) + 55, width + 150, height), "Key: " + "Weapon 1");
+			GUI.Label (new Rect ((screenMid / 2) + 420, (screenTop + 75) + 20, width + 150, height), "Time Played: " + time);
+			GUI.Label (new Rect ((screenMid / 2) + 370, (screenTop + 75) + 55, width + 150, height), "Key: " + key);
 			if(saving) {
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Save")) {
 					using (StreamWriter writeFile = new StreamWriter (Application.dataPath + "/Database/Heart3.txt")) {
@@ -186,6 +189,7 @@ public class MyHearts : MonoBehaviour {
 			if(loading){
 				if(GUI.Button (new Rect ((screenMid / 2) + 80, (screenTop + 200) + 190, width + 100, height / 2), "Continue")) {
 					using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart3.txt")) {
+						LoadInfo();
 					}
 				}
 			}
@@ -263,182 +267,189 @@ public class MyHearts : MonoBehaviour {
 	
 	void ReadInfo(){
 
-		using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart1.txt")) {
-			string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart1.txt");
-			for (int i = 0; i < fileInfo.Length; i++) {
-				pace = int.Parse (fileInfo[i]);
-				exp = int.Parse (fileInfo[i+1]);
-				blood = int.Parse (fileInfo[i+2]);
-				love = int.Parse (fileInfo[i+3]);
-				loveNotes = int.Parse (fileInfo[i+4]);
-				emo = fileInfo[i+5];
-				time = int.Parse (fileInfo[i+6]);
-				key = fileInfo[i+7];
-				statPoints = int.Parse (fileInfo[i+8]);
-				skillPoints = int.Parse (fileInfo[i+9]);
-				strPoints = int.Parse (fileInfo[i+10]);
-				pumpLow = int.Parse (fileInfo[i+11]);
-				pumpHigh = int.Parse (fileInfo[i+12]);
-				intPoints = int.Parse (fileInfo[i+13]);
-				loveLow = int.Parse (fileInfo[i+14]);
-				loveHigh = int.Parse (fileInfo[i+15]);
-				dexPoints = int.Parse (fileInfo[i+16]);
-				cardioLow = int.Parse (fileInfo[i+17]);
-				cardioHigh = int.Parse (fileInfo[i+18]);
-				lukPoints = int.Parse (fileInfo[i+19]);
-				shellLow = int.Parse (fileInfo[i+20]);
-				shellHigh = int.Parse (fileInfo[i+21]);
-				BP = int.Parse (fileInfo[i+22]);
-				LP = int.Parse (fileInfo[i+23]);
-				unlockLevel = int.Parse (fileInfo[i+24]);
-				unlockNextEquip = int.Parse (fileInfo[i+25]);
-				unlockNextInv = int.Parse (fileInfo[i+26]);
-				letterFound = int.Parse (fileInfo[i+27]);
-				slashSkill1 = int.Parse (fileInfo[i+28]);
-				slashSkill2 = int.Parse (fileInfo[i+29]);
-				slashSkill3 = int.Parse (fileInfo[i+30]);
-				slashSkill4 = int.Parse (fileInfo[i+31]);
-				slashSkill5 = int.Parse (fileInfo[i+32]);
-				slashSkill6 = int.Parse (fileInfo[i+33]);
-				slashSkill7 = int.Parse (fileInfo[i+34]);
-				slashSkill8 = int.Parse (fileInfo[i+35]);
-				blastSkill1 = int.Parse (fileInfo[i+36]);
-				blastSkill2 = int.Parse (fileInfo[i+37]);
-				blastSkill3 = int.Parse (fileInfo[i+38]);
-				blastSkill4 = int.Parse (fileInfo[i+39]);
-				blastSkill5 = int.Parse (fileInfo[i+40]);
-				blastSkill6 = int.Parse (fileInfo[i+41]);
-				blastSkill7 = int.Parse (fileInfo[i+42]);
-				blastSkill8 = int.Parse (fileInfo[i+43]);
-				blastSkill9 = int.Parse (fileInfo[i+44]);
-				blastSkill10 = int.Parse (fileInfo[i+45]);
-				buffSkill1 = int.Parse (fileInfo[i+46]);
-				buffSkill2 = int.Parse (fileInfo[i+47]);
-				buffSkill3 = int.Parse (fileInfo[i+48]);
-				buffSkill4 = int.Parse (fileInfo[i+49]);
-				buffSkill5 = int.Parse (fileInfo[i+50]);
-				buffSkill6 = int.Parse (fileInfo[i+51]);
-				i = fileInfo.Length;
+		if (toolBarInt == 0) {
+			using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart1.txt")) {
+				string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart1.txt");
+				for (int i = 0; i < fileInfo.Length; i++) {
+					pace = int.Parse (fileInfo [i]);
+					exp = int.Parse (fileInfo [i + 1]);
+					blood = int.Parse (fileInfo [i + 2]);
+					love = int.Parse (fileInfo [i + 3]);
+					loveNotes = int.Parse (fileInfo [i + 4]);
+					emo = fileInfo [i + 5];
+					time = int.Parse (fileInfo [i + 6]);
+					key = fileInfo [i + 7];
+					statPoints = int.Parse (fileInfo [i + 8]);
+					skillPoints = int.Parse (fileInfo [i + 9]);
+					strPoints = int.Parse (fileInfo [i + 10]);
+					pumpLow = int.Parse (fileInfo [i + 11]);
+					pumpHigh = int.Parse (fileInfo [i + 12]);
+					intPoints = int.Parse (fileInfo [i + 13]);
+					loveLow = int.Parse (fileInfo [i + 14]);
+					loveHigh = int.Parse (fileInfo [i + 15]);
+					dexPoints = int.Parse (fileInfo [i + 16]);
+					cardioLow = int.Parse (fileInfo [i + 17]);
+					cardioHigh = int.Parse (fileInfo [i + 18]);
+					lukPoints = int.Parse (fileInfo [i + 19]);
+					shellLow = int.Parse (fileInfo [i + 20]);
+					shellHigh = int.Parse (fileInfo [i + 21]);
+					BP = int.Parse (fileInfo [i + 22]);
+					LP = int.Parse (fileInfo [i + 23]);
+					unlockLevel = int.Parse (fileInfo [i + 24]);
+					unlockNextEquip = int.Parse (fileInfo [i + 25]);
+					unlockNextInv = int.Parse (fileInfo [i + 26]);
+					letterFound = int.Parse (fileInfo [i + 27]);
+					slashSkill1 = int.Parse (fileInfo [i + 28]);
+					slashSkill2 = int.Parse (fileInfo [i + 29]);
+					slashSkill3 = int.Parse (fileInfo [i + 30]);
+					slashSkill4 = int.Parse (fileInfo [i + 31]);
+					slashSkill5 = int.Parse (fileInfo [i + 32]);
+					slashSkill6 = int.Parse (fileInfo [i + 33]);
+					slashSkill7 = int.Parse (fileInfo [i + 34]);
+					slashSkill8 = int.Parse (fileInfo [i + 35]);
+					blastSkill1 = int.Parse (fileInfo [i + 36]);
+					blastSkill2 = int.Parse (fileInfo [i + 37]);
+					blastSkill3 = int.Parse (fileInfo [i + 38]);
+					blastSkill4 = int.Parse (fileInfo [i + 39]);
+					blastSkill5 = int.Parse (fileInfo [i + 40]);
+					blastSkill6 = int.Parse (fileInfo [i + 41]);
+					blastSkill7 = int.Parse (fileInfo [i + 42]);
+					blastSkill8 = int.Parse (fileInfo [i + 43]);
+					blastSkill9 = int.Parse (fileInfo [i + 44]);
+					blastSkill10 = int.Parse (fileInfo [i + 45]);
+					buffSkill1 = int.Parse (fileInfo [i + 46]);
+					buffSkill2 = int.Parse (fileInfo [i + 47]);
+					buffSkill3 = int.Parse (fileInfo [i + 48]);
+					buffSkill4 = int.Parse (fileInfo [i + 49]);
+					buffSkill5 = int.Parse (fileInfo [i + 50]);
+					buffSkill6 = int.Parse (fileInfo [i + 51]);
+					i = fileInfo.Length;
+				}
 			}
 		}
 
-		using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart2.txt")) {
-			string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart2.txt");
-			for (int i = 0; i < fileInfo.Length; i++) {
-				pace = int.Parse (fileInfo[i]);
-				exp = int.Parse (fileInfo[i+1]);
-				blood = int.Parse (fileInfo[i+2]);
-				love = int.Parse (fileInfo[i+3]);
-				loveNotes = int.Parse (fileInfo[i+4]);
-				emo = fileInfo[i+5];
-				time = int.Parse (fileInfo[i+6]);
-				key = fileInfo[i+7];
-				statPoints = int.Parse (fileInfo[i+8]);
-				skillPoints = int.Parse (fileInfo[i+9]);
-				strPoints = int.Parse (fileInfo[i+10]);
-				pumpLow = int.Parse (fileInfo[i+11]);
-				pumpHigh = int.Parse (fileInfo[i+12]);
-				intPoints = int.Parse (fileInfo[i+13]);
-				loveLow = int.Parse (fileInfo[i+14]);
-				loveHigh = int.Parse (fileInfo[i+15]);
-				dexPoints = int.Parse (fileInfo[i+16]);
-				cardioLow = int.Parse (fileInfo[i+17]);
-				cardioHigh = int.Parse (fileInfo[i+18]);
-				lukPoints = int.Parse (fileInfo[i+19]);
-				shellLow = int.Parse (fileInfo[i+20]);
-				shellHigh = int.Parse (fileInfo[i+21]);
-				BP = int.Parse (fileInfo[i+22]);
-				LP = int.Parse (fileInfo[i+23]);
-				unlockLevel = int.Parse (fileInfo[i+24]);
-				unlockNextEquip = int.Parse (fileInfo[i+25]);
-				unlockNextInv = int.Parse (fileInfo[i+26]);
-				letterFound = int.Parse (fileInfo[i+27]);
-				slashSkill1 = int.Parse (fileInfo[i+28]);
-				slashSkill2 = int.Parse (fileInfo[i+29]);
-				slashSkill3 = int.Parse (fileInfo[i+30]);
-				slashSkill4 = int.Parse (fileInfo[i+31]);
-				slashSkill5 = int.Parse (fileInfo[i+32]);
-				slashSkill6 = int.Parse (fileInfo[i+33]);
-				slashSkill7 = int.Parse (fileInfo[i+34]);
-				slashSkill8 = int.Parse (fileInfo[i+35]);
-				blastSkill1 = int.Parse (fileInfo[i+36]);
-				blastSkill2 = int.Parse (fileInfo[i+37]);
-				blastSkill3 = int.Parse (fileInfo[i+38]);
-				blastSkill4 = int.Parse (fileInfo[i+39]);
-				blastSkill5 = int.Parse (fileInfo[i+40]);
-				blastSkill6 = int.Parse (fileInfo[i+41]);
-				blastSkill7 = int.Parse (fileInfo[i+42]);
-				blastSkill8 = int.Parse (fileInfo[i+43]);
-				blastSkill9 = int.Parse (fileInfo[i+44]);
-				blastSkill10 = int.Parse (fileInfo[i+45]);
-				buffSkill1 = int.Parse (fileInfo[i+46]);
-				buffSkill2 = int.Parse (fileInfo[i+47]);
-				buffSkill3 = int.Parse (fileInfo[i+48]);
-				buffSkill4 = int.Parse (fileInfo[i+49]);
-				buffSkill5 = int.Parse (fileInfo[i+50]);
-				buffSkill6 = int.Parse (fileInfo[i+51]);
-				i = fileInfo.Length;
+		if (toolBarInt == 1) {
+			using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart2.txt")) {
+				string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart2.txt");
+				for (int i = 0; i < fileInfo.Length; i++) {
+					pace = int.Parse (fileInfo [i]);
+					exp = int.Parse (fileInfo [i + 1]);
+					blood = int.Parse (fileInfo [i + 2]);
+					love = int.Parse (fileInfo [i + 3]);
+					loveNotes = int.Parse (fileInfo [i + 4]);
+					emo = fileInfo [i + 5];
+					time = int.Parse (fileInfo [i + 6]);
+					key = fileInfo [i + 7];
+					statPoints = int.Parse (fileInfo [i + 8]);
+					skillPoints = int.Parse (fileInfo [i + 9]);
+					strPoints = int.Parse (fileInfo [i + 10]);
+					pumpLow = int.Parse (fileInfo [i + 11]);
+					pumpHigh = int.Parse (fileInfo [i + 12]);
+					intPoints = int.Parse (fileInfo [i + 13]);
+					loveLow = int.Parse (fileInfo [i + 14]);
+					loveHigh = int.Parse (fileInfo [i + 15]);
+					dexPoints = int.Parse (fileInfo [i + 16]);
+					cardioLow = int.Parse (fileInfo [i + 17]);
+					cardioHigh = int.Parse (fileInfo [i + 18]);
+					lukPoints = int.Parse (fileInfo [i + 19]);
+					shellLow = int.Parse (fileInfo [i + 20]);
+					shellHigh = int.Parse (fileInfo [i + 21]);
+					BP = int.Parse (fileInfo [i + 22]);
+					LP = int.Parse (fileInfo [i + 23]);
+					unlockLevel = int.Parse (fileInfo [i + 24]);
+					unlockNextEquip = int.Parse (fileInfo [i + 25]);
+					unlockNextInv = int.Parse (fileInfo [i + 26]);
+					letterFound = int.Parse (fileInfo [i + 27]);
+					slashSkill1 = int.Parse (fileInfo [i + 28]);
+					slashSkill2 = int.Parse (fileInfo [i + 29]);
+					slashSkill3 = int.Parse (fileInfo [i + 30]);
+					slashSkill4 = int.Parse (fileInfo [i + 31]);
+					slashSkill5 = int.Parse (fileInfo [i + 32]);
+					slashSkill6 = int.Parse (fileInfo [i + 33]);
+					slashSkill7 = int.Parse (fileInfo [i + 34]);
+					slashSkill8 = int.Parse (fileInfo [i + 35]);
+					blastSkill1 = int.Parse (fileInfo [i + 36]);
+					blastSkill2 = int.Parse (fileInfo [i + 37]);
+					blastSkill3 = int.Parse (fileInfo [i + 38]);
+					blastSkill4 = int.Parse (fileInfo [i + 39]);
+					blastSkill5 = int.Parse (fileInfo [i + 40]);
+					blastSkill6 = int.Parse (fileInfo [i + 41]);
+					blastSkill7 = int.Parse (fileInfo [i + 42]);
+					blastSkill8 = int.Parse (fileInfo [i + 43]);
+					blastSkill9 = int.Parse (fileInfo [i + 44]);
+					blastSkill10 = int.Parse (fileInfo [i + 45]);
+					buffSkill1 = int.Parse (fileInfo [i + 46]);
+					buffSkill2 = int.Parse (fileInfo [i + 47]);
+					buffSkill3 = int.Parse (fileInfo [i + 48]);
+					buffSkill4 = int.Parse (fileInfo [i + 49]);
+					buffSkill5 = int.Parse (fileInfo [i + 50]);
+					buffSkill6 = int.Parse (fileInfo [i + 51]);
+					i = fileInfo.Length;
+				}
 			}
 		}
 
-		using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart3.txt")) {
-			string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart3.txt");
-			for (int i = 0; i < fileInfo.Length; i++) {
-				pace = int.Parse (fileInfo[i]);
-				exp = int.Parse (fileInfo[i+1]);
-				blood = int.Parse (fileInfo[i+2]);
-				love = int.Parse (fileInfo[i+3]);
-				loveNotes = int.Parse (fileInfo[i+4]);
-				emo = fileInfo[i+5];
-				time = int.Parse (fileInfo[i+6]);
-				key = fileInfo[i+7];
-				statPoints = int.Parse (fileInfo[i+8]);
-				skillPoints = int.Parse (fileInfo[i+9]);
-				strPoints = int.Parse (fileInfo[i+10]);
-				pumpLow = int.Parse (fileInfo[i+11]);
-				pumpHigh = int.Parse (fileInfo[i+12]);
-				intPoints = int.Parse (fileInfo[i+13]);
-				loveLow = int.Parse (fileInfo[i+14]);
-				loveHigh = int.Parse (fileInfo[i+15]);
-				dexPoints = int.Parse (fileInfo[i+16]);
-				cardioLow = int.Parse (fileInfo[i+17]);
-				cardioHigh = int.Parse (fileInfo[i+18]);
-				lukPoints = int.Parse (fileInfo[i+19]);
-				shellLow = int.Parse (fileInfo[i+20]);
-				shellHigh = int.Parse (fileInfo[i+21]);
-				BP = int.Parse (fileInfo[i+22]);
-				LP = int.Parse (fileInfo[i+23]);
-				unlockLevel = int.Parse (fileInfo[i+24]);
-				unlockNextEquip = int.Parse (fileInfo[i+25]);
-				unlockNextInv = int.Parse (fileInfo[i+26]);
-				letterFound = int.Parse (fileInfo[i+27]);
-				slashSkill1 = int.Parse (fileInfo[i+28]);
-				slashSkill2 = int.Parse (fileInfo[i+29]);
-				slashSkill3 = int.Parse (fileInfo[i+30]);
-				slashSkill4 = int.Parse (fileInfo[i+31]);
-				slashSkill5 = int.Parse (fileInfo[i+32]);
-				slashSkill6 = int.Parse (fileInfo[i+33]);
-				slashSkill7 = int.Parse (fileInfo[i+34]);
-				slashSkill8 = int.Parse (fileInfo[i+35]);
-				blastSkill1 = int.Parse (fileInfo[i+36]);
-				blastSkill2 = int.Parse (fileInfo[i+37]);
-				blastSkill3 = int.Parse (fileInfo[i+38]);
-				blastSkill4 = int.Parse (fileInfo[i+39]);
-				blastSkill5 = int.Parse (fileInfo[i+40]);
-				blastSkill6 = int.Parse (fileInfo[i+41]);
-				blastSkill7 = int.Parse (fileInfo[i+42]);
-				blastSkill8 = int.Parse (fileInfo[i+43]);
-				blastSkill9 = int.Parse (fileInfo[i+44]);
-				blastSkill10 = int.Parse (fileInfo[i+45]);
-				buffSkill1 = int.Parse (fileInfo[i+46]);
-				buffSkill2 = int.Parse (fileInfo[i+47]);
-				buffSkill3 = int.Parse (fileInfo[i+48]);
-				buffSkill4 = int.Parse (fileInfo[i+49]);
-				buffSkill5 = int.Parse (fileInfo[i+50]);
-				buffSkill6 = int.Parse (fileInfo[i+51]);
-				i = fileInfo.Length;
+		if (toolBarInt == 2) {
+			using (StreamReader readFile = new StreamReader (Application.dataPath + "/Database/Heart3.txt")) {
+				string[] fileInfo = File.ReadAllLines (Application.dataPath + "/Database/Heart3.txt");
+				for (int i = 0; i < fileInfo.Length; i++) {
+					pace = int.Parse (fileInfo [i]);
+					exp = int.Parse (fileInfo [i + 1]);
+					blood = int.Parse (fileInfo [i + 2]);
+					love = int.Parse (fileInfo [i + 3]);
+					loveNotes = int.Parse (fileInfo [i + 4]);
+					emo = fileInfo [i + 5];
+					time = int.Parse (fileInfo [i + 6]);
+					key = fileInfo [i + 7];
+					statPoints = int.Parse (fileInfo [i + 8]);
+					skillPoints = int.Parse (fileInfo [i + 9]);
+					strPoints = int.Parse (fileInfo [i + 10]);
+					pumpLow = int.Parse (fileInfo [i + 11]);
+					pumpHigh = int.Parse (fileInfo [i + 12]);
+					intPoints = int.Parse (fileInfo [i + 13]);
+					loveLow = int.Parse (fileInfo [i + 14]);
+					loveHigh = int.Parse (fileInfo [i + 15]);
+					dexPoints = int.Parse (fileInfo [i + 16]);
+					cardioLow = int.Parse (fileInfo [i + 17]);
+					cardioHigh = int.Parse (fileInfo [i + 18]);
+					lukPoints = int.Parse (fileInfo [i + 19]);
+					shellLow = int.Parse (fileInfo [i + 20]);
+					shellHigh = int.Parse (fileInfo [i + 21]);
+					BP = int.Parse (fileInfo [i + 22]);
+					LP = int.Parse (fileInfo [i + 23]);
+					unlockLevel = int.Parse (fileInfo [i + 24]);
+					unlockNextEquip = int.Parse (fileInfo [i + 25]);
+					unlockNextInv = int.Parse (fileInfo [i + 26]);
+					letterFound = int.Parse (fileInfo [i + 27]);
+					slashSkill1 = int.Parse (fileInfo [i + 28]);
+					slashSkill2 = int.Parse (fileInfo [i + 29]);
+					slashSkill3 = int.Parse (fileInfo [i + 30]);
+					slashSkill4 = int.Parse (fileInfo [i + 31]);
+					slashSkill5 = int.Parse (fileInfo [i + 32]);
+					slashSkill6 = int.Parse (fileInfo [i + 33]);
+					slashSkill7 = int.Parse (fileInfo [i + 34]);
+					slashSkill8 = int.Parse (fileInfo [i + 35]);
+					blastSkill1 = int.Parse (fileInfo [i + 36]);
+					blastSkill2 = int.Parse (fileInfo [i + 37]);
+					blastSkill3 = int.Parse (fileInfo [i + 38]);
+					blastSkill4 = int.Parse (fileInfo [i + 39]);
+					blastSkill5 = int.Parse (fileInfo [i + 40]);
+					blastSkill6 = int.Parse (fileInfo [i + 41]);
+					blastSkill7 = int.Parse (fileInfo [i + 42]);
+					blastSkill8 = int.Parse (fileInfo [i + 43]);
+					blastSkill9 = int.Parse (fileInfo [i + 44]);
+					blastSkill10 = int.Parse (fileInfo [i + 45]);
+					buffSkill1 = int.Parse (fileInfo [i + 46]);
+					buffSkill2 = int.Parse (fileInfo [i + 47]);
+					buffSkill3 = int.Parse (fileInfo [i + 48]);
+					buffSkill4 = int.Parse (fileInfo [i + 49]);
+					buffSkill5 = int.Parse (fileInfo [i + 50]);
+					buffSkill6 = int.Parse (fileInfo [i + 51]);
+					i = fileInfo.Length;
+				}
 			}
 		}
+
 	}
 
 	void StoreInfo (StreamWriter file) {
