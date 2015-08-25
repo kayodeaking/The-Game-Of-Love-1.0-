@@ -10,7 +10,7 @@ public class HospitalShop : MonoBehaviour
 	Vector2 scrollViewPos = Vector2.zero;
 
 	int shopChoice = 0;
-	public static int currNotes = 5000;
+	public static int currNotes = 50000;
 	int totalNotes;
 	
 	string descriptValue;

@@ -1,90 +1,90 @@
-Weapon 1
+Loss
 1000
-
+15
 Blah Blah Blah
 -----------------------
-Weapon 2
+Remorse
 1000
-
+23
 Blah Blah Blah
 -----------------------
-Weapon 3
+Sadness
 1000
-
+35
 Blah Blah Blah
 -----------------------
-Weapon 4
+Bitterness
 2000
-
+43
 Blah Blah Blah
 -----------------------
-Weapon 5
+Sorrow
 2000
-
+56
 Blah Blah Blah
 -----------------------
-Weapon 6
+Loneliness
 2000
-
+68
 Blah Blah Blah
 -----------------------
-Weapon 7
+Misery
 3000
-
+80
 Blah Blah Blah
 -----------------------
-Weapon 8
+Longing
 3000
-
+95
 Blah Blah Blah
 -----------------------
-Weapon 9
+Neediness
 3000
-
+103
 Blah Blah Blah
 -----------------------
-Weapon 10
+Discontent
 4000
-
+115
 Blah Blah Blah
 -----------------------
-Weapon 11
+Glad
 4000
-
+127
 Blah Blah Blah
 -----------------------
-Weapon 12
+Happiness
 4000
-
+138
 Blah Blah Blah
 -----------------------
-Weapon 13
+Hope
 5000
-
+150
 Blah Blah Blah
 -----------------------
-Weapon 14
+Attraction 
 5000
-
+161
 Blah Blah Blah
 -----------------------
-Weapon 15
+Hostility
 5000
-
+175
 Blah Blah Blah
 -----------------------
-Weapon 16
+Rage
 6000
-
+189
 Blah Blah Blah
 -----------------------
-Weapon 17
+Passion
 6000
-
+201
 Blah Blah Blah
 -----------------------
-Weapon 18
+Triumph
 6000
-
+212
 Blah Blah Blah
 -----------------------
