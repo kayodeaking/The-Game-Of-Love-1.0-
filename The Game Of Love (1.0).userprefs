@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Database/GameItemStorage.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Database/Heart1.txt">
     <Files>
       <File FileName="Assets/HeartCondition.cs" Line="1886" Column="28" />
-      <File FileName="Assets/HospitalShop.cs" Line="578" Column="79" />
+      <File FileName="Assets/HospitalShop.cs" Line="231" Column="3" />
       <File FileName="Assets/AddToSlots.cs" Line="6" Column="26" />
-      <File FileName="Assets/Database/GameItemStorage.cs" Line="347" Column="26" />
-      <File FileName="Assets/MyHearts.cs" Line="331" Column="22" />
+      <File FileName="Assets/Database/GameItemStorage.cs" Line="6" Column="2" />
+      <File FileName="Assets/MyHearts.cs" Line="1141" Column="55" />
+      <File FileName="Assets/Database/Heart1.txt" Line="179" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
