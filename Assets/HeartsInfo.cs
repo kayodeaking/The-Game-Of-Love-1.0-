@@ -28,6 +28,9 @@ public class HeartsInfo : MonoBehaviour {
 	public static int exp;
 
 	public static int pace = 1;
+
+	public static int BP;
+	public static int LP;
 	
 	// Use this for initialization
 	void Start () {	
@@ -59,8 +62,8 @@ public class HeartsInfo : MonoBehaviour {
 
 			for (int i = 0; i < fileInfo.Length; i++) {
 				if(pace == (int.Parse (fileInfo[i]))) {
-					tempBlood = (int.Parse (fileInfo[i + 1])) + (HeartCondition.BP * 50) + ((strPoints + dexPoints) * 25);
-					tempLove = (int.Parse (fileInfo[i + 2])) + (HeartCondition.LP * 50) + ((intPoints + lukPoints) * 25);
+					tempBlood = (int.Parse (fileInfo[i + 1])) + (BP * 50) + ((strPoints + dexPoints) * 25);
+					tempLove = (int.Parse (fileInfo[i + 2])) + (LP * 50) + ((intPoints + lukPoints) * 25);
 					tempExp = (int.Parse (fileInfo[i + 3]));
 
 					tempPumpLow = (int.Parse (fileInfo[i + 4])) + (strPoints * 25);
