@@ -6,7 +6,10 @@ public class OnClick : MonoBehaviour {
 
 	public static bool loading;
 	public static bool saving;
-	
+
+	public GameObject pausePanel;
+	public GameObject optionPanel;
+	public GameObject lvCanvas;
 	// Use this for initialization
 	void Start () {
 	
@@ -75,5 +78,32 @@ public class OnClick : MonoBehaviour {
 
 		Application.LoadLevel (2);
 		
+	}
+
+	public void Pause_Resume() {
+		lvCanvas.SetActive (false);
+	}
+
+	public void Pause_Restart() {
+		lvCanvas.SetActive (false);
+	}
+
+	public void Pause_Options() {
+		optionPanel.SetActive (true);
+		pausePanel.SetActive (false);
+	}
+
+	public void Pause_Exit() {
+		Application.LoadLevel (1);
+		lvCanvas.SetActive (false);
+	}
+
+	public void Return_Options() {
+		optionPanel.SetActive (false);
+		pausePanel.SetActive (true);
+	}
+
+	public void Pause_Close() {
+		lvCanvas.SetActive (false);
 	}
 }
