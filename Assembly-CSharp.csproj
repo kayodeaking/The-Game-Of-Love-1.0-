@@ -48,13 +48,16 @@
   <ItemGroup>
      <Compile Include="Assets\Base_Item.cs" />
      <Compile Include="Assets\ButtonName.cs" />
+     <Compile Include="Assets\ChapterTitle.cs" />
      <Compile Include="Assets\Database\AddToSlots.cs" />
      <Compile Include="Assets\Database\GameItemStorage.cs" />
      <Compile Include="Assets\Dungeonizer\Dungeonizer.cs" />
      <Compile Include="Assets\HeartsInfo.cs" />
+     <Compile Include="Assets\KeyboardControls.cs" />
      <Compile Include="Assets\MouseClicks\OnClick.cs" />
      <Compile Include="Assets\MouseClicks\OnClickChapters.cs" />
      <Compile Include="Assets\MouseClicks\OnClickHearts.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickLevels.cs" />
      <Compile Include="Assets\MouseClicks\OnClickSESIL.cs" />
      <Compile Include="Assets\ReturnButtons.cs" />
      <Compile Include="Assets\Test_Items.cs" />
