@@ -7,7 +7,13 @@ public class OnClickTabs : MonoBehaviour {
 	public GameObject statPanel;
 	public GameObject equipPanel;
 	public GameObject invPanel;
-	public GameObject allTabs;
+
+	public GameObject slashPanel;
+	public GameObject blastPanel;
+	public GameObject buffPanel;
+
+	public GameObject allSEITabs;
+	public GameObject allSBBTabs;
 
 	// Use this for initialization
 	void Start () {
@@ -37,7 +43,29 @@ public class OnClickTabs : MonoBehaviour {
 		invPanel.SetActive (true);
 	}
 
-	public void Close() {
-		allTabs.SetActive (false);
+	public void Close_SEI() {
+		allSEITabs.SetActive (false);
+	}
+	
+	public void Slash_Tab() {
+		slashPanel.SetActive (true);
+		blastPanel.SetActive (false);
+		buffPanel.SetActive (false);
+	}
+	
+	public void Blast_Tab() {
+		slashPanel.SetActive (false);
+		blastPanel.SetActive (true);
+		buffPanel.SetActive (false);
+	}
+	
+	public void Buff_Tab() {
+		slashPanel.SetActive (false);
+		blastPanel.SetActive (false);
+		buffPanel.SetActive (true);
+	}
+	
+	public void Close_SBB() {
+		allSBBTabs.SetActive (false);
 	}
 }
