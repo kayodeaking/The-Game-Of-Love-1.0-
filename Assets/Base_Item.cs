@@ -15,8 +15,10 @@ public class Base_Item {
     public ItemType _itemType;
   	public  ActionType _actionType;
 	public float _actionAmount{get;set;}
-    Sprite image;        
-   public Base_Item(string name)
+	public Sprite _image {get;set;}
+	public Vector2 _position{get;set;}
+   
+	public Base_Item(string name)
     {
 		this.Name = name;
     }

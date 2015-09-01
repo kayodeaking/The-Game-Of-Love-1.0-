@@ -13,7 +13,9 @@ public class Weapon :MonoBehaviour,Base_Item {
 		this.Name = name;
 		_actionType = action_Type;
 		this._actionAmount = actionAmount;
+
 	}
+
 	
 
 }
