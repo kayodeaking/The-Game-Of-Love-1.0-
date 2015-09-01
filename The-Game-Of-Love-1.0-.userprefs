@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyHearts.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Base_Item.cs">
     <Files>
-      <File FileName="Assets/MainMenu.cs" Line="45" Column="2" />
-      <File FileName="Assets/OnClick.cs" Line="22" Column="3" />
-      <File FileName="Assets/MyHearts.cs" Line="159" Column="7" />
+      <File FileName="Assets/Test_Items.cs" Line="42" Column="12" />
+      <File FileName="Assets/Base_Item.cs" Line="65" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

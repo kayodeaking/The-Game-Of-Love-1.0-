@@ -11,40 +11,35 @@ public enum ActionType
 
 }
 public class Base_Item { 
-    string n;
-    ItemType i_Type;
-    ActionType a_Type;
+	public string Name{get;set;}
+    public ItemType _itemType;
+  	public  ActionType _actionType;
+	public float _actionAmount{get;set;}
     Sprite image;        
    public Base_Item(string name)
     {
-        n = name;
-       
+		this.Name = name;
     }
 
     public Base_Item(string name,ItemType item_Type,ActionType action_Type,float actionAmount)
     {
-        
-        n = name;
-        i_Type = item_Type;
-        a_Type = action_Type;
-        
+		this.Name = name;
+		_itemType = item_Type;
+		_actionType = action_Type;
+		this._actionAmount = actionAmount;
     }
+	public Base_Item(string name,ActionType action_Type,float actionAmount){
+		this.Name = name;
+		_actionType = action_Type;
+		this._actionAmount = actionAmount;
+	}
 
-    public string Name
-    {
-
-        get
-        {
-            return n;
-        }
-    }
 
     public string ActionType_To_String
     {
-
         get
         {
-            return a_Type.ToString();
+            return _actionType.ToString();
         }
     }
 
@@ -52,7 +47,7 @@ public class Base_Item {
     {
         get
         {
-            return i_Type.ToString();
+            return ActionType.ToString();
         }
     }
 
