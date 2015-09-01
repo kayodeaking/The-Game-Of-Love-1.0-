@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Base_Item.cs" />
      <Compile Include="Assets\ButtonName.cs" />
-     <Compile Include="Assets\ChapterTitle.cs" />
      <Compile Include="Assets\Database\AddToSlots.cs" />
      <Compile Include="Assets\Database\GameItemStorage.cs" />
      <Compile Include="Assets\HeartsInfo.cs" />
