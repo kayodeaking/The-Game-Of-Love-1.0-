@@ -50,6 +50,7 @@
      <Compile Include="Assets\ButtonName.cs" />
      <Compile Include="Assets\Database\AddToSlots.cs" />
      <Compile Include="Assets\Database\GameItemStorage.cs" />
+     <Compile Include="Assets\Dungeonizer\Dungeonizer.cs" />
      <Compile Include="Assets\HeartsInfo.cs" />
      <Compile Include="Assets\KeyboardControls.cs" />
      <Compile Include="Assets\MouseClicks\OnClick.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\MouseClicks\OnClickTabs.cs" />
      <Compile Include="Assets\ReturnButtons.cs" />
      <Compile Include="Assets\Test_Items.cs" />
+     <Compile Include="Assets\Weapon.cs" />
      <None Include="Assets\Database\Armor.txt" />
      <None Include="Assets\Database\Weapons.txt" />
      <None Include="Assets\Database\Letters.txt" />

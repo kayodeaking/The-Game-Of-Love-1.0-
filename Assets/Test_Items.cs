@@ -30,9 +30,11 @@ public class Test_Items : MonoBehaviour {
                      name = item.Element("name").Value,
                      itemtype = item.Element("ItemType").Value,
                      actionType = item.Element("ActionType").Value,
-
+				
+					
 
                  }).ToList();
+	
         foreach( var item in i)
         {
 

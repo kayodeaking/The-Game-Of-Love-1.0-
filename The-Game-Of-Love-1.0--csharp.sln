@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{318DE9D0-F2AC-6DFC-999C-8FF6B5695722}") = "The-Game-Of-Love-1.0-", "Assembly-CSharp-vs.csproj", "{4F29BF16-7F15-931F-AC0E-23A6A64C967E}"
 EndProject
+Project("{318DE9D0-F2AC-6DFC-999C-8FF6B5695722}") = "The-Game-Of-Love-1.0-", "Assembly-CSharp-Editor-vs.csproj", "{AE7F9C1C-BDB4-5403-E10E-10949CBDC4BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{4F29BF16-7F15-931F-AC0E-23A6A64C967E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F29BF16-7F15-931F-AC0E-23A6A64C967E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F29BF16-7F15-931F-AC0E-23A6A64C967E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7F9C1C-BDB4-5403-E10E-10949CBDC4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7F9C1C-BDB4-5403-E10E-10949CBDC4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7F9C1C-BDB4-5403-E10E-10949CBDC4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7F9C1C-BDB4-5403-E10E-10949CBDC4BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-											GlobalSection(MonoDevelopProperties) = preSolution
+															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
