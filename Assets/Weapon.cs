@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class Weapon :MonoBehaviour,Base_Item {
+public class Weapon:Base_Item {
 
 
 	// Use this for initialization

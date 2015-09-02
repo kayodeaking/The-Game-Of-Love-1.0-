@@ -12,8 +12,8 @@ public enum ActionType
 }
 public class Base_Item { 
 	public string Name{get;set;}
-    public ItemType _itemType;
-  	public  ActionType _actionType;
+    public static ItemType _itemType;
+  	public  static ActionType _actionType;
 	public float _actionAmount{get;set;}
 	public Sprite _image {get;set;}
 	public Vector2 _position{get;set;}
@@ -49,7 +49,7 @@ public class Base_Item {
     {
         get
         {
-            return ActionType.ToString();
+            return _itemType.ToString();
         }
     }
 
