@@ -71,7 +71,6 @@
      <None Include="Assets\Database\Special.txt" />
      <None Include="Assets\2D Hand Painted - Dungeon Tileset\Readme.txt" />
      <None Include="Assets\Database\Heart2.txt" />
-     <None Include="Assets\Database\PlayerCurves.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
