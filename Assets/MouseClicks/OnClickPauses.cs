@@ -6,6 +6,7 @@ public class OnClickPauses : MonoBehaviour {
 	public GameObject pausePanel;
 	public GameObject optionPanel;
 	public GameObject allPausePanel;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -47,5 +48,13 @@ public class OnClickPauses : MonoBehaviour {
 	}
 
 	public void Opitions_SE () {
+	}
+
+	public void Move_Set_1() {
+		KeyboardControls.moveSet = 1;
+	}
+
+	public void Move_Set_2() {
+		KeyboardControls.moveSet = 2;
 	}
 }
