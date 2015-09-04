@@ -5,14 +5,18 @@ public class KeyboardControls : MonoBehaviour {
 
 	public GameObject pausePanel;
 	public GameObject allPausePanel;
-	public GameObject invPanel;
+	public GameObject statPanel;
 	public GameObject allSEIPanel;
 	public GameObject slashPanel;
 	public GameObject allSkillPanel;
+	public GameObject miniMapPanel;
+	public GameObject playerHud;
 
 	bool openPauseMenu = false;
 	bool openSEIMenu = false;
 	bool openSkillMenu = false;
+	bool openPlayerHud = false;
+	bool openMiniMap = false;
 	
 	public static int moveSet = 1;
 	// Use this for initialization
@@ -22,27 +26,44 @@ public class KeyboardControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Game_Play_Only ();
+		if (Application.loadedLevel == 5) {
+			Game_Play_Only ();
+		}
 	}
 
 	void Game_Play_Only() {
 
 		//Pauses the game
 		if (Input.GetKeyDown (KeyCode.P)) {
+			openPauseMenu = !openPauseMenu;
 			pausePanel.SetActive (openPauseMenu);
 			allPausePanel.SetActive (openPauseMenu);
 		}
 
-		//Opens Inventory Menu
+		//Opens statentory Menu
 		if (Input.GetKeyDown (KeyCode.I)) {
-			invPanel.SetActive (openSEIMenu);
+			openSEIMenu = !openSEIMenu;
+			statPanel.SetActive (openSEIMenu);
 			allSEIPanel.SetActive (openSEIMenu);
 		}
 
 		//Opens Skills Menu
 		if (Input.GetKeyDown (KeyCode.K)) {
+			openSkillMenu = !openSkillMenu;
 			slashPanel.SetActive (openSkillMenu);
 			allSkillPanel.SetActive (openSkillMenu);
+		}
+
+		//Turns the Player Hud on/off
+		if (Input.GetKeyDown (KeyCode.U)) {
+			openPlayerHud = !openPlayerHud;
+			playerHud.SetActive (openPlayerHud);
+		}
+
+		//Turns Mini Map on/off
+		if (Input.GetKeyDown (KeyCode.M)) {
+			openMiniMap = !openMiniMap;
+			miniMapPanel.SetActive (openMiniMap);
 		}
 
 		//Players Dodge ability
@@ -82,6 +103,15 @@ public class KeyboardControls : MonoBehaviour {
 		//Players Assigned Potion 3
 		if (Input.GetKeyDown (KeyCode.Keypad3)) {
 
+		}
+		//Players Assigned Potion 4
+		if (Input.GetKeyDown (KeyCode.Keypad4)) {
+			
+		}
+		
+		//Players Assigned Potion 5
+		if (Input.GetKeyDown (KeyCode.Keypad5)) {
+			
 		}
 
 		if (moveSet == 1) {

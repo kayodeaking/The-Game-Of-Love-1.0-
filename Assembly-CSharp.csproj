@@ -54,6 +54,7 @@
      <Compile Include="Assets\MouseClicks\OnClickChapters.cs" />
      <Compile Include="Assets\MouseClicks\OnClickHearts.cs" />
      <Compile Include="Assets\MouseClicks\OnClickLevels.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickMiniMap.cs" />
      <Compile Include="Assets\MouseClicks\OnClickPauses.cs" />
      <Compile Include="Assets\MouseClicks\OnClickSESIL.cs" />
      <Compile Include="Assets\MouseClicks\OnClickTabs.cs" />
@@ -61,11 +62,8 @@
      <Compile Include="Assets\Test_Items.cs" />
      <Compile Include="Assets\Weapon.cs" />
      <None Include="Assets\Database\Letters.txt" />
-     <None Include="Assets\Database\Heart1.txt" />
-     <None Include="Assets\Database\Heart3.txt" />
      <None Include="Assets\SaveData.xml" />
      <None Include="Assets\2D Hand Painted - Dungeon Tileset\Readme.txt" />
-     <None Include="Assets\Database\Heart2.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
