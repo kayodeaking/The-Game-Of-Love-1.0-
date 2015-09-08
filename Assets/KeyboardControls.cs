@@ -11,12 +11,14 @@ public class KeyboardControls : MonoBehaviour {
 	public GameObject allSkillPanel;
 	public GameObject miniMapPanel;
 	public GameObject playerHud;
+	public GameObject letters;
 
 	bool openPauseMenu = false;
 	bool openSEIMenu = false;
 	bool openSkillMenu = false;
 	bool openPlayerHud = false;
 	bool openMiniMap = false;
+	bool openLetter = false;
 	
 	public static int moveSet = 1;
 	// Use this for initialization
@@ -40,11 +42,17 @@ public class KeyboardControls : MonoBehaviour {
 			allPausePanel.SetActive (openPauseMenu);
 		}
 
-		//Opens statentory Menu
+		//Opens Stat/Equip/Inv Menu
 		if (Input.GetKeyDown (KeyCode.I)) {
 			openSEIMenu = !openSEIMenu;
 			statPanel.SetActive (openSEIMenu);
 			allSEIPanel.SetActive (openSEIMenu);
+		}
+
+		//Opens letter Menu
+		if (Input.GetKeyDown (KeyCode.L)) {
+			openLetter = !openLetter;
+			letters.SetActive (openLetter);
 		}
 
 		//Opens Skills Menu
