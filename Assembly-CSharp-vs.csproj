@@ -58,6 +58,7 @@
      <Compile Include="Assets\MouseClicks\OnClickLevels.cs" />
      <Compile Include="Assets\MouseClicks\OnClickMiniMap.cs" />
      <Compile Include="Assets\MouseClicks\OnClickPauses.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickPlayerHud.cs" />
      <Compile Include="Assets\MouseClicks\OnClickSESIL.cs" />
      <Compile Include="Assets\MouseClicks\OnClickTabs.cs" />
      <Compile Include="Assets\MouseClicks\ReturnButtons.cs" />
