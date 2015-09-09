@@ -67,8 +67,6 @@
      <Compile Include="Assets\Weapon.cs" />
      <None Include="Assets\Resources\XML\Data_SaveFile.xml" />
      <None Include="Assets\Resources\Letters.txt" />
-     <None Include="Assets\Database\XML\Data_Items.xml" />
-     <None Include="Assets\Database\XML\Data_PlayerCurve.xml" />
      <None Include="Assets\SaveData.xml" />
      <None Include="Assets\2D Hand Painted - Dungeon Tileset\Readme.txt" />
  <Reference Include="UnityEngine.UI">
