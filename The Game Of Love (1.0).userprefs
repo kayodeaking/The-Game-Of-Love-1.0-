@@ -1,16 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MouseClicks/OnClickPlayerHud.cs">
     <Files>
-      <File FileName="Assets/KeyboardControls.cs" Line="56" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickLevels.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickChapters.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickPauses.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickMiniMap.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickCategories.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickTabs.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickLetters.cs" Line="1" Column="1" />
-      <File FileName="Assets/MouseClicks/OnClickPlayerHud.cs" Line="24" Column="30" />
+      <File FileName="Assets/Points/PlayerHudAffection.cs" Line="17" Column="50" />
+      <File FileName="Assets/Points/PlayerHudBlood.cs" Line="17" Column="15" />
+      <File FileName="Assets/MouseClicks/OnClickPlayerHud.cs" Line="32" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
