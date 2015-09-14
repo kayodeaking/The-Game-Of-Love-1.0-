@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Resources\Editor_ItemList.cs" />
      <Compile Include="Assets\Resources\Item.cs" />
      <Compile Include="Assets\Resources\Test_Items.cs" />
@@ -104,6 +105,41 @@
      <Compile Include="Assets\_Scripts\MouseClicks\ReturnButtons.cs" />
      <Compile Include="Assets\_Scripts\Player_Control.cs" />
      <Compile Include="Assets\_Scripts\Weapon.cs" />
+=======
+     <Compile Include="Assets\Base_Item.cs" />
+     <Compile Include="Assets\Dungeonizer\Dungeonizer.cs" />
+     <Compile Include="Assets\KeyboardControls.cs" />
+     <Compile Include="Assets\MouseClicks\ButtonName.cs" />
+     <Compile Include="Assets\MouseClicks\OnClick.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickCategories.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickChapters.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickHearts.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickLetters.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickLevels.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickMiniMap.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickPauses.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickPlayerHud.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickSESIL.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickTabs.cs" />
+     <Compile Include="Assets\MouseClicks\ReturnButtons.cs" />
+     <Compile Include="Assets\Player_Control.cs" />
+     <Compile Include="Assets\Points\AffectionPoints.cs" />
+     <Compile Include="Assets\Points\BloodPoints.cs" />
+     <Compile Include="Assets\Points\CardioPoints.cs" />
+     <Compile Include="Assets\Points\DexterityPoints.cs" />
+     <Compile Include="Assets\Points\HandelPointsDisplay.cs" />
+     <Compile Include="Assets\Points\IntelligencePoints.cs" />
+     <Compile Include="Assets\Points\LovePoints.cs" />
+     <Compile Include="Assets\Points\LuckPoints.cs" />
+     <Compile Include="Assets\Points\PlayerHudBlood.cs" />
+     <Compile Include="Assets\Points\PlayerHudLove.cs" />
+     <Compile Include="Assets\Points\PumpPoints.cs" />
+     <Compile Include="Assets\Points\ShellPoints.cs" />
+     <Compile Include="Assets\Points\StatusPoints.cs" />
+     <Compile Include="Assets\Points\StrengthPoints.cs" />
+     <Compile Include="Assets\Test_Items.cs" />
+     <Compile Include="Assets\Weapon.cs" />
+>>>>>>> origin/master
      <None Include="Assets\Resources\XML\Data_SaveFile.xml" />
      <None Include="Assets\Resources\Letters.txt" />
      <None Include="Assets\Resources\Item_Data.xml" />

@@ -44,6 +44,9 @@ public class OnClickTabs : MonoBehaviour {
 	}
 
 	public void Close_SEI() {
+		statPanel.SetActive (true);
+		equipPanel.SetActive (false);
+		invPanel.SetActive (false);
 		allSEITabs.SetActive (false);
 	}
 	
@@ -66,6 +69,9 @@ public class OnClickTabs : MonoBehaviour {
 	}
 	
 	public void Close_SBB() {
+		slashPanel.SetActive (true);
+		blastPanel.SetActive (false);
+		buffPanel.SetActive (false);
 		allSBBTabs.SetActive (false);
 	}
 }
