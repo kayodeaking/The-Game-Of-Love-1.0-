@@ -9,7 +9,11 @@ public class HandelPointsDisplay : MonoBehaviour {
 	public static int tempDexP;
 	public static int tempLukP;
 	public static int tempBlP = 500;
-	public static int tempAffP = 250;
+	public static int tempLoveP = 250;
+	public static float tempPump = 50;
+	public static float tempCardio = 50;
+	public static float tempShell = 50;
+	public static float tempAff = 50;
 
 	// Use this for initialization
 	void Start () {
@@ -56,11 +60,11 @@ public class HandelPointsDisplay : MonoBehaviour {
 		}
 	}
 
-	public void IncAff() {
+	public void IncLove() {
 		if (tempSP > 0) {
 			tempSP -= 1;
-			tempAffP += 50;
+			tempLoveP += 50;
 		}
 	}
-
+	
 }

@@ -13,6 +13,6 @@ public class AffectionPoints : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			text.text = "Affection: " + HandelPointsDisplay.tempAffP + "/" + HandelPointsDisplay.tempAffP;
+		text.text = "Affection: " + (49.5 + (HandelPointsDisplay.tempAff*.33f) * (3*HandelPointsDisplay.tempIntP)) + "~" + (150 + (HandelPointsDisplay.tempAff) * (3*HandelPointsDisplay.tempIntP));
 	}
 }
