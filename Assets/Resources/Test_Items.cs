@@ -2,38 +2,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 using System.Linq;
+using System.IO;
 
-public class Item
-{
-    public string name { get; set; }
-	public string type {get; set;}
-	public string kind {get;set;}
-	public string effect_1{get;set;}
-	public string amount_1{get;set;}
-	public string effect_2{get;set;}
-	public string amount_2{get;set;}
-	public string effect_3{get;set;}
-	public string amount_3{get;set;}
-	public string effect_4{get;set;}
-	public string amount_4{get;set;}
-	public string price {get;set;}
-	public string rank {get;set;}
-	public string description{get;set;}
-	public string stock{get;set;}
-	public string duration{get;set;}
 
-	public string Print_Values(){
+public class ItemContainer{
+	
+	public static List<Item> Load_Items(string filepath){
+		TextAsset _xml = Resources.Load<TextAsset>(filepath);
+		XmlSerializer serializer = new XmlSerializer(typeof(List<Item>));
+		StringReader reader  = new StringReader(_xml.text);
+		List<Item> itemList = serializer.Deserialize(reader) as List<Item>;
 
-		string print = "Name = " + name + " Type = " +type + "Kind = " + kind;
-		return print;
+		reader.Close();
+		return itemList;
 	}
+	
 
-
-  //  public string itemtype { get; set; }
-  //  public string actionType { get; set; }
-  //  public float actionValue { get; set; }
 }
+
 public class Level{
 	public string lvl {get;set;}
 	public string blood {get;set;}
@@ -45,13 +33,22 @@ public class Level{
 	public string shellScale{get;set;}
 
 }
+[System.Serializable]
 public class Test_Items : MonoBehaviour {
-  
+	
+	[SerializeField]
+	public 	List<Item> itemList;
 	// Use this for initialization
 	void Start () {
 		//ReadIN_Items();
-		ReadIN_PlayerCURVE();
+		//ReadIN_PlayerCURVE();
+		print ("Start");
+		itemList = ItemContainer.Load_Items("Item_Data");
 
+		foreach(Item i in itemList){
+			print (i.name);
+		}
+		print ("end");
     }
 	
 	// Update is called once per frame
@@ -119,4 +116,12 @@ public class Test_Items : MonoBehaviour {
 		}
 
 		}
+	[ContextMenu("Load_Item")]
+	void Load_Items(){
+
+		itemList = ItemContainer.Load_Items("Item_Data");
+		
+
+	
+	}
 }
