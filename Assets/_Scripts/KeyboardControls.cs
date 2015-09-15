@@ -7,8 +7,12 @@ public class KeyboardControls : MonoBehaviour {
 	public GameObject optionPanel;
 	public GameObject allPausePanel;
 	public GameObject statPanel;
+	public GameObject equipPanel;
+	public GameObject invPanel;
 	public GameObject allSEIPanel;
 	public GameObject slashPanel;
+	public GameObject blastPanel;
+	public GameObject buffPanel;
 	public GameObject allSkillPanel;
 	public GameObject miniMapPanel;
 	public GameObject playerHud;
@@ -47,6 +51,8 @@ public class KeyboardControls : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.I)) {
 			openSEIMenu = !openSEIMenu;
 			statPanel.SetActive (openSEIMenu);
+			equipPanel.SetActive (false);
+			invPanel.SetActive (false);
 			allSEIPanel.SetActive (openSEIMenu);
 		}
 
@@ -60,6 +66,8 @@ public class KeyboardControls : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.K)) {
 			openSkillMenu = !openSkillMenu;
 			slashPanel.SetActive (openSkillMenu);
+			blastPanel.SetActive (false);
+			buffPanel.SetActive (false);
 			allSkillPanel.SetActive (openSkillMenu);
 		}
 
