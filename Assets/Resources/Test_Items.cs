@@ -7,6 +7,7 @@ using System.Linq;
 using System.IO;
 
 
+
 public class ItemContainer{
 	
 	public static List<Item> Load_Items(string filepath){
@@ -37,7 +38,8 @@ public class Level{
 public class Test_Items : MonoBehaviour {
 	
 	[SerializeField]
-	public 	List<Item> itemList;
+	public List<Item> itemList;
+	public string[] name_arr;
 	// Use this for initialization
 	void Start () {
 		//ReadIN_Items();
@@ -117,11 +119,36 @@ public class Test_Items : MonoBehaviour {
 
 		}
 	[ContextMenu("Load_Item")]
-	void Load_Items(){
+	public void Load_Items(){
 
 		itemList = ItemContainer.Load_Items("Item_Data");
 		
 
 	
+	}
+	public Item Find_Item(string name){
+		Item item = new Item ();
+	
+		item=  itemList.Find (x => x.name.Equals (name));
+		return item;
+
+	}
+	[ContextMenu("Load NAME")]
+	public void Name_arr(){
+		name_arr = new string[itemList.Count];
+		for (int i = 0; i < itemList.Count; i++) {
+			name_arr[i] = itemList [i].name;
+		}
+
+
+	}
+	public List<Item> Item_List{ get{ return itemList; }}
+
+	[ContextMenu("Print ItemData")]
+	void Print_ItemData(){
+		List<Item> items = ItemData.Load_Items ("Item_Data");
+		foreach (Item i in items) {
+			print (i.name);
+		}
 	}
 }

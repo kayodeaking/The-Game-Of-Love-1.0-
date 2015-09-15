@@ -11,41 +11,41 @@ public class Item  {
 	
 	[XmlElement("name")]
 	public string name;
-	//[XmlElement("name")]
-	//public string name { get; set; }
 	[XmlElement("Type")]
-	public string type {get; set;}
+	public string type;
 	[XmlElement("Kind")]
-	public string kind {get;set;}
+	public string kind;
 	[XmlElement("Effect1")]
-	public string effect_1{get;set;}
+	public string effect_1;
 	[XmlElement("Amount1")]
-	public string amount_1{get;set;}
+	public string amount_1;
 	[XmlElement("Effect2")]
-	public string effect_2{get;set;}
+	public string effect_2;
 	[XmlElement("Amount2")]
-	public string amount_2{get;set;}
+	public string amount_2;
 	[XmlElement("Effect3")]
-	public string effect_3{get;set;}
+	public string effect_3;
 	[XmlElement("Amount3")]
-	public string amount_3{get;set;}
+	public string amount_3;
 	[XmlElement("Effect4")]
-	public string effect_4{get;set;}
+	public string effect_4;
 	[XmlElement("Amount4")]
-	public string amount_4{get;set;}
+	public string amount_4;
 	[XmlElement("Price")]
-	public string price {get;set;}
+	public string price;
 	[XmlElement("Rank")]
-	public string rank {get;set;}
+	public string rank;
 	[XmlElement("Descripition")]
-	public string description{get;set;}
+	public string description;
 	[XmlElement("stock")]
-	public string stock{get;set;}
+	public string stock;
 	[XmlElement("Duration")]
-	public string duration{get;set;}
-
+	public string duration;
+	public List<Effect> Effects;
 	
+	public Item(){
 
+	}
 	public string Print_Values(){
 		
 		string print = "Name = " + name + " Type = " +type + "Kind = " + kind;
