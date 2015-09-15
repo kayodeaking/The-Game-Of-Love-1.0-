@@ -54,6 +54,7 @@
      <Compile Include="Assets\MouseClicks\OnClickCategories.cs" />
      <Compile Include="Assets\MouseClicks\OnClickChapters.cs" />
      <Compile Include="Assets\MouseClicks\OnClickHearts.cs" />
+     <Compile Include="Assets\MouseClicks\OnClickItems.cs" />
      <Compile Include="Assets\MouseClicks\OnClickLetters.cs" />
      <Compile Include="Assets\MouseClicks\OnClickLevels.cs" />
      <Compile Include="Assets\MouseClicks\OnClickMiniMap.cs" />
