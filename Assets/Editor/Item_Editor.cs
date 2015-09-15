@@ -6,14 +6,14 @@ using UnityEditor;
 public class Item_Editor : EditorWindow {
 	public float grid_Height = 25.0f;
 	public float grid_Width = 20.0f;
-
+	int _index =0;
 	Vector2 scrollPosition = Vector2.zero;
 	List<Item> itemList;
 	void OnEnable(){
 		itemList = ItemContainer.Load_Items("Item_Data");
 
 	}
-		[MenuItem ("Window/My Window")]
+		[MenuItem ("DataEditor/Item")]
 	public static void  ShowWindow () {
 		EditorWindow.GetWindow(typeof(Item_Editor));
 	}
@@ -21,16 +21,38 @@ public class Item_Editor : EditorWindow {
 	void OnGUI () {
 
 		GUILayout.Label ("Item DataBase", EditorStyles.boldLabel);
-	
-		scrollPosition = GUILayout.BeginScrollView(scrollPosition, true, true,GUILayout.Width(100.0f)); 
-		if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
-		{
-			//Debug.Log("Left-Mouse Down");
-		}
-		//ItemTable_Header();
-		ItemTable_Body();
-	
-		GUILayout.EndScrollView();
+
+		EditorGUILayout.BeginHorizontal ();
+			EditorGUILayout.BeginVertical ();
+				scrollPosition = GUILayout.BeginScrollView(scrollPosition, true, true,GUILayout.Width(200.0f)); 
+			
+					ItemTable_Body();
+
+				GUILayout.EndScrollView();
+			EditorGUILayout.EndVertical ();
+
+			EditorGUILayout.BeginHorizontal ("Box");
+				EditorGUILayout.BeginVertical ();
+					EditorGUILayout.BeginHorizontal ();
+						EditorGUILayout.TextField("Name",itemList[_index].name);
+						EditorGUILayout.TextField("Type",itemList[_index].type);
+						EditorGUILayout.TextField("Kind",itemList[_index].kind);
+					EditorGUILayout.EndHorizontal ();
+					EditorGUILayout.BeginHorizontal ();
+						EditorGUILayout.TextField ("Price", itemList [_index].price);
+						EditorGUILayout.TextField ("Rank", itemList [_index].rank);
+						EditorGUILayout.TextField ("Stock", itemList [_index].stock);
+					EditorGUILayout.EndHorizontal ();
+						
+					//EditorGUILayout.TextField ("Duration", itemList [_index].duration);
+					EditorGUILayout.BeginHorizontal();
+			EditorGUILayout.TextField ("Description", itemList [_index].description);
+						EditorGUILayout.EndHorizontal ();
+				
+					EditorGUILayout.EndVertical ();	
+			EditorGUILayout.EndHorizontal ();
+
+		EditorGUILayout.EndHorizontal ();
 
 	
 	}
@@ -71,13 +93,15 @@ public class Item_Editor : EditorWindow {
 
 	void ItemTable_Body(){
 		EditorGUILayout.BeginVertical("Box");
-		
+		/*
 		foreach(Item i in itemList){
 			EditorGUILayout.BeginHorizontal();
 			if(GUILayout.Button(i.name)){
 			//GUILayout.Label (i.name);
 				Debug.Log("clicked:"+ i.name);
 			}
+
+
 			//i.name = EditorGUILayout.TextField(i.name,GUILayout.MaxWidth(grid_Width));
 			//i.type = EditorGUILayout.TextField(i.type,GUILayout.MaxWidth(grid_Width));
 			//i.kind = EditorGUILayout.TextField(i.kind,GUILayout.MaxWidth(grid_Width));
@@ -93,7 +117,16 @@ public class Item_Editor : EditorWindow {
 			
 			
 		}
-		
+		*/
+		for(int j  = 0;j<itemList.Count;j++){
+			EditorGUILayout.BeginHorizontal();
+			if(GUILayout.Button(itemList[j].name)){
+				
+				_index = j;
+
+			}
+			EditorGUILayout.EndHorizontal();
+		}
 		
 		GUILayout.EndVertical();	
 	}
