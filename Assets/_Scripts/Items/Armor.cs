@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+public enum Armor_type{
+	Pump,
+	Cardio,
+	Shell,
+}
 public class Armor : MonoBehaviour {
 
 	// Use this for initialization

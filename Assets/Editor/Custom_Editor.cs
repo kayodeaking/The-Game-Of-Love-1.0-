@@ -16,8 +16,8 @@ public class Custom_Editor : Editor{
 		string name = _choices [_choiceindex];
 		Item item = myTarget.Find_Item (name);
 		EditorGUILayout.LabelField (item.name);
-		//EditorGUILayout.LabelField (item.type);
-		//EditorGUILayout.LabelField (item.kind);
+			EditorGUILayout.LabelField (item.type);
+		EditorGUILayout.LabelField (item.kind);
 		//Editor_ItemList.Show (serializedObject.FindProperty ("itemList"));
 
 		EditorUtility.SetDirty(myTarget);

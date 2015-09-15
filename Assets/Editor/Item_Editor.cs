@@ -25,7 +25,7 @@ public class Item_Editor : EditorWindow {
 		scrollPosition = GUILayout.BeginScrollView(scrollPosition, true, true,GUILayout.Width(100.0f)); 
 		if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
 		{
-			Debug.Log("Left-Mouse Down");
+			//Debug.Log("Left-Mouse Down");
 		}
 		//ItemTable_Header();
 		ItemTable_Body();
@@ -73,14 +73,17 @@ public class Item_Editor : EditorWindow {
 		EditorGUILayout.BeginVertical("Box");
 		
 		foreach(Item i in itemList){
-			EditorGUILayout.BeginHorizontal();	
-			GUILayout.Label (i.name);
+			EditorGUILayout.BeginHorizontal();
+			if(GUILayout.Button(i.name)){
+			//GUILayout.Label (i.name);
+				Debug.Log("clicked:"+ i.name);
+			}
 			//i.name = EditorGUILayout.TextField(i.name,GUILayout.MaxWidth(grid_Width));
 			//i.type = EditorGUILayout.TextField(i.type,GUILayout.MaxWidth(grid_Width));
 			//i.kind = EditorGUILayout.TextField(i.kind,GUILayout.MaxWidth(grid_Width));
 			//i.effect_1 = EditorGUILayout.TextField(i.effect_1,GUILayout.MaxWidth(grid_Width));
 			//i.amount_1 = EditorGUILayout.TextField(i.amount_1,GUILayout.MaxWidth(grid_Width));
-		
+
 
 			//GUILayout.Box(new GUIContent(i.name));
 		//	GUILayout.Box(new GUIContent(i.type),GUILayout.MinWidth(grid_Width),GUILayout.MaxHeight(grid_Height));

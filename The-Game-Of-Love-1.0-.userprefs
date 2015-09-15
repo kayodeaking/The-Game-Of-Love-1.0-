@@ -1,10 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/Items/Potion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Test_Items.cs">
     <Files>
+      <File FileName="Assets/_Scripts/Items/Potion.cs" Line="6" Column="11" />
       <File FileName="Assets/_Scripts/Items/Item.cs" Line="10" Column="18" />
       <File FileName="Assets/Resources/Test_Items.cs" Line="15" Column="1" />
-      <File FileName="Assets/_Scripts/Items/Potion.cs" Line="2" Column="26" />
+      <File FileName="Assets/_Scripts/Items/Effect.cs" Line="11" Column="2" />
+      <File FileName="Assets/_Scripts/Items/Weapon.cs" Line="6" Column="7" />
+      <File FileName="Assets/_Scripts/Items/Armor.cs" Line="6" Column="8" />
+      <File FileName="Assets/Editor/Item_Editor.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
