@@ -5,6 +5,7 @@ public class KeyboardControls : MonoBehaviour {
 
 	public GameObject pausePanel;
 	public GameObject optionPanel;
+	public GameObject controlPanel;
 	public GameObject allPausePanel;
 	public GameObject statPanel;
 	public GameObject equipPanel;
@@ -43,6 +44,7 @@ public class KeyboardControls : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.P)) {
 			openPauseMenu = !openPauseMenu;
 			optionPanel.SetActive (false);
+			controlPanel.SetActive (false);
 			pausePanel.SetActive (openPauseMenu);
 			allPausePanel.SetActive (openPauseMenu);
 		}
@@ -81,10 +83,6 @@ public class KeyboardControls : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.M)) {
 			openMiniMap = !openMiniMap;
 			miniMapPanel.SetActive (openMiniMap);
-		}
-
-		//Players Dodge ability
-		if (Input.GetKeyDown (KeyCode.F)) {
 		}
 
 		//Players Assigned Skill 1

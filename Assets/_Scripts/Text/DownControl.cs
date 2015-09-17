@@ -2,17 +2,24 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class PlayerHudLove : MonoBehaviour {
+public class DownControl : MonoBehaviour {
 
 	Text text;
 	// Use this for initialization
 	void Start () {
+	
 		text = GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		text.text = "Love: " + HandelPointsDisplay.tempLoveP + "/" + HandelPointsDisplay.tempLoveP;
+	
+		if (Player_Control.moveSet == 1) {
+			text.text = "Move Down: Down Arrow Key";
+		}
+		
+		if (Player_Control.moveSet == 2) {
+			text.text = "Move Down: S Key";
+		}
 	}
 }

@@ -10,6 +10,7 @@ public class OnClickChapters : MonoBehaviour {
 	public GameObject chapter4;
 	public GameObject chapter5;
 	public GameObject options;
+	public GameObject controls;
 
 	// Use this for initialization
 	void Start () {
@@ -68,6 +69,7 @@ public class OnClickChapters : MonoBehaviour {
 
 	public void Open_Options() {
 		options.SetActive (true);
+		controls.SetActive (false);
 		chapter1.SetActive (false);
 		chapter2.SetActive (false);
 		chapter3.SetActive (false);
@@ -77,10 +79,23 @@ public class OnClickChapters : MonoBehaviour {
 
 	public void Close_Options() {
 		options.SetActive (false);
+		controls.SetActive (false);
 		chapter1.SetActive (true);
 		chapter2.SetActive (false);
 		chapter3.SetActive (false);
 		chapter4.SetActive (false);
 		chapter5.SetActive (false);
+	}
+
+	public void MoveSet1 () {
+		Player_Control.moveSet = 1;
+	}
+
+	public void MoveSet2 () {
+		Player_Control.moveSet = 2;
+	}
+	public void Open_Controls() {
+		controls.SetActive (true);
+		options.SetActive (false);
 	}
 }

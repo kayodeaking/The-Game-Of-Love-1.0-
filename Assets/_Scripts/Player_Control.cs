@@ -27,16 +27,6 @@ public class Player_Control : MonoBehaviour {
 			Player_Option_Set_2 ();
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			canAttack = true;
-			anim.SetBool ("Attack", canAttack);
-		}
-
-		if (Input.GetKeyUp (KeyCode.Space)) {
-			canAttack = false;
-			anim.SetBool ("Attack", canAttack);
-		}
-
 	}
 
 	//Arrow Key Movement
@@ -59,7 +49,20 @@ public class Player_Control : MonoBehaviour {
 			anim.SetFloat ("Speed", 1.0f);
 			transform.Translate(playerSpeed * Time.deltaTime,0 ,0);
 		}
+
+		//Players Dodge ability
+		if (Input.GetKeyDown (KeyCode.F)) {
+		}
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			canAttack = true;
+			anim.SetBool ("Attack", canAttack);
+		}
 		
+		if (Input.GetKeyUp (KeyCode.Space)) {
+			canAttack = false;
+			anim.SetBool ("Attack", canAttack);
+		}
 	}
 
 	//WASD Key Movement
@@ -82,6 +85,20 @@ public class Player_Control : MonoBehaviour {
 		if (Input.GetKey(KeyCode.D)) {
 			anim.SetFloat ("Speed", 1.0f);
 			transform.Translate(playerSpeed * Time.deltaTime,0 ,0);
+		}
+
+		//Players Dodge ability
+		if (Input.GetKeyDown (KeyCode.Space)) {
+		}
+
+		if (Input.GetMouseButtonDown (0)) {
+			canAttack = true;
+			anim.SetBool ("Attack", canAttack);
+		}
+		
+		if (Input.GetMouseButtonUp (0)) {
+			canAttack = false;
+			anim.SetBool ("Attack", canAttack);
 		}
 	}
 
