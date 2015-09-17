@@ -5,6 +5,7 @@ public class OnClickPauses : MonoBehaviour {
 
 	public GameObject pausePanel;
 	public GameObject optionPanel;
+	public GameObject controlPanel;
 	public GameObject allPausePanel;
 
 	// Use this for initialization
@@ -29,6 +30,7 @@ public class OnClickPauses : MonoBehaviour {
 	
 	public void Pause_Opitions() {
 		optionPanel.SetActive (true);
+		controlPanel.SetActive (false);
 		pausePanel.SetActive (false);
 	}
 	
@@ -45,6 +47,7 @@ public class OnClickPauses : MonoBehaviour {
 	
 	public void Pause_Close() {
 		allPausePanel.SetActive (false);
+		controlPanel.SetActive (false);
 		optionPanel.SetActive (false);
 	}
 
@@ -60,5 +63,10 @@ public class OnClickPauses : MonoBehaviour {
 
 	public void Move_Set_2() {
 		Player_Control.moveSet = 2;
+	}
+
+	public void Controls() {
+		optionPanel.SetActive (false);
+		controlPanel.SetActive (true);
 	}
 }
