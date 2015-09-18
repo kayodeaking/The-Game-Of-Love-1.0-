@@ -33,20 +33,22 @@ public class Player_Control : MonoBehaviour {
 	void Player_Option_Set_1() {
 		
 		if (Input.GetKey (KeyCode.UpArrow)) {
+			anim.SetFloat ("Down", -1.0f);
 			transform.Translate(0,playerSpeed * Time.deltaTime,0);
 		}
 		
 		if (Input.GetKey (KeyCode.DownArrow)) {
+			anim.SetFloat ("Down", 1.0f);
 			transform.Translate(0,-playerSpeed * Time.deltaTime,0);
 		}
 		
 		if (Input.GetKey (KeyCode.LeftArrow)) {
-			anim.SetFloat ("Speed", -1.0f);
+			anim.SetFloat ("Speed", 1.0f);
 			transform.Translate(-playerSpeed * Time.deltaTime,0 ,0);
 		}
 		
 		if (Input.GetKey (KeyCode.RightArrow)) {
-			anim.SetFloat ("Speed", 1.0f);
+			anim.SetFloat ("Speed", -1.0f);
 			transform.Translate(playerSpeed * Time.deltaTime,0 ,0);
 		}
 
@@ -69,7 +71,6 @@ public class Player_Control : MonoBehaviour {
 	void Player_Option_Set_2() {
 		
 		if (Input.GetKey (KeyCode.W)) {
-			
 			transform.Translate(0,playerSpeed * Time.deltaTime,0);
 		}
 		if (Input.GetKey(KeyCode.S)) {
@@ -77,13 +78,13 @@ public class Player_Control : MonoBehaviour {
 		}
 		
 		if (Input.GetKey(KeyCode.A)) {
-			anim.SetFloat ("Speed", -1.0f);
+			anim.SetFloat ("Speed", 1.0f);
 			transform.Translate(-playerSpeed * Time.deltaTime,0 ,0);
 		}
 		
 		
 		if (Input.GetKey(KeyCode.D)) {
-			anim.SetFloat ("Speed", 1.0f);
+			anim.SetFloat ("Speed", -1.0f);
 			transform.Translate(playerSpeed * Time.deltaTime,0 ,0);
 		}
 
