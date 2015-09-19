@@ -77,12 +77,9 @@ public class OnClick : MonoBehaviour {
 		
 	}
 
-	public void Inv_Equip_Tab1() {
-	}
+	public void Load_MonsterBook() {
 
-	public void Inv_Equip_Tab2() {
-	}
+		Application.LoadLevel (6);
 
-	public void Inv_Equip_Tab3() {
 	}
 }
