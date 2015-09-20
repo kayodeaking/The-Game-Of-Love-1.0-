@@ -4,7 +4,7 @@ using System;
 [Serializable]
 //[RequireComponent(typeof(Sprite))]
 public class Item_View : MonoBehaviour {
-	//public Sprite _sprite;
+	public Sprite _sprite;
 	public Item item;
 	// Use this for initialization
 	void Start () {

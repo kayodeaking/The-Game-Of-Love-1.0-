@@ -19,7 +19,14 @@ public class ItemContainer{
 		reader.Close();
 		return itemList;
 	}
+	public static void Save_Items(string filepath,List<Item> items){
+
+		var serializer = new XmlSerializer (typeof(List<Item>));
+		var stream = new FileStream (filepath, FileMode.Create);
+		serializer.Serialize (stream, items);
+		stream.Close ();
 	
+	}
 
 }
 

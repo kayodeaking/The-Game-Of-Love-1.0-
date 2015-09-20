@@ -41,8 +41,10 @@ public class Item  {
 	public string stock;
 	[XmlElement("Duration")]
 	public string duration;
+	[XmlElement("Image")]
+	public string image;
 	public List<Effect> Effects;
-	
+
 	public Item(){
 
 	}
