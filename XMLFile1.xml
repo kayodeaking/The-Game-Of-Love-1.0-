@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<item>
+		<name>A1</name>
+		<ItemType>Weapon</ItemType>
+		<ActionType>Damage</ActionType>
+		<ActionValue>1.0f</ActionValue>
+	</item>
+	<item>
+		<name>A2</name>
+		<ItemType>Armour</ItemType>
+		<ActionType>Healing</ActionType>
+		<ActionValue>2.0f</ActionValue>
+	</item>
+	<item>
+		<name>A3</name>
+		<ItemType>Key</ItemType>
+		<ActionType>Unlock</ActionType>
+		<ActionValue>5</ActionValue>
+	</item>
+	<item>
+		<name>A2</name>
+		<ItemType>Armour</ItemType>
+		<ActionType>Healing</ActionType>
+		<ActionValue>2.0f</ActionValue>
+	</item>
+</data-set>

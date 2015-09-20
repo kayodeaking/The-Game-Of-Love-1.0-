@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Level" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lvl" />
+              <xs:element name="Blood" />
+              <xs:element name="Love" />
+              <xs:element name="Exp" />
+              <xs:element name="PumpScale" />
+              <xs:element name="LoveScale" />
+              <xs:element name="CardioScale"/>
+              <xs:element name="ShellScale" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="save_data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Save" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="info" />
+              <xs:element name="name" />
+              <xs:element name="Age" />
+              <xs:element name="CurrentBlood" />
+              <xs:element name="MaxBlood" />
+              <xs:element name="CurrentLove" />
+              <xs:element name="MaxLove" />
+              <xs:element name="Strength" />
+              <xs:element name="Intelligence" />
+              <xs:element name="Dexterity" />
+              <xs:element name="Luck" />
+              <xs:element name="PumpLow" />
+              <xs:element name="PumpHigh" />
+              <xs:element name="AffectionLow" />
+              <xs:element name="AffectionHigh" />
+              <xs:element name="CardioLow" />
+              <xs:element name="CardioHigh" />
+              <xs:element name="ShellLow" />
+              <xs:element name="ShellHigh" />
+              <xs:element name="CurrentExperiance" />
+              <xs:element name="ExperiancetoNextAge" />
+              <xs:element name="StatusPoints" />
+              <xs:element name="SlashSkill1" />
+              <xs:element name="SlashSkill2" />
+              <xs:element name="SlashSkill3" />
+              <xs:element name="SlashSkill4" />
+              <xs:element name="SlashSkill5" />
+              <xs:element name="SlashSkill6" />
+              <xs:element name="SlashSkill7" />
+              <xs:element name="SlashSkill8" />
+              <xs:element name="BlastSkill1" />
+              <xs:element name="BlastSkill2" />
+              <xs:element name="BlastSkill3" />
+              <xs:element name="BlastSkill4" />
+              <xs:element name="BlastSkill5" />
+              <xs:element name="BlastSkill6" />
+              <xs:element name="BlastSkill7" />
+              <xs:element name="BlastSkill8" />
+              <xs:element name="BlastSkill9" />
+              <xs:element name="BlastSkill10" />
+              <xs:element name="BuffSkill1" />
+              <xs:element name="BuffSkill2" />
+              <xs:element name="BuffSkill3" />
+              <xs:element name="BuffSkill4" />
+              <xs:element name="BuffSkill5" />
+              <xs:element name="BuffSkill6" />
+              <xs:element name="A_Plus_BloodPackOwned" />
+              <xs:element name="B_Plus_BloodPackOwned" />
+              <xs:element name="AB_Plus_BloodPackOwned" />
+              <xs:element name="O_Neg_BloodPackOwned" />
+              <xs:element name="PheromoneOwned" />
+              <xs:element name="LoveMoleCuleOwned" />
+              <xs:element name="LoveDustOwned" />
+              <xs:element name="LovePotion_Number_9" />
+              <xs:element name="HeartPumpOwned" />
+              <xs:element name="AirKissOwned" />
+              <xs:element name="NutritionPillOwned" />
+              <xs:element name="LiquidEruptionOwned" />
+              <xs:element name="EpinephrinePillOwned" />
+              <xs:element name="HeartArmourOwned" />
+              <xs:element name="PowerKissOwned" />
+              <xs:element name="LoveArmorOwned" />
+              <xs:element name="Loss_Owned" />
+              <xs:element name="Loss_Equipped" />
+              <xs:element name="Remorse_Owned" />
+              <xs:element name="RemoreEquiped" />
+              <xs:element name="SadnessOwned" />
+              <xs:element name="SadnessEquiped" />
+              <xs:element name="MiseryOwned" />
+              <xs:element name="MiseryEquipped" />
+              <xs:element name="BitternessOwned" />
+              <xs:element name="BitternessEquiped" />
+              <xs:element name="LongingOwned" />
+              <xs:element name="LongingEquiped" />
+              <xs:element name="NeedinessOwned" />
+              <xs:element name="NeedinessEquiped" />
+              <xs:element name="SorrowOwned" />
+              <xs:element name="SorrowEquiped" />
+              <xs:element name="LonelinessOwned" type="xs:string" />
+              <xs:element name="LonelinessEquiped" />
+              <xs:element name="DiscontentOwned" />
+              <xs:element name="DiscontentEquiped" />
+              <xs:element name="GladOwned" />
+              <xs:element name="GladEquiped" />
+              <xs:element name="HostilityOwned" />
+              <xs:element name="HostilityEquiped" />
+              <xs:element name="RageOwned" />
+              <xs:element name="RageEquiped" />
+              <xs:element name="HopeOwned" />
+              <xs:element name="HopeEquipped" />
+              <xs:element name="Passion_Owned" />
+              <xs:element name="Passion_Equipped" />
+              <xs:element name="Attraction_Owned" />
+              <xs:element name="Attraction_Equipped" />
+              <xs:element name="Triumph_Owned" />
+              <xs:element name="Triumph_Equipped" />
+              <xs:element name="Sandels_Owned" />
+              <xs:element name="Sandels_Equiped" />
+              <xs:element name="LeatherGloves_Owned" />
+              <xs:element name="LeatherGloves_Equipped" />
+              <xs:element name="LeatherStrap_Owned" />
+              <xs:element name="LeatherStrap_Equipped" />
+              <xs:element name="BronzeShoes_Owned" />
+              <xs:element name="BronzeShoes_Equipped" />
+              <xs:element name="BronzeGloves_Owned" />
+              <xs:element name="BronzeGloves_Equipped" />
+              <xs:element name="BronzeStrap_Owned" />
+              <xs:element name="BronzeStrap_Equipped" />
+              <xs:element name="IronShoes_Owned" />
+              <xs:element name="IronShoes_Equipped" />
+              <xs:element name="IronGloves_Owned" />
+              <xs:element name="IronGloves_Equipped" />
+              <xs:element name="IronStraps_Owned" />
+              <xs:element name="IronStraps_Equipped" />
+              <xs:element name="SteelShoes_Owned" />
+              <xs:element name="SteelShoes_Equipped" />
+              <xs:element name="SteelGloves_Owned" />
+              <xs:element name="SteelGloves_Equipped" />
+              <xs:element name="SteelStraps_Owned" />
+              <xs:element name="SteelStraps_Equipped" />
+              <xs:element name="BloodShoes_Owned" />
+              <xs:element name="BloodShoes_Equipped" />
+              <xs:element name="BloodGloves_Owned" />
+              <xs:element name="BloodGloves_Equipped" />
+              <xs:element name="BloodStraps_Owned" />
+              <xs:element name="BloodStraps_Equipped" />
+              <xs:element name="LoveShoes_Owned" />
+              <xs:element name="LoveShoes_Equipped" />
+              <xs:element name="LoveGloves_Owned" />
+              <xs:element name="LoveGloves_Equipped" />
+              <xs:element name="LoveStraps_Owned" />
+              <xs:element name="LoveStraps_Equipped" />
+              <xs:element name="UnlockInventorySlot_Owned" />
+              <xs:element name="UnlockInventorySlow_Equipped" />
+              <xs:element name="AgeBoost1_Owned" />
+              <xs:element name="AgeBoost2_Owned" />
+              <xs:element name="AgeBoost3_Owned" />
+              <xs:element name="AgeBoost4_Owned" />
+              <xs:element name="BloodBoost1_Owned" />
+              <xs:element name="BloodBoost2_Owned" />
+              <xs:element name="LoveBoost1_Owned" />
+              <xs:element name="LoveBoost2_Owned" />
+              <xs:element name="StrengthBoost1_Owned" />
+              <xs:element name="StrengthBoost2_Owned" />
+              <xs:element name="IntelligenceBoost1_Owned" />
+              <xs:element name="IntelligenceBoost2_Owned" />
+              <xs:element name="DexterityBoost1_Owned" />
+              <xs:element name="DexterityBoost2_Owned" />
+              <xs:element name="LuckBoost1_Owned" />
+              <xs:element name="LuckBoost2_Owned" />
+              <xs:element name="Letters_Found" />
+              <xs:element name="Control_Type" />
+              <xs:element name="Potion_Slot_1_Empty" />
+              <xs:element name="Item_in_PotionSlot_1" />
+              <xs:element name="Potion_Slot_2_Empty" />
+              <xs:element name="Item_in_PotionSlot_2" />
+              <xs:element name="Potion_Slot_4_Empty" />
+              <xs:element name="Item_in_PotionSlot_4" />
+              <xs:element name="Potion_Slot_5_Empty" />
+              <xs:element name="Item_in_PotionSlot_5" />
+              <xs:element name="Skill_Slot_1_Empty" type="xs:string" />
+              <xs:element name="Skill_in_Skill_Slot_1" />
+              <xs:element name="Skill_Slot_2_Empty" type="xs:string" />
+              <xs:element name="Skill_in_Skill_Slot_2" />
+              <xs:element name="Skill_Slot_3_Empty" type="xs:string" />
+              <xs:element name="Skill_in_Skill_Slot_3" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
