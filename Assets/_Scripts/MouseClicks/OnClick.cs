@@ -43,11 +43,11 @@ public class OnClick : MonoBehaviour {
 
 		if (Application.loadedLevel == 1) { //Current Scene would be Levels
 			Application.LoadLevel (0);
-		}else if (Application.loadedLevel == 3) { //Current Scene would be Hearts Condition
+		} else if (Application.loadedLevel == 3) { //Current Scene would be Hearts Condition
 			Application.LoadLevel (1);
-		}else if (Application.loadedLevel == 2) { //Current Scene would be Heart Shop
+		} else if (Application.loadedLevel == 2) { //Current Scene would be Heart Shop
 			Application.LoadLevel (1);
-		}else if (Application.loadedLevel == 4) { //Current scene would be My Hearts
+		} else if (Application.loadedLevel == 4) { //Current scene would be My Hearts
 			if (saving) {
 				saving = false;
 				Application.LoadLevel (1);
@@ -57,6 +57,8 @@ public class OnClick : MonoBehaviour {
 				loading = false;
 				Application.LoadLevel (0);
 			}
+		} else if (Application.loadedLevel == 6) { //Current Scene would be Monster Book
+			Application.LoadLevel (1);
 		}
 
 	}
