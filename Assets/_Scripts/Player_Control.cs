@@ -7,6 +7,7 @@ public class Player_Control : MonoBehaviour {
 	public float playerSpeed = 10.0f;
 	public Animator anim;
 	public bool canAttack = false;
+	public bool isUp = false;
 	void Start () {
 
 		anim = GetComponent<Animator> ();
@@ -33,22 +34,30 @@ public class Player_Control : MonoBehaviour {
 	void Player_Option_Set_1() {
 		
 		if (Input.GetKey (KeyCode.UpArrow)) {
-			anim.SetFloat ("Down", -1.0f);
+			anim.SetFloat ("DIrection", 1.0f);
+			isUp = true;
+			anim.SetBool ("isUp", isUp);
 			transform.Translate(0,playerSpeed * Time.deltaTime,0);
 		}
 		
 		if (Input.GetKey (KeyCode.DownArrow)) {
-			anim.SetFloat ("Down", 1.0f);
+			anim.SetFloat ("DIrection", -1.0f);
+			isUp = true;
+			anim.SetBool ("isUp", isUp);
 			transform.Translate(0,-playerSpeed * Time.deltaTime,0);
 		}
-		
+
 		if (Input.GetKey (KeyCode.LeftArrow)) {
+			isUp = false;
+			anim.SetBool ("isUp", isUp);
 			anim.SetFloat ("Speed", 1.0f);
 			transform.Translate(-playerSpeed * Time.deltaTime,0 ,0);
 		}
 		
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			anim.SetFloat ("Speed", -1.0f);
+			isUp = false;
+			anim.SetBool ("isUp", isUp);
 			transform.Translate(playerSpeed * Time.deltaTime,0 ,0);
 		}
 

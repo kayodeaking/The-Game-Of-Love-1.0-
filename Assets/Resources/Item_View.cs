@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 [Serializable]
+[ExecuteInEditMode]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
@@ -10,20 +11,20 @@ public class Item_View : MonoBehaviour {
 	private SpriteRenderer _renderer;
 	private BoxCollider2D _collider;
 	private Rigidbody2D _rb;
+	public ItemDataBase db;
+
 	public Item item;
+	[HideInInspector]
+	public  int itemID;
 	/*
 	public Item_View(Item item){
 
 	}
 	*/
-	void OnEnable(){
-		_sprite = item.sprite;
-		_renderer = gameObject.GetComponent<SpriteRenderer> ();
-		_renderer.sprite = _sprite;
-		_collider = gameObject.GetComponent<BoxCollider2D> ();
-		_rb = gameObject.GetComponent<Rigidbody2D> ();
-		_collider.isTrigger = true;
 
+	void OnEnable(){
+
+		Get_Data ();
 
 	}
 	void Start () {
@@ -34,6 +35,34 @@ public class Item_View : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		item = db.Item (itemID);
+		_sprite = item.sprite;
+		_renderer = gameObject.GetComponent<SpriteRenderer> ();
+		_renderer.sprite = _sprite;
+	}
+
+	void Get_Data(){
+		db = (ItemDataBase)Resources.Load<ItemDataBase> ("ItemDataBase");
+		item = db.Item (itemID);
+		_sprite = item.sprite;
+		_renderer = gameObject.GetComponent<SpriteRenderer> ();
+		_renderer.sprite = _sprite;
+		_collider = gameObject.GetComponent<BoxCollider2D> ();
+		_rb = gameObject.GetComponent<Rigidbody2D> ();
+		_collider.isTrigger = true;
+
+	}
+
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.gameObject.tag == "Player") {
+			Add_Item_To_Inventory ();
+			DestroyObject (this.gameObject);
+		}
+
+	}
+
+	void Add_Item_To_Inventory(){
+		
+		print ("Added " + item.name + " to Inventory");
 	}
 }

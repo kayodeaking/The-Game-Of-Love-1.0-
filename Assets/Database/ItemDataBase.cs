@@ -10,7 +10,7 @@ using System.IO;
 [Serializable]
 public class ItemDataBase:ScriptableObject{
 	[SerializeField]
-	public List<Item> database;
+	private List<Item> database;
 	void OnEnable(){
 		database = Load_ItemsXML ("Item_Data");
 	}

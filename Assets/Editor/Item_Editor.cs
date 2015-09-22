@@ -14,7 +14,7 @@ public class Item_Editor : EditorWindow {
 	private int _index = 0;
 	private Vector2 scrollPosition = Vector2.zero;
 	private Vector2 scrollPosition2 = Vector2.zero;
-	private List<Item> itemList;
+
 	private ItemDataBase _items;
 	Item_Type itemTYPE = Item_Type.None;
 	//Potion_Type p_Type = Potion_Type.None;
@@ -26,12 +26,13 @@ public class Item_Editor : EditorWindow {
 
 	}
 	void LoadDataBase(){
-		_items = (ItemDataBase)AssetDatabase.LoadAssetAtPath<ItemDataBase> ("Assets/ItemDataBase.asset");
-		itemList = _items.Load_ItemsXML ("Item_Data");
+		_items = (ItemDataBase)AssetDatabase.LoadAssetAtPath<ItemDataBase> ("Assets/Resources/ItemDataBase.asset");
+
 	}
 	void CreateDataBase(){
 		_items = ScriptableObject.CreateInstance<ItemDataBase>();
 		AssetDatabase.CreateAsset (_items, "Assets/ItemDataBase.asset");
+		 _items.Load_ItemsXML ("Item_Data");
 		AssetDatabase.SaveAssets();
 		AssetDatabase.Refresh();
 	}
@@ -185,7 +186,7 @@ public class Item_Editor : EditorWindow {
 
 	}
 	void Create_Prefabs(){
-
+		/*
 		foreach (Item i in itemList) {
 
 			//GameObject go = new GameObject (i.name+" Game Object");
@@ -196,22 +197,25 @@ public class Item_Editor : EditorWindow {
 			//Object prefab =PrefabUtility.CreateEmptyPrefab("Assets/"+i.name+".prefab");
 			//EditorUtility.ReplacePrefab(i.gameObject, prefab, ReplacePrefabOptions.ConnectToPrefab);
 		}
+		*/
 
 	}
 	void Create_GameObjects(){
+		/*
 		foreach (Item i in itemList) {
 
 			GameObject go = new GameObject (i.name + " Game Object");
 			go.gameObject.AddComponent<Item_View> ().item = i;
 
 		}
+	*/
 
 	}
 
 	void Create_Selected_GameObject(){
 
-		GameObject go = new GameObject (itemList [_index].name + "-Object");
-		go.gameObject.AddComponent<Item_View> ().item = itemList [_index];
+		GameObject go = new GameObject (_items.Item(_index).name + "-Object");
+		go.gameObject.AddComponent<Item_View> ().itemID = _index;
 
 	}
 	/*
