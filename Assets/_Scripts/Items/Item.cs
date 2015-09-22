@@ -12,7 +12,8 @@ public class Item  {
 	[XmlElement("name")]
 	public string name;
 	[XmlElement("Type")]
-	public string type;
+	public Item_Type type;
+	//public string type;
 	[XmlElement("Kind")]
 	public string kind;
 	[XmlElement("Effect1")]
@@ -41,16 +42,10 @@ public class Item  {
 	public string stock;
 	[XmlElement("Duration")]
 	public string duration;
-	[XmlElement("Image")]
-	public string image;
+	//[XmlElement("Image")]
+	public Sprite sprite;
 	public List<Effect> Effects;
 
-	public Item(){
 
-	}
-	public string Print_Values(){
-		
-		string print = "Name = " + name + " Type = " +type + "Kind = " + kind;
-		return print;
-	}
+
 }

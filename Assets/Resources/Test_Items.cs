@@ -72,7 +72,7 @@ public class Test_Items : MonoBehaviour {
 		         select new Item
 		         {
 			name = item.Element("name").Value,
-			type = item.Element("Type").Value,
+			//type = item.Element("Type").Value,
 			kind = item.Element("Kind").Value,
 			effect_1 = item.Element("Effect1").Value,
 			amount_1 = item.Element("Amount1").Value,
@@ -95,14 +95,7 @@ public class Test_Items : MonoBehaviour {
 			
 		}).ToList();
 		
-		foreach( var item in i)
-		{
-			
-			print (item.Print_Values());
-			// print(item.itemtype);
-			// print(item.actionType);
 
-	}
 	}
 	void ReadIN_PlayerCURVE(){
 		XElement doc= XElement.Load("Data_PlayerCurve.xml");

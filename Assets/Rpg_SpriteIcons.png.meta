@@ -1,0 +1,4819 @@
+fileFormatVersion: 2
+guid: 99500a813926740e6a9f9080a55c73e7
+timeCreated: 1442939797
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rpg_SpriteIcons_0
+    21300002: Rpg_SpriteIcons_1
+    21300004: Rpg_SpriteIcons_2
+    21300006: Rpg_SpriteIcons_3
+    21300008: Rpg_SpriteIcons_4
+    21300010: Rpg_SpriteIcons_5
+    21300012: Rpg_SpriteIcons_6
+    21300014: Rpg_SpriteIcons_7
+    21300016: Rpg_SpriteIcons_8
+    21300018: Rpg_SpriteIcons_9
+    21300020: Rpg_SpriteIcons_10
+    21300022: Rpg_SpriteIcons_11
+    21300024: Rpg_SpriteIcons_12
+    21300026: Rpg_SpriteIcons_13
+    21300028: Rpg_SpriteIcons_14
+    21300030: Rpg_SpriteIcons_15
+    21300032: Rpg_SpriteIcons_16
+    21300034: Rpg_SpriteIcons_17
+    21300036: Rpg_SpriteIcons_18
+    21300038: Rpg_SpriteIcons_19
+    21300040: Rpg_SpriteIcons_20
+    21300042: Rpg_SpriteIcons_21
+    21300044: Rpg_SpriteIcons_22
+    21300046: Rpg_SpriteIcons_23
+    21300048: Rpg_SpriteIcons_24
+    21300050: Rpg_SpriteIcons_25
+    21300052: Rpg_SpriteIcons_26
+    21300054: Rpg_SpriteIcons_27
+    21300056: Rpg_SpriteIcons_28
+    21300058: Rpg_SpriteIcons_29
+    21300060: Rpg_SpriteIcons_30
+    21300062: Rpg_SpriteIcons_31
+    21300064: Rpg_SpriteIcons_32
+    21300066: Rpg_SpriteIcons_33
+    21300068: Rpg_SpriteIcons_34
+    21300070: Rpg_SpriteIcons_35
+    21300072: Rpg_SpriteIcons_36
+    21300074: Rpg_SpriteIcons_37
+    21300076: Rpg_SpriteIcons_38
+    21300078: Rpg_SpriteIcons_39
+    21300080: Rpg_SpriteIcons_40
+    21300082: Rpg_SpriteIcons_41
+    21300084: Rpg_SpriteIcons_42
+    21300086: Rpg_SpriteIcons_43
+    21300088: Rpg_SpriteIcons_44
+    21300090: Rpg_SpriteIcons_45
+    21300092: Rpg_SpriteIcons_46
+    21300094: Rpg_SpriteIcons_47
+    21300096: Rpg_SpriteIcons_48
+    21300098: Rpg_SpriteIcons_49
+    21300100: Rpg_SpriteIcons_50
+    21300102: Rpg_SpriteIcons_51
+    21300104: Rpg_SpriteIcons_52
+    21300106: Rpg_SpriteIcons_53
+    21300108: Rpg_SpriteIcons_54
+    21300110: Rpg_SpriteIcons_55
+    21300112: Rpg_SpriteIcons_56
+    21300114: Rpg_SpriteIcons_57
+    21300116: Rpg_SpriteIcons_58
+    21300118: Rpg_SpriteIcons_59
+    21300120: Rpg_SpriteIcons_60
+    21300122: Rpg_SpriteIcons_61
+    21300124: Rpg_SpriteIcons_62
+    21300126: Rpg_SpriteIcons_63
+    21300128: Rpg_SpriteIcons_64
+    21300130: Rpg_SpriteIcons_65
+    21300132: Rpg_SpriteIcons_66
+    21300134: Rpg_SpriteIcons_67
+    21300136: Rpg_SpriteIcons_68
+    21300138: Rpg_SpriteIcons_69
+    21300140: Rpg_SpriteIcons_70
+    21300142: Rpg_SpriteIcons_71
+    21300144: Rpg_SpriteIcons_72
+    21300146: Rpg_SpriteIcons_73
+    21300148: Rpg_SpriteIcons_74
+    21300150: Rpg_SpriteIcons_75
+    21300152: Rpg_SpriteIcons_76
+    21300154: Rpg_SpriteIcons_77
+    21300156: Rpg_SpriteIcons_78
+    21300158: Rpg_SpriteIcons_79
+    21300160: Rpg_SpriteIcons_80
+    21300162: Rpg_SpriteIcons_81
+    21300164: Rpg_SpriteIcons_82
+    21300166: Rpg_SpriteIcons_83
+    21300168: Rpg_SpriteIcons_84
+    21300170: Rpg_SpriteIcons_85
+    21300172: Rpg_SpriteIcons_86
+    21300174: Rpg_SpriteIcons_87
+    21300176: Rpg_SpriteIcons_88
+    21300178: Rpg_SpriteIcons_89
+    21300180: Rpg_SpriteIcons_90
+    21300182: Rpg_SpriteIcons_91
+    21300184: Rpg_SpriteIcons_92
+    21300186: Rpg_SpriteIcons_93
+    21300188: Rpg_SpriteIcons_94
+    21300190: Rpg_SpriteIcons_95
+    21300192: Rpg_SpriteIcons_96
+    21300194: Rpg_SpriteIcons_97
+    21300196: Rpg_SpriteIcons_98
+    21300198: Rpg_SpriteIcons_99
+    21300200: Rpg_SpriteIcons_100
+    21300202: Rpg_SpriteIcons_101
+    21300204: Rpg_SpriteIcons_102
+    21300206: Rpg_SpriteIcons_103
+    21300208: Rpg_SpriteIcons_104
+    21300210: Rpg_SpriteIcons_105
+    21300212: Rpg_SpriteIcons_106
+    21300214: Rpg_SpriteIcons_107
+    21300216: Rpg_SpriteIcons_108
+    21300218: Rpg_SpriteIcons_109
+    21300220: Rpg_SpriteIcons_110
+    21300222: Rpg_SpriteIcons_111
+    21300224: Rpg_SpriteIcons_112
+    21300226: Rpg_SpriteIcons_113
+    21300228: Rpg_SpriteIcons_114
+    21300230: Rpg_SpriteIcons_115
+    21300232: Rpg_SpriteIcons_116
+    21300234: Rpg_SpriteIcons_117
+    21300236: Rpg_SpriteIcons_118
+    21300238: Rpg_SpriteIcons_119
+    21300240: Rpg_SpriteIcons_120
+    21300242: Rpg_SpriteIcons_121
+    21300244: Rpg_SpriteIcons_122
+    21300246: Rpg_SpriteIcons_123
+    21300248: Rpg_SpriteIcons_124
+    21300250: Rpg_SpriteIcons_125
+    21300252: Rpg_SpriteIcons_126
+    21300254: Rpg_SpriteIcons_127
+    21300256: Rpg_SpriteIcons_128
+    21300258: Rpg_SpriteIcons_129
+    21300260: Rpg_SpriteIcons_130
+    21300262: Rpg_SpriteIcons_131
+    21300264: Rpg_SpriteIcons_132
+    21300266: Rpg_SpriteIcons_133
+    21300268: Rpg_SpriteIcons_134
+    21300270: Rpg_SpriteIcons_135
+    21300272: Rpg_SpriteIcons_136
+    21300274: Rpg_SpriteIcons_137
+    21300276: Rpg_SpriteIcons_138
+    21300278: Rpg_SpriteIcons_139
+    21300280: Rpg_SpriteIcons_140
+    21300282: Rpg_SpriteIcons_141
+    21300284: Rpg_SpriteIcons_142
+    21300286: Rpg_SpriteIcons_143
+    21300288: Rpg_SpriteIcons_144
+    21300290: Rpg_SpriteIcons_145
+    21300292: Rpg_SpriteIcons_146
+    21300294: Rpg_SpriteIcons_147
+    21300296: Rpg_SpriteIcons_148
+    21300298: Rpg_SpriteIcons_149
+    21300300: Rpg_SpriteIcons_150
+    21300302: Rpg_SpriteIcons_151
+    21300304: Rpg_SpriteIcons_152
+    21300306: Rpg_SpriteIcons_153
+    21300308: Rpg_SpriteIcons_154
+    21300310: Rpg_SpriteIcons_155
+    21300312: Rpg_SpriteIcons_156
+    21300314: Rpg_SpriteIcons_157
+    21300316: Rpg_SpriteIcons_158
+    21300318: Rpg_SpriteIcons_159
+    21300320: Rpg_SpriteIcons_160
+    21300322: Rpg_SpriteIcons_161
+    21300324: Rpg_SpriteIcons_162
+    21300326: Rpg_SpriteIcons_163
+    21300328: Rpg_SpriteIcons_164
+    21300330: Rpg_SpriteIcons_165
+    21300332: Rpg_SpriteIcons_166
+    21300334: Rpg_SpriteIcons_167
+    21300336: Rpg_SpriteIcons_168
+    21300338: Rpg_SpriteIcons_169
+    21300340: Rpg_SpriteIcons_170
+    21300342: Rpg_SpriteIcons_171
+    21300344: Rpg_SpriteIcons_172
+    21300346: Rpg_SpriteIcons_173
+    21300348: Rpg_SpriteIcons_174
+    21300350: Rpg_SpriteIcons_175
+    21300352: Rpg_SpriteIcons_176
+    21300354: Rpg_SpriteIcons_177
+    21300356: Rpg_SpriteIcons_178
+    21300358: Rpg_SpriteIcons_179
+    21300360: Rpg_SpriteIcons_180
+    21300362: Rpg_SpriteIcons_181
+    21300364: Rpg_SpriteIcons_182
+    21300366: Rpg_SpriteIcons_183
+    21300368: Rpg_SpriteIcons_184
+    21300370: Rpg_SpriteIcons_185
+    21300372: Rpg_SpriteIcons_186
+    21300374: Rpg_SpriteIcons_187
+    21300376: Rpg_SpriteIcons_188
+    21300378: Rpg_SpriteIcons_189
+    21300380: Rpg_SpriteIcons_190
+    21300382: Rpg_SpriteIcons_191
+    21300384: Rpg_SpriteIcons_192
+    21300386: Rpg_SpriteIcons_193
+    21300388: Rpg_SpriteIcons_194
+    21300390: Rpg_SpriteIcons_195
+    21300392: Rpg_SpriteIcons_196
+    21300394: Rpg_SpriteIcons_197
+    21300396: Rpg_SpriteIcons_198
+    21300398: Rpg_SpriteIcons_199
+    21300400: Rpg_SpriteIcons_200
+    21300402: Rpg_SpriteIcons_201
+    21300404: Rpg_SpriteIcons_202
+    21300406: Rpg_SpriteIcons_203
+    21300408: Rpg_SpriteIcons_204
+    21300410: Rpg_SpriteIcons_205
+    21300412: Rpg_SpriteIcons_206
+    21300414: Rpg_SpriteIcons_207
+    21300416: Rpg_SpriteIcons_208
+    21300418: Rpg_SpriteIcons_209
+    21300420: Rpg_SpriteIcons_210
+    21300422: Rpg_SpriteIcons_211
+    21300424: Rpg_SpriteIcons_212
+    21300426: Rpg_SpriteIcons_213
+    21300428: Rpg_SpriteIcons_214
+    21300430: Rpg_SpriteIcons_215
+    21300432: Rpg_SpriteIcons_216
+    21300434: Rpg_SpriteIcons_217
+    21300436: Rpg_SpriteIcons_218
+    21300438: Rpg_SpriteIcons_219
+    21300440: Rpg_SpriteIcons_220
+    21300442: Rpg_SpriteIcons_221
+    21300444: Rpg_SpriteIcons_222
+    21300446: Rpg_SpriteIcons_223
+    21300448: Rpg_SpriteIcons_224
+    21300450: Rpg_SpriteIcons_225
+    21300452: Rpg_SpriteIcons_226
+    21300454: Rpg_SpriteIcons_227
+    21300456: Rpg_SpriteIcons_228
+    21300458: Rpg_SpriteIcons_229
+    21300460: Rpg_SpriteIcons_230
+    21300462: Rpg_SpriteIcons_231
+    21300464: Rpg_SpriteIcons_232
+    21300466: Rpg_SpriteIcons_233
+    21300468: Rpg_SpriteIcons_234
+    21300470: Rpg_SpriteIcons_235
+    21300472: Rpg_SpriteIcons_236
+    21300474: Rpg_SpriteIcons_237
+    21300476: Rpg_SpriteIcons_238
+    21300478: Rpg_SpriteIcons_239
+    21300480: Rpg_SpriteIcons_240
+    21300482: Rpg_SpriteIcons_241
+    21300484: Rpg_SpriteIcons_242
+    21300486: Rpg_SpriteIcons_243
+    21300488: Rpg_SpriteIcons_244
+    21300490: Rpg_SpriteIcons_245
+    21300492: Rpg_SpriteIcons_246
+    21300494: Rpg_SpriteIcons_247
+    21300496: Rpg_SpriteIcons_248
+    21300498: Rpg_SpriteIcons_249
+    21300500: Rpg_SpriteIcons_250
+    21300502: Rpg_SpriteIcons_251
+    21300504: Rpg_SpriteIcons_252
+    21300506: Rpg_SpriteIcons_253
+    21300508: Rpg_SpriteIcons_254
+    21300510: Rpg_SpriteIcons_255
+    21300512: Rpg_SpriteIcons_256
+    21300514: Rpg_SpriteIcons_257
+    21300516: Rpg_SpriteIcons_258
+    21300518: Rpg_SpriteIcons_259
+    21300520: Rpg_SpriteIcons_260
+    21300522: Rpg_SpriteIcons_261
+    21300524: Rpg_SpriteIcons_262
+    21300526: Rpg_SpriteIcons_263
+    21300528: Rpg_SpriteIcons_264
+    21300530: Rpg_SpriteIcons_265
+    21300532: Rpg_SpriteIcons_266
+    21300534: Rpg_SpriteIcons_267
+    21300536: Rpg_SpriteIcons_268
+    21300538: Rpg_SpriteIcons_269
+    21300540: Rpg_SpriteIcons_270
+    21300542: Rpg_SpriteIcons_271
+    21300544: Rpg_SpriteIcons_272
+    21300546: Rpg_SpriteIcons_273
+    21300548: Rpg_SpriteIcons_274
+    21300550: Rpg_SpriteIcons_275
+    21300552: Rpg_SpriteIcons_276
+    21300554: Rpg_SpriteIcons_277
+    21300556: Rpg_SpriteIcons_278
+    21300558: Rpg_SpriteIcons_279
+    21300560: Rpg_SpriteIcons_280
+    21300562: Rpg_SpriteIcons_281
+    21300564: Rpg_SpriteIcons_282
+    21300566: Rpg_SpriteIcons_283
+    21300568: Rpg_SpriteIcons_284
+    21300570: Rpg_SpriteIcons_285
+    21300572: Rpg_SpriteIcons_286
+    21300574: Rpg_SpriteIcons_287
+    21300576: Rpg_SpriteIcons_288
+    21300578: Rpg_SpriteIcons_289
+    21300580: Rpg_SpriteIcons_290
+    21300582: Rpg_SpriteIcons_291
+    21300584: Rpg_SpriteIcons_292
+    21300586: Rpg_SpriteIcons_293
+    21300588: Rpg_SpriteIcons_294
+    21300590: Rpg_SpriteIcons_295
+    21300592: Rpg_SpriteIcons_296
+    21300594: Rpg_SpriteIcons_297
+    21300596: Rpg_SpriteIcons_298
+    21300598: Rpg_SpriteIcons_299
+    21300600: Rpg_SpriteIcons_300
+    21300602: Rpg_SpriteIcons_301
+    21300604: Rpg_SpriteIcons_302
+    21300606: Rpg_SpriteIcons_303
+    21300608: Rpg_SpriteIcons_304
+    21300610: Rpg_SpriteIcons_305
+    21300612: Rpg_SpriteIcons_306
+    21300614: Rpg_SpriteIcons_307
+    21300616: Rpg_SpriteIcons_308
+    21300618: Rpg_SpriteIcons_309
+    21300620: Rpg_SpriteIcons_310
+    21300622: Rpg_SpriteIcons_311
+    21300624: Rpg_SpriteIcons_312
+    21300626: Rpg_SpriteIcons_313
+    21300628: Rpg_SpriteIcons_314
+    21300630: Rpg_SpriteIcons_315
+    21300632: Rpg_SpriteIcons_316
+    21300634: Rpg_SpriteIcons_317
+    21300636: Rpg_SpriteIcons_318
+    21300638: Rpg_SpriteIcons_319
+    21300640: Rpg_SpriteIcons_320
+    21300642: Rpg_SpriteIcons_321
+    21300644: Rpg_SpriteIcons_322
+    21300646: Rpg_SpriteIcons_323
+    21300648: Rpg_SpriteIcons_324
+    21300650: Rpg_SpriteIcons_325
+    21300652: Rpg_SpriteIcons_326
+    21300654: Rpg_SpriteIcons_327
+    21300656: Rpg_SpriteIcons_328
+    21300658: Rpg_SpriteIcons_329
+    21300660: Rpg_SpriteIcons_330
+    21300662: Rpg_SpriteIcons_331
+    21300664: Rpg_SpriteIcons_332
+    21300666: Rpg_SpriteIcons_333
+    21300668: Rpg_SpriteIcons_334
+    21300670: Rpg_SpriteIcons_335
+    21300672: Rpg_SpriteIcons_336
+    21300674: Rpg_SpriteIcons_337
+    21300676: Rpg_SpriteIcons_338
+    21300678: Rpg_SpriteIcons_339
+    21300680: Rpg_SpriteIcons_340
+    21300682: Rpg_SpriteIcons_341
+    21300684: Rpg_SpriteIcons_342
+    21300686: Rpg_SpriteIcons_343
+    21300688: Rpg_SpriteIcons_344
+    21300690: Rpg_SpriteIcons_345
+    21300692: Rpg_SpriteIcons_346
+    21300694: Rpg_SpriteIcons_347
+    21300696: Rpg_SpriteIcons_348
+    21300698: Rpg_SpriteIcons_349
+    21300700: Rpg_SpriteIcons_350
+    21300702: Rpg_SpriteIcons_351
+    21300704: Rpg_SpriteIcons_352
+    21300706: Rpg_SpriteIcons_353
+    21300708: Rpg_SpriteIcons_354
+    21300710: Rpg_SpriteIcons_355
+    21300712: Rpg_SpriteIcons_356
+    21300714: Rpg_SpriteIcons_357
+    21300716: Rpg_SpriteIcons_358
+    21300718: Rpg_SpriteIcons_359
+    21300720: Rpg_SpriteIcons_360
+    21300722: Rpg_SpriteIcons_361
+    21300724: Rpg_SpriteIcons_362
+    21300726: Rpg_SpriteIcons_363
+    21300728: Rpg_SpriteIcons_364
+    21300730: Rpg_SpriteIcons_365
+    21300732: Rpg_SpriteIcons_366
+    21300734: Rpg_SpriteIcons_367
+    21300736: Rpg_SpriteIcons_368
+    21300738: Rpg_SpriteIcons_369
+    21300740: Rpg_SpriteIcons_370
+    21300742: Rpg_SpriteIcons_371
+    21300744: Rpg_SpriteIcons_372
+    21300746: Rpg_SpriteIcons_373
+    21300748: Rpg_SpriteIcons_374
+    21300750: Rpg_SpriteIcons_375
+    21300752: Rpg_SpriteIcons_376
+    21300754: Rpg_SpriteIcons_377
+    21300756: Rpg_SpriteIcons_378
+    21300758: Rpg_SpriteIcons_379
+    21300760: Rpg_SpriteIcons_380
+    21300762: Rpg_SpriteIcons_381
+    21300764: Rpg_SpriteIcons_382
+    21300766: Rpg_SpriteIcons_383
+    21300768: Rpg_SpriteIcons_384
+    21300770: Rpg_SpriteIcons_385
+    21300772: Rpg_SpriteIcons_386
+    21300774: Rpg_SpriteIcons_387
+    21300776: Rpg_SpriteIcons_388
+    21300778: Rpg_SpriteIcons_389
+    21300780: Rpg_SpriteIcons_390
+    21300782: Rpg_SpriteIcons_391
+    21300784: Rpg_SpriteIcons_392
+    21300786: Rpg_SpriteIcons_393
+    21300788: Rpg_SpriteIcons_394
+    21300790: Rpg_SpriteIcons_395
+    21300792: Rpg_SpriteIcons_396
+    21300794: Rpg_SpriteIcons_397
+    21300796: Rpg_SpriteIcons_398
+    21300798: Rpg_SpriteIcons_399
+    21300800: Rpg_SpriteIcons_400
+    21300802: Rpg_SpriteIcons_401
+    21300804: Rpg_SpriteIcons_402
+    21300806: Rpg_SpriteIcons_403
+    21300808: Rpg_SpriteIcons_404
+    21300810: Rpg_SpriteIcons_405
+    21300812: Rpg_SpriteIcons_406
+    21300814: Rpg_SpriteIcons_407
+    21300816: Rpg_SpriteIcons_408
+    21300818: Rpg_SpriteIcons_409
+    21300820: Rpg_SpriteIcons_410
+    21300822: Rpg_SpriteIcons_411
+    21300824: Rpg_SpriteIcons_412
+    21300826: Rpg_SpriteIcons_413
+    21300828: Rpg_SpriteIcons_414
+    21300830: Rpg_SpriteIcons_415
+    21300832: Rpg_SpriteIcons_416
+    21300834: Rpg_SpriteIcons_417
+    21300836: Rpg_SpriteIcons_418
+    21300838: Rpg_SpriteIcons_419
+    21300840: Rpg_SpriteIcons_420
+    21300842: Rpg_SpriteIcons_421
+    21300844: Rpg_SpriteIcons_422
+    21300846: Rpg_SpriteIcons_423
+    21300848: Rpg_SpriteIcons_424
+    21300850: Rpg_SpriteIcons_425
+    21300852: Rpg_SpriteIcons_426
+    21300854: Rpg_SpriteIcons_427
+    21300856: Rpg_SpriteIcons_428
+    21300858: Rpg_SpriteIcons_429
+    21300860: Rpg_SpriteIcons_430
+    21300862: Rpg_SpriteIcons_431
+    21300864: Rpg_SpriteIcons_432
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rpg_SpriteIcons_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 473
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 473
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 473
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 474
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 473
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 474
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_6
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 474
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 474
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_8
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 474
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_9
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 473
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_10
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 473
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 474
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_12
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 474
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 475
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_14
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 473
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 473
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_16
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 472
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_17
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 474
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 472
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_19
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 474
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_20
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 472
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_21
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 477
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_22
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 475
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_23
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 475
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_24
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 475
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_25
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 477
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_26
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 475
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_27
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 475
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_28
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 475
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_29
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 438
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_30
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_32
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_33
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 439
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_34
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 438
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_35
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 437
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 439
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_37
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 439
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_38
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 437
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_39
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_40
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_41
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 439
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_42
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 437
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_43
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 448
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_44
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 437
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_45
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 451
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_46
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 437
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_47
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 441
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_48
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 441
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_49
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 438
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_50
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 439
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_51
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 439
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_52
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 439
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_53
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 439
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_54
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 439
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_55
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 439
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_56
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 441
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_57
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 439
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_58
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 439
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_59
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 439
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_60
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 440
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_61
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 403
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_62
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 404
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_63
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 402
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_64
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 403
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_65
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 403
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_66
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 403
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_67
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 401
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_68
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 403
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_69
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 401
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_70
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 400
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_71
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 404
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_72
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 422
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_73
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 423
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_74
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 422
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_75
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 402
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_76
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 401
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_77
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 401
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_78
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 401
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_79
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 403
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_80
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 405
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_81
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 403
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_82
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 404
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_83
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 402
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_84
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 400
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_85
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 403
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_86
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 404
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_87
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 403
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_88
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 403
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_89
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 403
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_90
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 403
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_91
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 403
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_92
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 418
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_93
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 414
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_94
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 414
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_95
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 403
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_96
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 405
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_97
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 402
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_98
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 405
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_99
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 367
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_100
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 365
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_101
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 365
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_102
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 366
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_103
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 367
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_104
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 366
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_105
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 365
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_106
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 367
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_107
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 365
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_108
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 365
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_109
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 365
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_110
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 365
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_111
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 366
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_112
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 368
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_113
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 366
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_114
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 365
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_115
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 367
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_116
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 367
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_117
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 368
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_118
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 366
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_119
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 368
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_120
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 367
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_121
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 367
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_122
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 367
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_123
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 368
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_124
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 367
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_125
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 366
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_126
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 365
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_127
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 365
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_128
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 329
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_129
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 329
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_130
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 329
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_131
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 329
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_132
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 331
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_133
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 330
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_134
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 329
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_135
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 330
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_136
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 330
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_137
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 330
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_138
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 329
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_139
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 330
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_140
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 329
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_141
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 329
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_142
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 343
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_143
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 332
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_144
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 329
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_145
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 331
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_146
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 331
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_147
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 333
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_148
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 329
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_149
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 331
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_150
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 328
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_151
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 328
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_152
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 328
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_153
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 328
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_154
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 328
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_155
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 328
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_156
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 329
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_157
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 331
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_158
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 338
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_159
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 339
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_160
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 293
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_161
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 293
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_162
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 293
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_163
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 293
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_164
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 295
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_165
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 297
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_166
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 294
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_167
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 294
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_168
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 294
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_169
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 294
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_170
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 295
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_171
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 293
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_172
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 295
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_173
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 292
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_174
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 294
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_175
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 293
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_176
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 297
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_177
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 295
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_178
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 293
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_179
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 296
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_180
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 292
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_181
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 292
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_182
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 295
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_183
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 314
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_184
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 316
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_185
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 313
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_186
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 297
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_187
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 292
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_188
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 293
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_189
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 293
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_190
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 298
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_191
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 294
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_192
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 257
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_193
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 257
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_194
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 257
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_195
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 257
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_196
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 262
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_197
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 262
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_198
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 258
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_199
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 257
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_200
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 257
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_201
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 257
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_202
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 257
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_203
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 257
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_204
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 257
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_205
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 273
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_206
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 258
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_207
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 257
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_208
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 257
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_209
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 259
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_210
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 257
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_211
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_212
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 256
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_213
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 264
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_214
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 258
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_215
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 259
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_216
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 259
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_217
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 261
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_218
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 260
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_219
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 262
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_220
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 260
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_221
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 258
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_222
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 260
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_223
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 221
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_224
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 221
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_225
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 221
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_226
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 222
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_227
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 226
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_228
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 226
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_229
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 221
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_230
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 221
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_231
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 221
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_232
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 221
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_233
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 221
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_234
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 221
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_235
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 226
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_236
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 244
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_237
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 221
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_238
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 221
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_239
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 244
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_240
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 223
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_241
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 223
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_242
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 225
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_243
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 227
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_244
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 226
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_245
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 225
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_246
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 220
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_247
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 222
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_248
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 221
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_249
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 222
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_250
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 222
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_251
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 222
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_252
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 221
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_253
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 234
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_254
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 227
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_255
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 233
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_256
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 220
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_257
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 227
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_258
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 230
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_259
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 185
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_260
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 185
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_261
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 185
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_262
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 185
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_263
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 197
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_264
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 190
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_265
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 187
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_266
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 185
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_267
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 185
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_268
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 185
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_269
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 185
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_270
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 185
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_271
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 185
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_272
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 187
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_273
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 185
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_274
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 185
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_275
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 193
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_276
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 187
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_277
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_278
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 185
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_279
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 190
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_280
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 184
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_281
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 186
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_282
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 188
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_283
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 185
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_284
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 185
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_285
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 190
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_286
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 189
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_287
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 184
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_288
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 185
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_289
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 149
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_290
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 149
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_291
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 150
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_292
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 150
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_293
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 154
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_294
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 152
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_295
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 149
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_296
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 149
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_297
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 150
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_298
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 149
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_299
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 149
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_300
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 148
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_301
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 151
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_302
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 149
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_303
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 149
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_304
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 151
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_305
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 153
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_306
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 151
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_307
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 149
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_308
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 153
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_309
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 149
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_310
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 153
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_311
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 154
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_312
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 149
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_313
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 149
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_314
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 149
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_315
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 152
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_316
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 152
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_317
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 152
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_318
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_319
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_320
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 114
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_321
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 116
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_322
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 118
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_323
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 116
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_324
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 114
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_325
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_326
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 116
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_327
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_328
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 113
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_329
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 112
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_330
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 117
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_331
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 114
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_332
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 113
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_333
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 113
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_334
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 113
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_335
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 115
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_336
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 115
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_337
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 114
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_338
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 118
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_339
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 117
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_340
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 115
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_341
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 114
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_342
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 113
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_343
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 113
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_344
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 116
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_345
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 114
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_346
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 114
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_347
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 113
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_348
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_349
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 80
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_350
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 78
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_351
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 82
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_352
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 81
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_353
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_354
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 77
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_355
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 76
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_356
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 76
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_357
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 77
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_358
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 76
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_359
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 78
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_360
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 79
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_361
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 77
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_362
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 77
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_363
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_364
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 79
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_365
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 79
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_366
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 78
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_367
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 82
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_368
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_369
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 79
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_370
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 78
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_371
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 79
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_372
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 78
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_373
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 80
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_374
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 77
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_375
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 78
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_376
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 42
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_377
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 41
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_378
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 41
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_379
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 41
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_380
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 45
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_381
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 48
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_382
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 41
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_383
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 40
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_384
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 41
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_385
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 42
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_386
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 41
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_387
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 66
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_388
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 41
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_389
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 43
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_390
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 41
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_391
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 41
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_392
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 43
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_393
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 45
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_394
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 42
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_395
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 43
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_396
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 44
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_397
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 44
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_398
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 42
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_399
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 43
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_400
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 42
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_401
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 44
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_402
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 43
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_403
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 50
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_404
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 41
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_405
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 44
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_406
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_407
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_408
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_409
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 5
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_410
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 7
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_411
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 6
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_412
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 6
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_413
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 5
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_414
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_415
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_416
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 5
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_417
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 4
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_418
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 7
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_419
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 8
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_420
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 5
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_421
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 4
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_422
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 9
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_423
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 7
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_424
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 5
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_425
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 6
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_426
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 6
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_427
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 7
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_428
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 6
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_429
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 5
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_430
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 6
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_431
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 8
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rpg_SpriteIcons_432
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 5
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

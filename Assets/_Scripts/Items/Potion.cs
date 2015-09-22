@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-public enum Potion_Type{
-	Blood,
-	Love,
-	Strength,
-}
-public class Potion : MonoBehaviour {
 
+public class Potion: MonoBehaviour {
+	Item item;
+	Potion_Type _type;
 	// Use this for initialization
 	void Start () {
 	
