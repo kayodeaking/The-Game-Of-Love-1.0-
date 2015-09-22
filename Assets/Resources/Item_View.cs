@@ -7,12 +7,14 @@ using System;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 public class Item_View : MonoBehaviour {
+	
+
+
 	private Sprite _sprite;
 	private SpriteRenderer _renderer;
 	private BoxCollider2D _collider;
 	private Rigidbody2D _rb;
 	public ItemDataBase db;
-
 	public Item item;
 	[HideInInspector]
 	public  int itemID;
@@ -35,18 +37,17 @@ public class Item_View : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		item = db.Item (itemID);
-		_sprite = item.sprite;
 		_renderer = gameObject.GetComponent<SpriteRenderer> ();
-		_renderer.sprite = _sprite;
+		_renderer.sprite = item.sprite;
+
 	}
 
 	void Get_Data(){
 		db = (ItemDataBase)Resources.Load<ItemDataBase> ("ItemDataBase");
 		item = db.Item (itemID);
-		_sprite = item.sprite;
+
 		_renderer = gameObject.GetComponent<SpriteRenderer> ();
-		_renderer.sprite = _sprite;
+		_renderer.sprite = item.sprite;
 		_collider = gameObject.GetComponent<BoxCollider2D> ();
 		_rb = gameObject.GetComponent<Rigidbody2D> ();
 		_collider.isTrigger = true;

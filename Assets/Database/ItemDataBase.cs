@@ -12,7 +12,7 @@ public class ItemDataBase:ScriptableObject{
 	[SerializeField]
 	private List<Item> database;
 	void OnEnable(){
-		database = Load_ItemsXML ("Item_Data");
+		//database = Load_ItemsXML ("Item_Data");
 	}
 	public void Add(Item item){
 		database.Add (item);
