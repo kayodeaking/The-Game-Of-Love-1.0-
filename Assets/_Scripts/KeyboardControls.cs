@@ -3,28 +3,21 @@ using System.Collections;
 
 public class KeyboardControls : MonoBehaviour {
 
+
 	public GameObject pausePanel;
-	public GameObject optionPanel;
-	public GameObject controlPanel;
-	public GameObject allPausePanel;
 	public GameObject statPanel;
-	public GameObject equipPanel;
-	public GameObject invPanel;
-	public GameObject allSEIPanel;
-	public GameObject slashPanel;
-	public GameObject blastPanel;
-	public GameObject buffPanel;
-	public GameObject allSkillPanel;
+	public GameObject skillPanel;
 	public GameObject miniMapPanel;
 	public GameObject playerHud;
+	public GameObject tooltip;
 	public GameObject letters;
 
-	bool openPauseMenu = false;
-	bool openSEIMenu = false;
-	bool openSkillMenu = false;
-	bool openPlayerHud = false;
-	bool openMiniMap = false;
-	bool openLetter = false;
+	bool openPauseMenu;
+	bool openSEIMenu;
+	bool openSkillMenu;
+	bool openPlayerHud;
+	bool openMiniMap;
+	bool openLetter;
 	
 	// Use this for initialization
 	void Start () {
@@ -42,45 +35,43 @@ public class KeyboardControls : MonoBehaviour {
 
 		//Pauses the game
 		if (Input.GetKeyDown (KeyCode.P)) {
+			openPauseMenu = pausePanel.activeSelf;
 			openPauseMenu = !openPauseMenu;
-			optionPanel.SetActive (false);
-			controlPanel.SetActive (false);
 			pausePanel.SetActive (openPauseMenu);
-			allPausePanel.SetActive (openPauseMenu);
 		}
 
 		//Opens Stat/Equip/Inv Menu
 		if (Input.GetKeyDown (KeyCode.I)) {
+			openSEIMenu = statPanel.activeSelf;
 			openSEIMenu = !openSEIMenu;
 			statPanel.SetActive (openSEIMenu);
-			equipPanel.SetActive (false);
-			invPanel.SetActive (false);
-			allSEIPanel.SetActive (openSEIMenu);
 		}
 
 		//Opens letter Menu
 		if (Input.GetKeyDown (KeyCode.L)) {
+			openLetter = letters.activeSelf;
 			openLetter = !openLetter;
+			tooltip.SetActive (false);
 			letters.SetActive (openLetter);
 		}
 
 		//Opens Skills Menu
 		if (Input.GetKeyDown (KeyCode.K)) {
+			openSkillMenu = skillPanel.activeSelf;
 			openSkillMenu = !openSkillMenu;
-			slashPanel.SetActive (openSkillMenu);
-			blastPanel.SetActive (false);
-			buffPanel.SetActive (false);
-			allSkillPanel.SetActive (openSkillMenu);
+			skillPanel.SetActive (openSkillMenu);
 		}
 
 		//Turns the Player Hud on/off
 		if (Input.GetKeyDown (KeyCode.U)) {
+			openPlayerHud = playerHud.activeSelf;
 			openPlayerHud = !openPlayerHud;
 			playerHud.SetActive (openPlayerHud);
 		}
 
 		//Turns Mini Map on/off
 		if (Input.GetKeyDown (KeyCode.M)) {
+			openMiniMap = miniMapPanel.activeSelf;
 			openMiniMap = !openMiniMap;
 			miniMapPanel.SetActive (openMiniMap);
 		}

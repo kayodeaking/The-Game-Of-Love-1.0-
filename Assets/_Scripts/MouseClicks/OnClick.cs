@@ -16,12 +16,27 @@ public class OnClick : MonoBehaviour {
 	void Update () {
 	
 	}
-	public void Load_StartLevel(){
+
+	public void Return_ToStart () {
+		Application.LoadLevel (0);
+	}
+
+	public void Load_GameFromStart (){
 		
 		Application.LoadLevel(1);
 	}
 
-	public void Load_MyHeartsLevel(){
+	public void Load_GameFromFile () {
+		
+		Application.LoadLevel (1);
+		
+	}
+
+	public void Delete_GameFile () {
+		
+	}
+
+	public void Load_MyHeartsScene (){
 	
 		//Current scene would be Title
 		if (Application.loadedLevel == 0) {
@@ -33,55 +48,62 @@ public class OnClick : MonoBehaviour {
 
 	}
 
-	public void Load_GameFromFile() {
+	public void Load_HeartConditionScene () {
+			
+		Application.LoadLevel (3);
+		
+	}
 
-		Application.LoadLevel (1);
+	public void Load_HeartShopSecene () {
+
+		Application.LoadLevel (2);
+		
+	}
+
+	public void Load_MonsterBook () {
+
+		Application.LoadLevel (6);
 
 	}
 	
-	public void Return() {
+	public void Load_LevelChoiceScene () {
 
-		if (Application.loadedLevel == 1) { //Current Scene would be Levels
-			Application.LoadLevel (0);
+		if (Application.loadedLevel == 2) { //Current Scene would be Heart Shop
+			Application.LoadLevel (1);
 		} else if (Application.loadedLevel == 3) { //Current Scene would be Hearts Condition
 			Application.LoadLevel (1);
-		} else if (Application.loadedLevel == 2) { //Current Scene would be Heart Shop
+		}  else if (Application.loadedLevel == 5) { //Current Scene would be Levels
 			Application.LoadLevel (1);
-		} else if (Application.loadedLevel == 4) { //Current scene would be My Hearts
-			if (saving) {
-				saving = false;
-				Application.LoadLevel (1);
-			}
-			
-			if (loading) {
-				loading = false;
-				Application.LoadLevel (0);
-			}
 		} else if (Application.loadedLevel == 6) { //Current Scene would be Monster Book
 			Application.LoadLevel (1);
 		}
 
 	}
 
-	public void Delete_GameFile() {
+	public void Exit_MyHeartScene () {
 
-	}
-
-	public void Load_HeartCondition() {
-			
-		Application.LoadLevel (3);
+		if (saving) {
+			saving = false;
+			Application.LoadLevel (1);
+		}
 		
+		if (loading) {
+			loading = false;
+			Application.LoadLevel (0);
+		}
+
 	}
 
-	public void Load_HeartShop () {
+	public void Restart_GameLevel () {
+			Application.LoadLevel (5);
+	}
 
-		Application.LoadLevel (2);
+	public void MoveSet1 () {
+		Player_Control.moveSet = 1;
+	}
+	
+	public void MoveSet2 () {
+		Player_Control.moveSet = 2;
+	}
 		
-	}
-
-	public void Load_MonsterBook() {
-
-		Application.LoadLevel (6);
-
-	}
 }
