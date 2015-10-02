@@ -34,19 +34,31 @@ public class Player_Stats : MonoBehaviour {
 	}
 
 	void DecreaseHealth() {
-		currBlood -= 25f;
+		if (currBlood <= 0) {
+			currBlood = 0;
+		} else {
+			currBlood -= 25f;
+		}
 		float tempBlood = currBlood / max_Blood;
 		SetBloodBar (tempBlood);
 	}
 
 	void DecreaseMagic() {
-		currLove -= 25f;
+		if (currLove <= 0) {
+			currLove = 0;
+		} else {
+			currLove -= 25f;
+		}
 		float tempLove = currLove / max_Love;
 		SetLoveBar (tempLove);
 	}
 
 	void IncreaseExp() {
-		currExp += 10;
+		if (currExp >= max_Exp) {
+			currExp = max_Exp;
+		} else {
+			currExp += 10;
+		}
 		float tempExp = currExp / max_Exp;
 		SetExpBar (tempExp);
 	}
