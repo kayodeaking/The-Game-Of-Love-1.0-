@@ -18,7 +18,8 @@ public class KeyboardControls : MonoBehaviour {
 	bool openPlayerHud;
 	bool openMiniMap;
 	bool openLetter;
-	
+
+	public GameObject itemSlot1;
 	// Use this for initialization
 	void Start () {
 	
@@ -92,26 +93,34 @@ public class KeyboardControls : MonoBehaviour {
 		}
 
 		//Players Assigned Potion 1
-		if (Input.GetKeyDown (KeyCode.Keypad1)) {
+		if (Input.GetKeyDown (KeyCode.Alpha1)) {
 
+			Debug.Log("no issue with key");
+			if(itemSlot1.transform.GetChild (0) != null) {
+				itemSlot1.transform.GetChild (0).GetComponent<UpdateStack>().UsePotion();
+			} else {
+					Debug.Log ("Slot is empty");
+			}
 		}
 
 		//Players Assigned Potion 2
-		if (Input.GetKeyDown (KeyCode.Keypad2)) {
-
+		if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			Debug.Log("no issue with key");
+			
 		}
 
 		//Players Assigned Potion 3
-		if (Input.GetKeyDown (KeyCode.Keypad3)) {
-
+		if (Input.GetKeyDown (KeyCode.Alpha3)) {
+			Debug.Log("no issue with key");
+			
 		}
 		//Players Assigned Potion 4
-		if (Input.GetKeyDown (KeyCode.Keypad4)) {
+		if (Input.GetKeyDown (KeyCode.Alpha4)) {
 			
 		}
 		
 		//Players Assigned Potion 5
-		if (Input.GetKeyDown (KeyCode.Keypad5)) {
+		if (Input.GetKeyDown (KeyCode.Alpha5)) {
 			
 		}
 
