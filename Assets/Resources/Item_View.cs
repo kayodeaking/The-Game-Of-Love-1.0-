@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 [Serializable]
 [ExecuteInEditMode]
@@ -23,6 +24,8 @@ public class Item_View : MonoBehaviour {
 
 	}
 	*/
+
+	public static GameObject newItem;
 
 	void OnEnable(){
 
@@ -56,14 +59,17 @@ public class Item_View : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Player") {
-			Add_Item_To_Inventory ();
+			CreateNewObject ();
 			DestroyObject (this.gameObject);
 		}
 
 	}
 
-	void Add_Item_To_Inventory(){
+	void CreateNewObject() {
+		print ("created new object");
 		
-		print ("Added " + item.name + " to Inventory");
+		//newItem = Instantiate (this.gameObject);
+		//Inventory.AddToInv (newItem);
+		
 	}
 }

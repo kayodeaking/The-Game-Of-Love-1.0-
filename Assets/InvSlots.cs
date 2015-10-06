@@ -12,31 +12,35 @@ public class InvSlots : MonoBehaviour, IDropHandler {
 			return null;
 		}
 	}
-	
+
+	public static GameObject invSlot;
+
 	#region IDropHandler implementation
 	
 	public void OnDrop (PointerEventData eventData)
 	{
-		if (DragHandler.dragItem.tag == "Potions") {
-			if (!item) {
+		if (!item) {
+			DragHandler.dragItem.transform.SetParent (transform);
+			Destroy (DragHandler.initItem);
+		} else {
+			if (DragHandler.dragItem.name == item.name) {
+				Destroy (item);
 				DragHandler.dragItem.transform.SetParent (transform);
-				//Destroy (DragHandler.dragItem);
-				//Destroy (item);
+				DragHandler.dragItem.GetComponent<UpdateStack>().CombineStack();
+				Destroy (DragHandler.initItem);
 			} else {
-				if ((item.name + "(Clone)") != DragHandler.dragItem.name) {
-					Destroy (DragHandler.dragItem);
-					DragHandler.dragItem.transform.SetParent (transform);
-				} else {
-					Destroy (DragHandler.dragItem);
-					DragHandler.dragItem.transform.SetParent (transform);
-					item.GetComponent<UpdateStack>().CombineStack();
-					Destroy (item);
-				}
-			} 
-		} else { 
-			Destroy(DragHandler.dragItem);
+				item.transform.SetParent (DragHandler.initItem.transform.parent.transform);
+				DragHandler.dragItem.transform.SetParent (transform);
+				Destroy (DragHandler.initItem);
+			}
 		}
+		DragHandler.dragItem.GetComponent<RectTransform> ().localScale = new Vector3 (1, 1, 1);
+		DragHandler.dragItem.GetComponent<RectTransform> ().localRotation = new Quaternion (0, 0, 0, 0);
 	}
 	
 	#endregion
+
+	public void GetSlot() {
+		invSlot = this.gameObject;
+	}
 }

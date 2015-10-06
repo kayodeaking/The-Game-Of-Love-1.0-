@@ -6,6 +6,7 @@ using System.Collections;
 public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 
 	public static GameObject dragItem;
+	public static GameObject initItem;
 	Vector3 startPos;
 	Transform startParent;
 
@@ -13,7 +14,9 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
 	public void OnBeginDrag (PointerEventData eventData)
 	{
+		initItem = gameObject;
 		dragItem = Instantiate(gameObject);
+		dragItem.name = gameObject.name;
 		startPos = transform.position;
 		startParent = transform.parent;
 		GetComponent<CanvasGroup> ().blocksRaycasts = false;
@@ -42,8 +45,4 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	}
 
 	#endregion
-
-	public void Destroy () {
-		Destroy (gameObject);
-	}
 }

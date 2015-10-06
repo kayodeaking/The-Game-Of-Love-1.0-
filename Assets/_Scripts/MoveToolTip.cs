@@ -3,10 +3,20 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class MoveToolTip : MonoBehaviour {
-	
+
+	public GameObject nameText;
+
+	public GameObject item {
+		get {
+			if (Slots.slot.transform.childCount > 0) {
+				return Slots.slot.transform.GetChild (0).gameObject;
+			}
+			return null;
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
-
 	}
 	
 	// Update is called once per frame
@@ -19,5 +29,13 @@ public class MoveToolTip : MonoBehaviour {
 		float y = Input.mousePosition.y - 80;
 		Vector3 pos = new Vector3 (x, y, 0);
 		this.transform.position = pos;
+	}
+
+	public void Info () {
+		if (!item) {
+			nameText.GetComponent<Text> ().text = "";
+		} else {
+			nameText.GetComponent<Text> ().text = item.name;
+		}
 	}
 }

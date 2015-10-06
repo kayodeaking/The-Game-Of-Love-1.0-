@@ -13,13 +13,13 @@ public class UpdateStack : MonoBehaviour {
 		}
 	}
 
-	public static string itemName;
+	//public static string itemName;
 	public static int stack = 5;
 
 	// Use this for initialization
 	void Start () {
 	
-		itemName = this.gameObject.name;
+		//itemName = this.gameObject.name;
 	}
 	
 	// Update is called once per frame
@@ -38,9 +38,12 @@ public class UpdateStack : MonoBehaviour {
 
 	public void UsePotion () {
 		stack -= 1;
+		Player_Stats.currBlood += 50;
+		Player_Stats.currLove += 50;
 	}
 
 	public void IncPotion () {
+
 	}
 
 	public void CombineStack() {

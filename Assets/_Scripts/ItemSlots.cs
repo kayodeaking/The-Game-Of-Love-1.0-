@@ -17,22 +17,19 @@ public class ItemSlots : MonoBehaviour, IDropHandler {
 	
 	public void OnDrop (PointerEventData eventData)
 	{
-		if (DragHandler.dragItem.tag == "Potions") {
-			if (!item) {
+		if (!item) {
+			DragHandler.dragItem.transform.SetParent (transform);
+		} else {
+			if (DragHandler.dragItem.name == item.name) {
+				Destroy (item);
 				DragHandler.dragItem.transform.SetParent (transform);
+				DragHandler.dragItem.GetComponent<UpdateStack>().CombineStack();
 			} else {
-				if (item.name != DragHandler.dragItem.name) {
-					Destroy (item);
-					DragHandler.dragItem.transform.SetParent (transform);
-				} else {
-					Destroy (item);
-					DragHandler.dragItem.transform.SetParent (transform);
-					item.GetComponent<UpdateStack>().CombineStack();
-				}
-			} 
-		} else { 
-			Destroy(DragHandler.dragItem);
+				Destroy (item);
+				DragHandler.dragItem.transform.SetParent (transform);
+			}
 		}
+		DragHandler.dragItem.gameObject.GetComponent<DragHandler> ().enabled = false;
 	}
 	
 	#endregion

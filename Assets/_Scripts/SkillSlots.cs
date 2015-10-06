@@ -17,16 +17,18 @@ public class SkillSlots : MonoBehaviour, IDropHandler {
 	
 	public void OnDrop (PointerEventData eventData)
 	{
-		if (DragHandler.dragItem.tag == "Skills") {
-			if (!item) {
+		if (!item) {
+			DragHandler.dragItem.transform.SetParent (transform);
+		} else {
+			if (DragHandler.dragItem.name == item.name) {
+				Destroy (item);
 				DragHandler.dragItem.transform.SetParent (transform);
-			} else if (item.name != DragHandler.dragItem.name) {
-				Destroy (transform.GetChild (0).gameObject);
+			} else {
+				Destroy (item);
 				DragHandler.dragItem.transform.SetParent (transform);
 			}
-		} else { 
-			Destroy(DragHandler.dragItem);
 		}
+		DragHandler.dragItem.gameObject.GetComponent<DragHandler> ().enabled = false;
 	}
 	
 	#endregion
