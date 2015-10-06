@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour {
 	public float Magnitude = 3.0f;
 	public bool attack = false;
 	private Animator anim;
+	public GameObject effect;
 	void Init(){
 		anim = gameObject.GetComponent<Animator>();
 		image = gameObject.transform.GetComponentInChildren<Image>();
@@ -63,6 +64,8 @@ public class Enemy : MonoBehaviour {
 
 	public void Hit(int dmg){
 		health-= dmg;
+		GameObject go =  Instantiate(effect, transform.position, Quaternion.identity) as GameObject;
+		Destroy(go, 1.0f);
 		image.fillAmount =(float)health/(float)maxHealth;
 
 	}
@@ -71,7 +74,9 @@ public class Enemy : MonoBehaviour {
 	[ContextMenu("Damage")]
 	public void TestDMG(){
 		player.gameObject.GetComponent<Player_Stats>().Hit (damage);
+
 		//Hit(damage);
+
 		
 	}
 
