@@ -31,7 +31,7 @@ public class Player_Control : MonoBehaviour {
 	public GameObject downrightDirectionPoint;
 	public GameObject downleftDirectionPoint;
 	GameObject mainDirectionPoint;
-	
+	GameObject enemy;
 	public static Vector3 VecDirection;
 	int directionType;
 
@@ -41,7 +41,25 @@ public class Player_Control : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 
-
+	void OnTriggerStay2D(Collider2D col){
+		
+		if(col.gameObject.tag == "Enemy"){
+			
+			if(canAttack){
+				//	col.gameObject.GetComponent<Enemy>().Hit(1);
+				enemy = col.gameObject;
+			}
+			
+		}
+		
+	}
+	void SendDamage(){
+		if(enemy!=null){
+			enemy.GetComponent<Enemy>().Hit(10);
+			print ("Send dmg");
+		}
+		
+	}
 	// Update is called once per frame
 	void Update () {
 		
