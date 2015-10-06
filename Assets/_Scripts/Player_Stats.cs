@@ -20,7 +20,7 @@ public class Player_Stats : MonoBehaviour {
 	void Start () {
 
 		currBlood = max_Blood;
-		InvokeRepeating ("DecreaseHealth", 1f, 1f);
+		//InvokeRepeating ("DecreaseHealth", 1f, 1f);
 
 		currLove = max_Love;
 		InvokeRepeating ("DecreaseMagic", 1f, 1f);
@@ -33,7 +33,7 @@ public class Player_Stats : MonoBehaviour {
 	
 	}
 
-	void DecreaseHealth() {
+	public void DecreaseHealth() {
 		if (currBlood <= 0) {
 			currBlood = 0;
 		} else {
@@ -76,6 +76,18 @@ public class Player_Stats : MonoBehaviour {
 	public void SetExpBar (float exp) {
 		
 		expBar.transform.localScale = new Vector3 (exp, expBar.transform.localScale.y, expBar.transform.localScale.z);
+	}
+
+	public void Hit(int dmg){
+		print ("player hit");
+		if (currBlood <= 0) {
+			currBlood = 0;
+		} else {
+			currBlood -= (float)dmg;
+		}
+		float tempBlood = currBlood / max_Blood;
+		SetBloodBar (tempBlood);
+
 	}
 
 }
