@@ -34,7 +34,7 @@ public class Player_Control : MonoBehaviour {
 	GameObject enemy;
 	public static Vector3 VecDirection;
 	int directionType;
-
+	
 	// Use this for initialization
 	void Start () {
 
@@ -234,4 +234,12 @@ public class Player_Control : MonoBehaviour {
 		}
 
 	}
+
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.gameObject.tag == "Item") {
+			Destroy (col.gameObject);
+		}
+
+	}
+	
 }

@@ -9,7 +9,7 @@ using System.IO;
 [XmlRoot("Item")]
 public class Item  {
 	
-	[XmlElement("name")]
+	[XmlElement("Name")]
 	public string name;
 	[XmlElement("Type")]
 	public Item_Type type;
@@ -45,7 +45,5 @@ public class Item  {
 	//[XmlElement("Image")]
 	public Sprite sprite;
 	public List<Effect> Effects;
-
-
 
 }

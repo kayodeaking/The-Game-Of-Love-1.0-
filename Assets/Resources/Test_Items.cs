@@ -71,7 +71,7 @@ public class Test_Items : MonoBehaviour {
 		var i = (from item in doc.Descendants("item")
 		         select new Item
 		         {
-			name = item.Element("name").Value,
+			name = item.Element("Name").Value,
 			//type = item.Element("Type").Value,
 			kind = item.Element("Kind").Value,
 			effect_1 = item.Element("Effect1").Value,

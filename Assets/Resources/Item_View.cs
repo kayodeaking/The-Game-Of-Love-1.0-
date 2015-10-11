@@ -24,9 +24,7 @@ public class Item_View : MonoBehaviour {
 
 	}
 	*/
-
-	public static GameObject newItem;
-
+	
 	void OnEnable(){
 
 		Get_Data ();
@@ -55,21 +53,5 @@ public class Item_View : MonoBehaviour {
 		_rb = gameObject.GetComponent<Rigidbody2D> ();
 		_collider.isTrigger = true;
 
-	}
-
-	void OnTriggerEnter2D(Collider2D col){
-		if (col.gameObject.tag == "Player") {
-			CreateNewObject ();
-			DestroyObject (this.gameObject);
-		}
-
-	}
-
-	void CreateNewObject() {
-		print ("created new object");
-		
-		//newItem = Instantiate (this.gameObject);
-		//Inventory.AddToInv (newItem);
-		
 	}
 }
