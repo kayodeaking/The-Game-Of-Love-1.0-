@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 using System.IO;
 [System.Serializable]
 [XmlRoot("Item")]
-public class Item  {
+public class Item {
 	
 	[XmlElement("Name")]
 	public string name;
@@ -44,6 +44,11 @@ public class Item  {
 	public string duration;
 	//[XmlElement("Image")]
 	public Sprite sprite;
+<<<<<<< Updated upstream
 	public List<Effect> Effects;
+=======
+	//public List<Effect> Effects;
+
+>>>>>>> Stashed changes
 
 }

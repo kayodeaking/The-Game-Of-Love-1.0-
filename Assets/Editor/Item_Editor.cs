@@ -13,26 +13,41 @@ public class Item_Editor : EditorWindow {
 
 	private int _index = 0;
 	private Vector2 scrollPosition = Vector2.zero;
-	private Vector2 scrollPosition2 = Vector2.zero;
+	//private Vector2 scrollPosition2 = Vector2.zero;
 
 	private ItemDataBase _items;
-	Item_Type itemTYPE = Item_Type.None;
+	private PotionDataBase _potions;
+	//Item_Type itemTYPE = Item_Type.None;
 	//Potion_Type p_Type = Potion_Type.None;
 	//Weapon_Type w_Type = Weapon_Type.None;
 	void OnEnable(){
-
+	if(_items==null)
+			LoadDataBase ();
 		//itemList = (List<Item>)ItemDataBase.Load_ItemsXML ("Item_Data");
-		LoadDataBase ();
 
 	}
 	void LoadDataBase(){
 		_items = (ItemDataBase)AssetDatabase.LoadAssetAtPath<ItemDataBase> ("Assets/Resources/ItemDataBase.asset");
+		if(_items==null)
+			CreateDataBase();
 
 	}
 	void CreateDataBase(){
 		_items = ScriptableObject.CreateInstance<ItemDataBase>();
-		AssetDatabase.CreateAsset (_items, "Assets/ItemDataBase.asset");
-		 _items.Load_ItemsXML ("Item_Data");
+		AssetDatabase.CreateAsset (_items, "Assets/Resources/ItemDatBase.asset");
+		_items.Load_ItemsXML ("Item_Data");
+		AssetDatabase.SaveAssets();
+		AssetDatabase.Refresh();
+	}
+	void CreatePotionDataBase(){
+		_potions = ScriptableObject.CreateInstance<PotionDataBase>();
+		AssetDatabase.CreateAsset (_potions, "Assets/PotionDataBase.asset");
+		AssetDatabase.SaveAssets();
+		AssetDatabase.Refresh();
+	}
+	void CreateNewPotionAsset(){
+		Potion potion = ScriptableObject.CreateInstance<Potion>();
+		AssetDatabase.CreateAsset(potion,"Assets/Potion.asset");
 		AssetDatabase.SaveAssets();
 		AssetDatabase.Refresh();
 	}
@@ -59,7 +74,6 @@ public class Item_Editor : EditorWindow {
 
 
 	}
-
 
 
 
@@ -139,35 +153,45 @@ public class Item_Editor : EditorWindow {
 
 	void TOP_BUTTONS(){
 		EditorGUILayout.BeginHorizontal ("box",GUILayout.Width(50));
+		/*
 		if (GUILayout.Button ("Load XML ")) {
-			//itemList = (List<Item>)ItemDataBase.Load_ItemsXML ("Item_Data");
+			_items.Load_ItemsXML ("Item_Data");
 			
 		}
+		*/
+
+		/*
 		if (GUILayout.Button ("Save XML")) {
 
-
-
 		}
-
+		*/
+		/*
 		if(GUILayout.Button("CreateDataBase File")){
+		//	CreatePotionDataBase();
 			CreateDataBase ();
 		}
+		*/
+
 
 		if (GUILayout.Button ("Load DataBase")) {
 			LoadDataBase ();
 
 		}
+		/*
 		if (GUILayout.Button ("Load GameObjects")) {
 			Create_GameObjects ();
 		}
-
+		*/
+		/*
 		if (GUILayout.Button ("Create prefabs")) {
+			CreateNewPotionAsset();
 
 		}
 		if (GUILayout.Button ("Load Selected GameObject")) {
 			Create_Selected_GameObject ();
 
 		}	
+		*/
 		EditorGUILayout.EndHorizontal();
 	}
 	void Scroll_Area(){
@@ -177,10 +201,7 @@ public class Item_Editor : EditorWindow {
 		scrollPosition = GUILayout.BeginScrollView(scrollPosition,GUILayout.ExpandHeight(true)); 
 
 		ItemTable_Body();
-
 		GUILayout.EndScrollView();
-
-
 		EditorGUILayout.EndVertical ();
 
 

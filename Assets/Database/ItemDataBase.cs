@@ -32,13 +32,13 @@ public class ItemDataBase:ScriptableObject{
 	public Item Item(int index){
 		return database.ElementAt( index );
 	}
-	public List<Item> Load_ItemsXML(string filepath){
+	public void Load_ItemsXML(string filepath){
 		TextAsset _xml = Resources.Load<TextAsset>(filepath);
 		XmlSerializer serializer = new XmlSerializer(typeof(List<Item>));
 		StringReader reader  = new StringReader(_xml.text);
 		List<Item> itemList = serializer.Deserialize(reader) as List<Item>;
 		reader.Close();
-		return itemList;
+		database = itemList;
 	}
 	public void Save_ItemXML(string filepath,List<Item> items){
 

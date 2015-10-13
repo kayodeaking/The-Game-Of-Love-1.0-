@@ -65,7 +65,7 @@ public class Test_Items : MonoBehaviour {
 	    
        
 	}
-
+	/*
 	void ReadIN_Items(){
 		XElement doc= XElement.Load("Data_Items.xml");
 		var i = (from item in doc.Descendants("item")
@@ -97,6 +97,7 @@ public class Test_Items : MonoBehaviour {
 		
 
 	}
+	*/
 	void ReadIN_PlayerCURVE(){
 		XElement doc= XElement.Load("Data_PlayerCurve.xml");
 		var l = (from level in doc.Descendants("Level")

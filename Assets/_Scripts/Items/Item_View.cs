@@ -8,8 +8,6 @@ using System;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 public class Item_View : MonoBehaviour {
-	
-
 
 	private Sprite _sprite;
 	private SpriteRenderer _renderer;
@@ -24,7 +22,14 @@ public class Item_View : MonoBehaviour {
 
 	}
 	*/
+<<<<<<< Updated upstream:Assets/Resources/Item_View.cs
 	
+=======
+
+
+	public static GameObject newItem;
+
+>>>>>>> Stashed changes:Assets/_Scripts/Items/Item_View.cs
 	void OnEnable(){
 
 		Get_Data ();

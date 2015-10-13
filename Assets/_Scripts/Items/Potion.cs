@@ -1,16 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+[System.Serializable]
+public class Potion:Base_Item{
 
-public class Potion: MonoBehaviour {
-	Item item;
-	Potion_Type _type;
-	// Use this for initialization
-	void Start () {
+	public Potion_Type _type; 
+	public Potion():base(){
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

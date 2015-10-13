@@ -1,15 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+[System.Serializable]
+public class Weapon:Base_Item{
 
-public class Weapon: MonoBehaviour{
-
-
-	// Use this for initialization
-	public Weapon(){
-		
-	}
-
-
-	
+	public Weapon_Type _type;
 
 }
