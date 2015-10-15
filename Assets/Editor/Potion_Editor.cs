@@ -138,12 +138,11 @@ void TOP_BUTTONS(){
 
 		_potions.potion(_index).name= EditorGUILayout.TextField("Name",_potions.potion(_index).name);
 		_potions.potion(_index).sprite = (Sprite)EditorGUILayout.ObjectField ("Sprite",_potions.potion(_index).sprite, typeof(Sprite), false);
+		_potions.potion(_index)._type = (Potion_Type)EditorGUILayout.EnumPopup("Kind",_potions.potion(_index)._type);
 		_potions.potion(_index).price = (int)EditorGUILayout.IntSlider("Price",_potions.potion(_index).price ,1, 100);
-		EditorGUILayout.Space();
 		_potions.potion(_index).rank = (int)EditorGUILayout.IntSlider("Rank",_potions.potion(_index).rank ,1, 100);
-
-		_potions.potion(_index).stock = (int)EditorGUILayout.IntSlider("Stock",_potions.potion(_index).stock ,1, 100);
-		_potions.potion(_index).duration =( int)EditorGUILayout.IntSlider("Duration",_potions.potion(_index).duration ,1, 100);
+		_potions.potion(_index).stock =  (int)EditorGUILayout.IntSlider("Stock",_potions.potion(_index).stock ,1, 100);
+		_potions.potion(_index).duration = (int)EditorGUILayout.IntSlider("Duration",_potions.potion(_index).duration ,1, 100);
 
 
 		EditorGUILayout.EndVertical ();	

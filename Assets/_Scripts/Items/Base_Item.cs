@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 [System.Serializable]
-public class Base_Item:ScriptableObject{
+public  abstract class Base_Item:ScriptableObject{
 
 	public string name;
 	public string description;

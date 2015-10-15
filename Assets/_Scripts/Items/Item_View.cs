@@ -14,7 +14,7 @@ public class Item_View : MonoBehaviour {
 	private BoxCollider2D _collider;
 	private Rigidbody2D _rb;
 	public ItemDataBase db;
-	public Item item;
+	public Base_Item item;
 	[HideInInspector]
 	public  int itemID;
 	/*
@@ -22,14 +22,9 @@ public class Item_View : MonoBehaviour {
 
 	}
 	*/
-<<<<<<< Updated upstream:Assets/Resources/Item_View.cs
-	
-=======
-
 
 	public static GameObject newItem;
-
->>>>>>> Stashed changes:Assets/_Scripts/Items/Item_View.cs
+	
 	void OnEnable(){
 
 		Get_Data ();

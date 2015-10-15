@@ -10,14 +10,15 @@ using System.IO;
 [Serializable]
 public class ItemDataBase:ScriptableObject{
 	[SerializeField]
-	private List<Item> database;
+	private List<Base_Item> database;
 	void OnEnable(){
 		//database = Load_ItemsXML ("Item_Data");
+
 	}
-	public void Add(Item item){
-		database.Add (item);
+	public void Add(Base_Item item){
+		database.Add(item);
 	}
-	public void Remove(Item item){
+	public void Remove(Base_Item item){
 		database.Remove (item);
 
 	}
@@ -29,16 +30,16 @@ public class ItemDataBase:ScriptableObject{
 		get { return database.Count; }
 	
 	}
-	public Item Item(int index){
+	public Base_Item Item(int index){
 		return database.ElementAt( index );
 	}
 	public void Load_ItemsXML(string filepath){
 		TextAsset _xml = Resources.Load<TextAsset>(filepath);
 		XmlSerializer serializer = new XmlSerializer(typeof(List<Item>));
 		StringReader reader  = new StringReader(_xml.text);
-		List<Item> itemList = serializer.Deserialize(reader) as List<Item>;
+		//List<Item> itemList = serializer.Deserialize(reader) as List<Item>;
 		reader.Close();
-		database = itemList;
+		//database = itemList;
 	}
 	public void Save_ItemXML(string filepath,List<Item> items){
 

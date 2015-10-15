@@ -4,5 +4,6 @@ using System.Collections;
 public class Weapon:Base_Item{
 
 	public Weapon_Type _type;
-
+	public Weapon():base(){
+	}
 }

@@ -4,4 +4,6 @@ using System.Collections;
 public class Armor : Base_Item {
 
 	public Armor_Type _type;
+	public Armor():base(){
+	}
 }

@@ -18,9 +18,10 @@ public class Item_Editor : EditorWindow {
 	private ItemDataBase _items;
 	private PotionDataBase _potions;
 	//Item_Type itemTYPE = Item_Type.None;
-	//Potion_Type p_Type = Potion_Type.None;
-	//Weapon_Type w_Type = Weapon_Type.None;
+	Potion_Type p_type = Potion_Type.None;
+	Weapon_Type w_type = Weapon_Type.None;
 	void OnEnable(){
+		_index= 0;
 	if(_items==null)
 			LoadDataBase ();
 		//itemList = (List<Item>)ItemDataBase.Load_ItemsXML ("Item_Data");
@@ -35,7 +36,7 @@ public class Item_Editor : EditorWindow {
 	void CreateDataBase(){
 		_items = ScriptableObject.CreateInstance<ItemDataBase>();
 		AssetDatabase.CreateAsset (_items, "Assets/Resources/ItemDatBase.asset");
-		_items.Load_ItemsXML ("Item_Data");
+		//_items.Load_ItemsXML ("Item_Data");
 		AssetDatabase.SaveAssets();
 		AssetDatabase.Refresh();
 	}
@@ -56,7 +57,18 @@ public class Item_Editor : EditorWindow {
 	public static void  ShowWindow () {
 		EditorWindow.GetWindow(typeof(Item_Editor));
 
+
 	}
+	/*
+	[MenuItem ("DataEditor/Base_item")]
+	public static void CreateBaseItem(){
+		Base_Item bI = ScriptableObject.CreateInstance<Base_Item>();
+		AssetDatabase.CreateAsset(bI,"Assets/Resources/Items/BaseItem.asset");
+		AssetDatabase.SaveAssets();
+		AssetDatabase.Refresh();
+	}
+	*/
+
 
 	void OnGUI () {
 
@@ -66,8 +78,10 @@ public class Item_Editor : EditorWindow {
 
 		TOP_BUTTONS ();
 		EditorGUILayout.BeginHorizontal ();
-		Scroll_Area ();
-		Value_Window ();
+		if(_items.COUNT>0){
+			Scroll_Area ();
+			Value_Window ();
+		}
 		EditorGUILayout.EndHorizontal ();
 
 		EditorGUILayout.EndVertical ();
@@ -79,40 +93,38 @@ public class Item_Editor : EditorWindow {
 
 	void ItemTable_Body(){
 
-		EditorGUILayout.BeginVertical("Box");
+		EditorGUILayout.BeginVertical();
 
 		for (int k = 0; k < _items.COUNT; k++) {
+			if(_items.Item(k)){
 			EditorGUILayout.BeginHorizontal();
-			if(GUILayout.Button(_items.Item(k).name,"Box",GUILayout.ExpandWidth(true))){
 
+				if(GUILayout.Button(_items.Item(k).name,"Box",GUILayout.ExpandWidth(true))){
+			
 				_index = k;
+					EditorUtility.SetDirty(_items);
 
 			}
+
+			if(GUILayout.Button("-",GUILayout.Width(15.0f))){
+					AssetDatabase.DeleteAsset("Assets/Resources/Items/"+_items.Item(k).name.ToString()+".asset");
+					_items.RemoveAt(k);
+					EditorUtility.SetDirty(_items);
+
+				}
 			EditorGUILayout.EndHorizontal();
+			}
 		}
 
 		EditorGUILayout.EndVertical();	
 
-		/*
-
-		for(int j  = 0;j<itemList.Count;j++){
-			EditorGUILayout.BeginHorizontal();
-			if(GUILayout.Button(itemList[j].name,"Box",GUILayout.ExpandWidth(true))){
-
-				_index = j;
-
-			}
-			EditorGUILayout.EndHorizontal();
-		}
-
-		GUILayout.EndVertical();	
-		*/
+	
 	}
 
 
 	void Value_Window(){
-		EditorGUILayout.BeginHorizontal ("Box");
-		EditorGUILayout.BeginVertical (GUILayout.Width(250));
+		EditorGUILayout.BeginHorizontal ();
+		EditorGUILayout.BeginVertical ("Box",GUILayout.Width(300));
 	/*
 		itemList[_index].name= EditorGUILayout.TextField("Name",itemList[_index].name);
 			//EditorGUILayout.TextField("Type",itemList[_index].type);
@@ -123,19 +135,16 @@ public class Item_Editor : EditorWindow {
 		itemList[_index].stock = EditorGUILayout.TextField ("Stock", itemList [_index].stock);
 		itemList[_index].duration =	EditorGUILayout.TextField ("Duration", itemList [_index].duration);
 		itemList [_index].sprite = (Sprite)EditorGUILayout.ObjectField (itemList [_index].sprite, typeof(Sprite), true);
-*/
-
-
+*/	 try {
+	
+		_items.Item(_index).Item = (Item_Type)EditorGUILayout.EnumPopup("Type:" , _items.Item(_index).Item);
 		_items.Item(_index).name= EditorGUILayout.TextField("Name",_items.Item(_index).name);
-		//EditorGUILayout.TextField("Type",itemList[_index].type);
-		_items.Item(_index).type = (Item_Type)EditorGUILayout.EnumPopup("Type:" , _items.Item(_index).type);
-		_items.Item(_index).kind = 	EditorGUILayout.TextField("Kind",_items.Item(_index).kind);
-		_items.Item(_index).price= 	EditorGUILayout.TextField ("Price", _items.Item(_index).price);
-		_items.Item(_index).rank = EditorGUILayout.TextField ("Rank", _items.Item(_index).rank);
-		_items.Item(_index).stock = EditorGUILayout.TextField ("Stock", _items.Item(_index).stock);
-		_items.Item(_index).duration =	EditorGUILayout.TextField ("Duration", _items.Item(_index).duration);
-		_items.Item(_index).sprite = (Sprite)EditorGUILayout.ObjectField (_items.Item(_index).sprite, typeof(Sprite), true);
-
+		FindKindType(_items.Item(_index).Item);
+		Effect_listView();
+		}
+	catch (System.ArgumentOutOfRangeException ex){
+			Debug.Log ("OUT OF RANGE");
+		}
 		//FindKindType ();
 		//scrollPosition2 = GUILayout.BeginScrollView(scrollPosition2,GUILayout.ExpandHeight(true)); 
 		//EditorGUILayout.TextField ("Description", itemList [_index].description);
@@ -144,6 +153,13 @@ public class Item_Editor : EditorWindow {
 
 
 		EditorGUILayout.EndVertical ();	
+		EditorGUILayout.BeginVertical("Box");
+		_items.Item(_index).description = EditorGUILayout.TextField("Description",_items.Item(_index).description , GUILayout.Height(100.0f));
+		_items.Item(_index).price= 	(int)EditorGUILayout.IntField("Price",_items.Item(_index).price);
+		_items.Item(_index).rank = (int)EditorGUILayout.IntField("Rank",_items.Item(_index).rank);
+		_items.Item(_index).stock = (int)EditorGUILayout.IntField("Stock",_items.Item(_index).stock);
+		_items.Item(_index).duration =(int)EditorGUILayout.IntField("Duration",_items.Item(_index).duration);
+		EditorGUILayout.EndVertical();
 		EditorGUILayout.EndHorizontal ();
 
 
@@ -177,6 +193,11 @@ public class Item_Editor : EditorWindow {
 			LoadDataBase ();
 
 		}
+		if(GUILayout.Button("New Item")){
+
+			EditorWindow.GetWindow(typeof(NewItemWindow));
+
+		}
 		/*
 		if (GUILayout.Button ("Load GameObjects")) {
 			Create_GameObjects ();
@@ -199,8 +220,9 @@ public class Item_Editor : EditorWindow {
 		EditorGUILayout.BeginVertical (GUILayout.Width(250));
 
 		scrollPosition = GUILayout.BeginScrollView(scrollPosition,GUILayout.ExpandHeight(true)); 
-
+		if(_items.COUNT>0){
 		ItemTable_Body();
+		}
 		GUILayout.EndScrollView();
 		EditorGUILayout.EndVertical ();
 
@@ -239,31 +261,67 @@ public class Item_Editor : EditorWindow {
 		go.gameObject.AddComponent<Item_View> ().itemID = _index;
 
 	}
-	/*
-	void FindKindType(){
+	void Effect_listView(){
+		//EditorGUILayout.LabelField("EFFECTS");
+		SerializedObject so = new SerializedObject(_items.Item(_index));
+		SerializedProperty sp  = so.FindProperty("Effects");
+		Show(sp,true);
+		so.ApplyModifiedProperties();
+	}
+	public static void Show (SerializedProperty list, bool showListSize = true) {
+		EditorGUILayout.PropertyField(list);
+		EditorGUI.indentLevel += 1;
+		if (list.isExpanded) {
+			if (showListSize) {
+				EditorGUILayout.PropertyField(list.FindPropertyRelative("Array.size"));
+			}
+			for (int i = 0; i < list.arraySize; i++) {
+				SerializedProperty so_Object =  list.GetArrayElementAtIndex(i);
+				EditorGUILayout.PropertyField(so_Object);
+				if(so_Object.isExpanded){
+					//SerializedProperty so_Amount =
+					EditorGUI.indentLevel += 1;
+					EditorGUILayout.PropertyField(list.GetArrayElementAtIndex(i).FindPropertyRelative("e_type"));
+					EditorGUILayout.PropertyField(list.GetArrayElementAtIndex(i).FindPropertyRelative("amount"));
+				}
+			}
+		}
+		EditorGUI.indentLevel -= 1;
+	}
+void OnInspectorUpdate(){
+		Repaint ();
+	}
+		
+	void FindKindType(Item_Type itemType){
 
-		switch (itemTYPE) {
+		switch (itemType) {
 
-		case ItemType.None:
+		case Item_Type.None:
 
 			break;
-		case ItemType.Weapon:
-
-			w_Type =(Weapon_Type)EditorGUILayout.EnumPopup ("Weapon Kind", w_Type);
+		case Item_Type.Weapon:
+			SerializedType();
+		// w_type = (Weapon_Type)EditorGUILayout.EnumPopup ("Weapon Kind", w_type);
 			break;
-		case ItemType.Potion:
-
-			p_Type = (Potion_Type)EditorGUILayout.EnumPopup ("Potion Kind", p_Type);
+		case Item_Type.Potion:
+			SerializedType();
+		// p_type = (Potion_Type)EditorGUILayout.EnumPopup ("Potion Kind", p_type);
 			break;
-
-		case ItemType.Armor:
-
-
+		case Item_Type.Armor:
+			SerializedType();
 			break;
 
 
 		}
 
 	}
-	*/
+	void SerializedType(){
+
+		SerializedObject sO = new SerializedObject(_items.Item(_index));
+		sO.Update();
+		SerializedProperty sType  =  sO.FindProperty("_type");
+		EditorGUILayout.PropertyField(sType);
+		sO.ApplyModifiedProperties();
+
+	}
 }
