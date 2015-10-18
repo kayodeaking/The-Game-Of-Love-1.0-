@@ -44,10 +44,16 @@ public class Item {
 	public string duration;
 	//[XmlElement("Image")]
 	public Sprite sprite;
+<<<<<<< Updated upstream
 
 	public List<Effect> Effects;
 
 
 
 
+=======
+	public List<Effect> Effects;
+	//public List<Effect> Effects;
+
+>>>>>>> Stashed changes
 }
