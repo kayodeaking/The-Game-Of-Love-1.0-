@@ -9,7 +9,8 @@ public class UIItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	public TestItem slotsItem;
 	public Stack<TestItem> itemStack = new Stack<TestItem> ();
 	public Sprite empty;
-	
+	public Item item;
+
 	public static GameObject dragItem;
 	Vector3 startPos;
 	public static Vector3 passedPos;

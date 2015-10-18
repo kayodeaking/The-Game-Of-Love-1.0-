@@ -21,7 +21,7 @@ public class NewItemWindow : EditorWindow {
 		
 	}
 	void LoadDataBase(){
-		_items = (ItemDataBase)AssetDatabase.LoadAssetAtPath<ItemDataBase> ("Assets/Resources/ItemDataBase.asset");
+		_items = (ItemDataBase)AssetDatabase.LoadAssetAtPath<ItemDataBase> ("Assets/Resources/ItemDatBase.asset");
 
 	}
 	void OnGUI(){
@@ -48,41 +48,45 @@ public class NewItemWindow : EditorWindow {
 	}
 
 	void CreateNewPotionAsset(){
-		Potion potion = ScriptableObject.CreateInstance<Potion>();
-		potion.Item = Item;
+		//Potion potion = ScriptableObject.CreateInstance<Potion>();
+		Potion potion = new Potion();
+		potion.type = Item;
 		potion.name = Name;
 		potion.price = price;
-		AssetDatabase.CreateAsset(potion,"Assets/Resources/Items/"+potion.name.ToString()+".asset");
-		AssetDatabase.SaveAssets();
-		AssetDatabase.Refresh();
+		//AssetDatabase.AddObjectToAsset(potion,_items);
+		//AssetDatabase.CreateAsset(potion,"Assets/Resources/Items/"+potion.name.ToString()+".asset");
+		//AssetDatabase.SaveAssets();
+		//AssetDatabase.Refresh();
 		_items.Add(potion);
 
 
 	}
 	void CreateNewWeaponAsset(){
-		Weapon weapon = ScriptableObject.CreateInstance<Weapon>();
-		weapon.Item = Item;
+		//Weapon weapon = ScriptableObject.CreateInstance<Weapon>();
+		Weapon weapon = new Weapon();
+		weapon.type = Item;
 		weapon.name = Name;
 		weapon.price = price;
 		weapon.rank = rank;
 		weapon.sprite = sprite;
-		AssetDatabase.CreateAsset(weapon,"Assets/Resources/Items/"+weapon.name.ToString()+".asset");
-		AssetDatabase.SaveAssets();
-		AssetDatabase.Refresh();
+		//AssetDatabase.CreateAsset(weapon,"Assets/Resources/Items/"+weapon.name.ToString()+".asset");
+		//AssetDatabase.SaveAssets();
+		//AssetDatabase.Refresh();
 		_items.Add(weapon);
 
 	}
 	void CreateNewArmorAsset(){
-		Armor armor = ScriptableObject.CreateInstance<Armor>();
-		armor.Item = Item;
+		//Armor armor = ScriptableObject.CreateInstance<Armor>();
+		Armor armor = new Armor();
+		armor.type= Item;
 		armor.name = Name;
 		armor.price = price;
 		armor.rank = rank;
 		armor.sprite = sprite;
 		if(armor!=null){
-			AssetDatabase.CreateAsset(armor,"Assets/Resources/Items/"+armor.name.ToString()+".asset");
-			AssetDatabase.SaveAssets();
-			AssetDatabase.Refresh();
+		//	AssetDatabase.CreateAsset(armor,"Assets/Resources/Items/"+armor.name.ToString()+".asset");
+		//	AssetDatabase.SaveAssets();
+		//	AssetDatabase.Refresh();
 			_items.Add(armor);	
 		}
 
