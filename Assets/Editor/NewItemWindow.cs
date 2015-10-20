@@ -29,8 +29,8 @@ public class NewItemWindow : EditorWindow {
 		EditorGUILayout.BeginVertical();
 			Item = (Item_Type)EditorGUILayout.EnumPopup("Type:" , Item);
 			Name = EditorGUILayout.TextField("Name",Name);
-			price = (int)EditorGUILayout.IntSlider("Price",price ,1, 100);
-			rank = (int)EditorGUILayout.IntSlider("Rank",rank ,1, 100);
+			price = (int)EditorGUILayout.IntSlider("Price",price ,1, 30000);
+			rank = (int)EditorGUILayout.IntSlider("Rank",rank ,1, 10);
 			sprite = (Sprite)EditorGUILayout.ObjectField (sprite, typeof(Sprite), false);
 		if(GUILayout.Button("Done")){
 			if(click_count == 0){
@@ -78,7 +78,7 @@ public class NewItemWindow : EditorWindow {
 	void CreateNewArmorAsset(){
 		//Armor armor = ScriptableObject.CreateInstance<Armor>();
 		Armor armor = new Armor();
-		armor.type= Item;
+		armor.type = Item;
 		armor.name = Name;
 		armor.price = price;
 		armor.rank = rank;
@@ -93,7 +93,17 @@ public class NewItemWindow : EditorWindow {
 
 
 	}
-	
+
+	void CreateNewLockAsset() {
+		Lock locks = new Lock();
+		locks.type = Item;
+		locks.name = Name;
+		locks.price = price;
+		locks.rank = rank;
+		locks.sprite = sprite;
+		_items.Add(locks);	
+	}
+
 	void NewItemSelect(){
 		
 		switch(Item){
@@ -107,7 +117,8 @@ public class NewItemWindow : EditorWindow {
 			CreateNewArmorAsset();
 			break;
 		case Item_Type.Lock:
-			Debug.Log("CreateLock");
+			CreateNewLockAsset();
+			//Debug.Log("CreateLock");
 			break;
 		case Item_Type.None:
 			break;

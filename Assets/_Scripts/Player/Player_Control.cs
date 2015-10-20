@@ -34,7 +34,7 @@ public class Player_Control : MonoBehaviour {
 	GameObject enemy;
 	public static Vector3 VecDirection;
 	int directionType;
-	
+
 	// Use this for initialization
 	void Start () {
 
@@ -105,6 +105,28 @@ public class Player_Control : MonoBehaviour {
 			}
 		}
 
+		//Players Assigned Potion 1
+		if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			UsePotion(1);
+		}
+		
+		//Players Assigned Potion 2
+		if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			UsePotion(2);
+		}
+		
+		//Players Assigned Potion 3
+		if (Input.GetKeyDown (KeyCode.Alpha3)) {
+			
+		}
+		//Players Assigned Potion 4
+		if (Input.GetKeyDown (KeyCode.Alpha4)) {
+		}
+		
+		//Players Assigned Potion 5
+		if (Input.GetKeyDown (KeyCode.Alpha5)) {
+		}
+
 		FlipDirections ();
 	}
 
@@ -148,11 +170,13 @@ public class Player_Control : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
+			GetComponent<SoundEffects>().PlaySound (0);
 			canAttack = true;
 			anim.SetBool ("Attack", canAttack);
 		}
 		
 		if (Input.GetKeyUp (KeyCode.Space)) {
+			GetComponent<SoundEffects>().PlaySound (0);
 			canAttack = false;
 			anim.SetBool ("Attack", canAttack);
 		}
@@ -210,7 +234,6 @@ public class Player_Control : MonoBehaviour {
 	}
 	void Shootup(){
 		Instantiate(FireSpell,this.transform.position,this.transform.rotation);
-
 	}
 	
 	void Skill () {
@@ -243,9 +266,25 @@ public class Player_Control : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Item") {
+			GetComponent<SoundEffects> ().PlaySound (3);
 			Destroy (col.gameObject);
 		}
 
+	}
+
+	void UsePotion(int itemID) {
+
+		switch(itemID){
+		case 1:
+			Player_Stats.currBlood += 50;
+			print ("Used Health Pot");
+			break;
+		case 2:
+			Player_Stats.currLove += 50;
+			print ("Used Mana Pot");
+			break;
+		}
+		GetComponent<SoundEffects> ().PlaySound (5);
 	}
 	
 }

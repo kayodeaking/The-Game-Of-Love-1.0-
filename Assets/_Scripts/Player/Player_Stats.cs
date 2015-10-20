@@ -20,7 +20,7 @@ public class Player_Stats : MonoBehaviour {
 	void Start () {
 
 		currBlood = max_Blood;
-		//InvokeRepeating ("DecreaseHealth", 1f, 1f);
+		InvokeRepeating ("DecreaseHealth", 1f, 1f);
 
 		currLove = max_Love;
 		InvokeRepeating ("DecreaseMagic", 1f, 1f);
@@ -36,8 +36,12 @@ public class Player_Stats : MonoBehaviour {
 	public void DecreaseHealth() {
 		if (currBlood <= 0) {
 			currBlood = 0;
+			GetComponent<SoundEffects>().PlaySound (2);
 		} else {
 			currBlood -= 25f;
+			if(currBlood <= (max_Blood/2)) {
+				GetComponent<SoundEffects>().PlaySound (1);
+			}
 		}
 		float tempBlood = currBlood / max_Blood;
 		SetBloodBar (tempBlood);

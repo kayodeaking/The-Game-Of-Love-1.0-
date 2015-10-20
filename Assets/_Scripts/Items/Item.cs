@@ -6,12 +6,7 @@ public  class Item {
 	public string name;
 	public string description;
 	public Sprite sprite;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
 	[SerializeField]
->>>>>>> Stashed changes
 	public List<Effect> Effects;
 	public int price;
 	public int rank;
@@ -25,11 +20,4 @@ public  class Item {
 		this.name = name;
 
 	}
-
-
-=======
-	public List<Effect> Effects;
-	//public List<Effect> Effects;
-
->>>>>>> Stashed changes
 }

@@ -21,17 +21,7 @@ public class Item_View : MonoBehaviour {
 
 	}
 	*/
-<<<<<<< Updated upstream
 
-	public static GameObject newItem;
-	
-=======
-	
-
-
-	public static GameObject newItem;
-
->>>>>>> Stashed changes
 	void OnEnable(){
 
 		Get_Data ();

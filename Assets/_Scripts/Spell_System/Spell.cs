@@ -10,7 +10,6 @@ public class Spell : MonoBehaviour {
 	public GameObject ImpactEffect;
 	private Collider2D col;
 	public float moveSpeed = .05f;
-
 	 Vector3 direction;
 
 	// Use this for initialization
@@ -36,7 +35,6 @@ public class Spell : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 	
 		if(col.gameObject.tag =="Enemy"){
-
 			Destroy(this.gameObject);
 
 		}
