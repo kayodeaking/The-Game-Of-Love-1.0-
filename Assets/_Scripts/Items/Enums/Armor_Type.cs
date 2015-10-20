@@ -5,7 +5,7 @@ public enum Armor_Type {
 	None,
 	Gloves,
 	Crown,
-	Strap,
+	Vien,
 
 
 }

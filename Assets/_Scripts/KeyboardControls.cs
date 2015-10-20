@@ -19,7 +19,6 @@ public class KeyboardControls : MonoBehaviour {
 	bool openMiniMap;
 	bool openLetter;
 
-	public GameObject itemSlot1;
 	// Use this for initialization
 	void Start () {
 	
@@ -75,57 +74,6 @@ public class KeyboardControls : MonoBehaviour {
 			openMiniMap = miniMapPanel.activeSelf;
 			openMiniMap = !openMiniMap;
 			miniMapPanel.SetActive (openMiniMap);
-		}
-
-		//Players Assigned Skill 1
-		if (Input.GetKeyDown (KeyCode.Z)) {
-
-		}
-
-		//Players Assigned Skill 2
-		if (Input.GetKeyDown (KeyCode.X)) {
-
-		}
-
-		//Players Assigned Skill 3
-		if (Input.GetKeyDown (KeyCode.C)) {
-
-		}
-
-		//Players Assigned Potion 1
-		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-
-			if(itemSlot1.transform.GetChild (0) != null) {
-				itemSlot1.transform.GetChild (0).GetComponent<UpdateStack>().UsePotion();
-			}
-		}
-
-		//Players Assigned Potion 2
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-
-			if(itemSlot1.transform.GetChild (0) != null) {
-				itemSlot1.transform.GetChild (0).GetComponent<UpdateStack>().UsePotion();
-			}
-		}
-
-		//Players Assigned Potion 3
-		if (Input.GetKeyDown (KeyCode.Alpha3)) {
-			if(itemSlot1.transform.GetChild (0) != null) {
-				itemSlot1.transform.GetChild (0).GetComponent<UpdateStack>().UsePotion();
-			}
-		}
-		//Players Assigned Potion 4
-		if (Input.GetKeyDown (KeyCode.Alpha4)) {
-			if(itemSlot1.transform.GetChild (0) != null) {
-				itemSlot1.transform.GetChild (0).GetComponent<UpdateStack>().UsePotion();
-			}
-		}
-		
-		//Players Assigned Potion 5
-		if (Input.GetKeyDown (KeyCode.Alpha5)) {
-			if(itemSlot1.transform.GetChild (0) != null) {
-				itemSlot1.transform.GetChild (0).GetComponent<UpdateStack>().UsePotion();
-			}
 		}
 
 	}

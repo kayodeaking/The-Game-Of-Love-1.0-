@@ -6,7 +6,10 @@ public  class Item {
 	public string name;
 	public string description;
 	public Sprite sprite;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 	[SerializeField]
 	public List<Effect> Effects;
 	public int price;
@@ -21,6 +24,9 @@ public  class Item {
 		this.name = name;
 
 	}
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 }

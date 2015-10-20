@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-public class Editor_Menus:EditorWindow {
+public class Editor_Menus: EditorWindow {
 	
 	//[MenuItem("DataEditor/ItemDataBase")]
 	public static void  CreateItemDataBase(){
@@ -21,7 +21,7 @@ public class Editor_Menus:EditorWindow {
 
 		Levels lvls = ScriptableObject.CreateInstance<Levels>();
 		AssetDatabase.CreateAsset(lvls,"Assets/Resources/Levels.asset");
-		AssetDatabase.SaveAssets();
+		AssetDatabase.SaveAssets ();
 		AssetDatabase.Refresh();
 
 	}
