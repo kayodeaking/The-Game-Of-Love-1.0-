@@ -32,7 +32,7 @@ public class Player_Control : MonoBehaviour {
 	public GameObject downleftDirectionPoint;
 	GameObject mainDirectionPoint;
 	GameObject enemy;
-	public static Vector3 VecDirection;
+	public static Vector2 VecDirection;
 	int directionType;
 	
 	// Use this for initialization
@@ -77,7 +77,7 @@ public class Player_Control : MonoBehaviour {
 				skillPrefab = zSkill;
 				//Shoot ();
 				Shootup();
-			}
+			}//
 			if (Input.GetKeyDown (KeyCode.X)) {
 				skillPrefab = xSkillPrefab;
 				Shoot ();
@@ -210,6 +210,7 @@ public class Player_Control : MonoBehaviour {
 	}
 	void Shootup(){
 		Instantiate(FireSpell,this.transform.position,this.transform.rotation);
+		//Instantiate(FireSpell,firePoint.transform.position, firePoint.transform.rotation);
 
 	}
 	
@@ -220,22 +221,22 @@ public class Player_Control : MonoBehaviour {
 	void FlipDirections () {
 
 		if (directionType == 1) {
-			VecDirection = Vector3.up;
+			VecDirection = Vector2.up;
 			mainDirectionPoint = upDirectionPoint;
 		}
 
 		if (directionType == 2) {
-			VecDirection = Vector3.down;
+			VecDirection = Vector2.down;
 			mainDirectionPoint = downDirectionPoint;
 		}
 
 		if (directionType == 3) {
-			VecDirection = Vector3.left;
+			VecDirection = Vector2.left;
 			mainDirectionPoint = leftDirectionPoint;
 		}
 
 		if (directionType == 4) {
-			VecDirection = Vector3.right;
+			VecDirection = Vector2.right;
 			mainDirectionPoint = rightDirectionPoint;
 		}
 

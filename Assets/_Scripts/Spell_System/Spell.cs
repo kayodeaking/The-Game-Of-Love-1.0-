@@ -11,7 +11,7 @@ public class Spell : MonoBehaviour {
 	private Collider2D col;
 	public float moveSpeed = .05f;
 
-	 Vector3 direction;
+	 Vector2 direction;
 
 	// Use this for initialization
 	void OnEnable(){
