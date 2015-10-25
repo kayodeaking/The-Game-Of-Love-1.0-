@@ -117,10 +117,11 @@ public class Player_Control : MonoBehaviour {
 		
 		//Players Assigned Potion 3
 		if (Input.GetKeyDown (KeyCode.Alpha3)) {
-			
+			GetComponent<SoundEffects>().PlaySound (2);
 		}
 		//Players Assigned Potion 4
 		if (Input.GetKeyDown (KeyCode.Alpha4)) {
+			GetComponent<SoundEffects>().PlaySound (1);
 		}
 		
 		//Players Assigned Potion 5
