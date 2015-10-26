@@ -40,6 +40,7 @@ public class Leveling_System : MonoBehaviour {
 	public void Level_UP(){
 		if(currentXp>NextLevel.xp){
 			print("LevelUP");
+			GetComponent<SoundEffects>().PlaySound (4);
 			currentLevelID+=1;
 			SetCurrentLevel();
 			SetNext_Level();
