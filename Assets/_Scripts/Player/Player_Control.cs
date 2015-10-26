@@ -234,11 +234,9 @@ public class Player_Control : MonoBehaviour {
 	}
 	void Shootup(){
 		Instantiate(FireSpell,this.transform.position,this.transform.rotation);
-<<<<<<< HEAD
+
 		//Instantiate(FireSpell,firePoint.transform.position, firePoint.transform.rotation);
 
-=======
->>>>>>> origin/master
 	}
 	
 	void Skill () {

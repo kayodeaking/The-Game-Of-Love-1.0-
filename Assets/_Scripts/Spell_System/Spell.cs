@@ -10,12 +10,8 @@ public class Spell : MonoBehaviour {
 	public GameObject ImpactEffect;
 	private Collider2D col;
 	public float moveSpeed = .05f;
-<<<<<<< HEAD
-
 	 Vector2 direction;
-=======
-	 Vector3 direction;
->>>>>>> origin/master
+	
 
 	// Use this for initialization
 	void OnEnable(){

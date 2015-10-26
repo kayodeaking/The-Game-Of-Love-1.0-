@@ -22,11 +22,7 @@ public class Item_View : MonoBehaviour {
 	}
 	*/
 
-<<<<<<< HEAD
-	public static GameObject newItem;
 	
-=======
->>>>>>> origin/master
 	void OnEnable(){
 
 		Get_Data ();
