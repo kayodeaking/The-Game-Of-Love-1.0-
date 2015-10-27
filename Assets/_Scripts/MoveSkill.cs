@@ -8,7 +8,7 @@ public class MoveSkill : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
-		direction = Player_Control.VecDirection;
+		//direction = Player_Control.VecDirection;
 	}
 	
 	// Update is called once per frame

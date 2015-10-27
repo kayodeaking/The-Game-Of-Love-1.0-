@@ -2,13 +2,11 @@
 using System.Collections;
 
 public class Player_Control : MonoBehaviour {
-
+	private PlayerDirection direction;
 	public float playerSpeed = 10.0f;
 	private Animator anim;
 	private bool canAttack = false;
-	private bool isUp = false;
 	public static int moveSet = 1;
-	
 	public float fireRate = 5;
 	public float damage = 10;
 	public LayerMask whatToHit;
@@ -19,34 +17,23 @@ public class Player_Control : MonoBehaviour {
 	Transform skillPrefab;
 	float timeSpawnSkill = 0;
 	public float skillSpawnRate = 10;
-
 	float timeToFire = 0;
-	public GameObject firePoint;
-	public GameObject upDirectionPoint;
-	public GameObject downDirectionPoint;
-	public GameObject rightDirectionPoint;
-	public GameObject leftDirectionPoint;
-	public GameObject uprightDirectionPoint;
-	public GameObject upleftDirectionPoint;
-	public GameObject downrightDirectionPoint;
-	public GameObject downleftDirectionPoint;
-	GameObject mainDirectionPoint;
 	GameObject enemy;
-	public static Vector2 VecDirection;
+	public Vector2 VecDirection;
+	public float SkillRotation;
 	int directionType;
 
 	// Use this for initialization
 	void Start () {
 
-		anim = GetComponent<Animator> ();
+	anim = GetComponent<Animator> ();
 	}
-
 	void OnTriggerStay2D(Collider2D col){
 		
 		if(col.gameObject.tag == "Enemy"){
 			
 			if(canAttack){
-				//	col.gameObject.GetComponent<Enemy>().Hit(1);
+				//col.gameObject.GetComponent<Enemy>().Hit(1);
 				enemy = col.gameObject;
 			}
 			
@@ -75,9 +62,9 @@ public class Player_Control : MonoBehaviour {
 		if (fireRate == 0) {
 			if (Input.GetKeyDown (KeyCode.Z)) {
 				skillPrefab = zSkill;
-				//Shoot ();
-				Shootup();
-			}//
+				Shoot ();
+			
+			}
 			if (Input.GetKeyDown (KeyCode.X)) {
 				skillPrefab = xSkillPrefab;
 				Shoot ();
@@ -86,12 +73,13 @@ public class Player_Control : MonoBehaviour {
 				skillPrefab = cSkillPrefab;
 				Shoot ();
 			}
-		} else {
+		} 
+		else {
 			if (Input.GetKey (KeyCode.Z) && Time.time > timeToFire) {
 				timeToFire = Time.time + 1/fireRate;
 				skillPrefab = zSkill;
-				//Shoot ();
-				Shootup();
+				Shoot ();
+			
 			}
 			if (Input.GetKey (KeyCode.X) && Time.time > timeToFire) {
 				timeToFire = Time.time + 1/fireRate;
@@ -128,43 +116,37 @@ public class Player_Control : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Alpha5)) {
 		}
 
-		FlipDirections ();
+		SetDirection();
 	}
 
 	//Arrow Key Movement
 	void Player_Option_Set_1() {
 		
 		if (Input.GetKey (KeyCode.UpArrow)) {
-			anim.SetFloat ("DIrection", 1.0f);
-			isUp = true;
-			anim.SetBool ("isUp", isUp);
-			transform.Translate (0, playerSpeed * Time.deltaTime, 0);
-			directionType = 1;
+			direction = PlayerDirection.UP;
+			SetAnimDirection(1.0f,true);
+			MoveY(playerSpeed);
 		}
 
-		if (Input.GetKey (KeyCode.DownArrow)) {
-			anim.SetFloat ("DIrection", -1.0f);
-			isUp = true;
-			anim.SetBool ("isUp", isUp);
-			transform.Translate (0, -playerSpeed * Time.deltaTime, 0);
-			directionType = 2;
+		 if (Input.GetKey (KeyCode.DownArrow)) {
+			
+			direction = PlayerDirection.DOWN;
+			SetAnimDirection(-1.0f,true);
+			MoveY(-playerSpeed);
 		}
 
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			isUp = false;
-			anim.SetBool ("isUp", isUp);
-			anim.SetFloat ("Speed", 1.0f);
-			transform.Translate (-playerSpeed * Time.deltaTime, 0, 0);
-			directionType = 3;
+		 if (Input.GetKey (KeyCode.LeftArrow)) {
+			direction = PlayerDirection.LEFT;
+			SetAnimSpeed(1.0f,false);
+			MoveX(-playerSpeed);
 		}
 
-		if (Input.GetKey (KeyCode.RightArrow)) {
-			anim.SetFloat ("Speed", -1.0f);
-			isUp = false;
-			anim.SetBool ("isUp", isUp);
-			transform.Translate (playerSpeed * Time.deltaTime, 0, 0);
-			directionType = 4;
+	if (Input.GetKey (KeyCode.RightArrow)) {
+			direction = PlayerDirection.RIGHT;
+			SetAnimSpeed(-1.0f,false);
+			MoveX(playerSpeed);
 		}
+
 
 		//Players Dodge ability
 		if (Input.GetKeyDown (KeyCode.F)) {
@@ -182,7 +164,6 @@ public class Player_Control : MonoBehaviour {
 			anim.SetBool ("Attack", canAttack);
 		}
 	}
-
 	//WASD Key Movement
 	void Player_Option_Set_2() {
 		
@@ -218,55 +199,22 @@ public class Player_Control : MonoBehaviour {
 			anim.SetBool ("Attack", canAttack);
 		}
 	}
-
-
+		
 	void Shoot () {
-		Vector2 directionPos = new Vector2 (mainDirectionPoint.transform.position.x, mainDirectionPoint.transform.position.y);
-		Vector2 firePointPos = new Vector2 (firePoint.transform.position.x, firePoint.transform.position.y);
-		RaycastHit2D hit = Physics2D.Raycast (firePointPos, directionPos - firePointPos, 500, whatToHit);
+		
 		if (Time.time > timeSpawnSkill) {
 			Skill ();
 			timeSpawnSkill = Time.time + 1/skillSpawnRate;
 		}
-		Debug.DrawLine (firePointPos,	directionPos);
-		if (hit.collider != null) {
-			Debug.DrawLine (firePointPos, hit.point, Color.red);
-		}
+	
 	}
-	void Shootup(){
-		Instantiate(FireSpell,this.transform.position,this.transform.rotation);
 
-		//Instantiate(FireSpell,firePoint.transform.position, firePoint.transform.rotation);
-
-	}
 	
 	void Skill () {
-		Instantiate (skillPrefab, firePoint.transform.position, firePoint.transform.rotation);
-	}
-
-	void FlipDirections () {
-
-		if (directionType == 1) {
-			VecDirection = Vector2.up;
-			mainDirectionPoint = upDirectionPoint;
-		}
-
-		if (directionType == 2) {
-			VecDirection = Vector2.down;
-			mainDirectionPoint = downDirectionPoint;
-		}
-
-		if (directionType == 3) {
-			VecDirection = Vector2.left;
-			mainDirectionPoint = leftDirectionPoint;
-		}
-
-		if (directionType == 4) {
-			VecDirection = Vector2.right;
-			mainDirectionPoint = rightDirectionPoint;
-		}
+		Instantiate(skillPrefab,this.transform.position,Quaternion.Euler(0, 0, SkillRotation));
 
 	}
+
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Item") {
@@ -290,5 +238,57 @@ public class Player_Control : MonoBehaviour {
 		}
 		GetComponent<SoundEffects> ().PlaySound (5);
 	}
-	
+	void SetDirection(){
+		
+	switch(direction){
+		case PlayerDirection.UP:
+			VecDirection = Vector2.up;
+			SkillRotation = 0.0f;
+
+			break;
+		case PlayerDirection.DOWN:
+			VecDirection = Vector2.down;
+			SkillRotation = 180.0f;
+
+		
+			break;
+		case PlayerDirection.RIGHT:
+			VecDirection = Vector2.right;
+			SkillRotation = -90.0f;
+
+
+			break;
+		case PlayerDirection.LEFT:
+			VecDirection = Vector2.left;
+			SkillRotation = 90.0f;
+			break;
+		}
+
+	}
+	void MoveX(float speed){
+		
+		transform.Translate (speed * Time.deltaTime, 0, 0);
+
+
+	}
+	void MoveY(float speed){
+
+		transform.Translate (0,speed * Time.deltaTime, 0);
+
+
+	}
+	void SetAnimDirection(float direction,bool UP){
+		anim.SetFloat ("DIrection", direction);
+		anim.SetBool ("isUp",UP);
+
+	}
+	void SetAnimSpeed(float speed,bool UP){
+		anim.SetFloat ("Speed",speed);
+		anim.SetBool ("isUp",UP);
+
+	}
+
+	void OnGizmos(){
+
+	}
 }

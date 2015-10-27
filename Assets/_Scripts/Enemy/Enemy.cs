@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 ///[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
- 
 //[ExecuteInEditMode]
 public class Enemy : MonoBehaviour {
 	public int health =100;
@@ -16,6 +15,8 @@ public class Enemy : MonoBehaviour {
 	public bool attack = false;
 	private Animator anim;
 	public GameObject effect;
+	Vector3 direction;
+	float distance;
 	void Init(){
 		anim = gameObject.GetComponent<Animator>();
 		image = gameObject.transform.GetComponentInChildren<Image>();
@@ -32,7 +33,6 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		Vector3 direction;
 		direction = player.transform.position - transform.position;
 		if(Vector3.SqrMagnitude(direction) < sqrMagnitude){
 			attack = true;
@@ -63,6 +63,7 @@ public class Enemy : MonoBehaviour {
 	}
 
 	public void Hit(int dmg){
+		//print ("Hit");
 		health-= dmg;
 		GameObject go =  Instantiate(effect, transform.position, Quaternion.identity) as GameObject;
 		Destroy(go, 1.0f);
@@ -73,16 +74,27 @@ public class Enemy : MonoBehaviour {
 
 	[ContextMenu("Damage")]
 	public void TestDMG(){
-		player.gameObject.GetComponent<Player_Stats>().Hit (damage);
+		//player.gameObject.GetComponent<Player_Stats>().Hit (damage);
 
 		//Hit(damage);
 
 		
 	}
 	void  OnCollisionEnter2D(Collision2D coll){
-
+	
 
 	}
+
+	void OnDrawGizmos(){
+	#if UNITY_EDITOR
+		UnityEditor.Handles.color = Color.yellow;
+		UnityEditor.Handles.DrawWireDisc(this.transform.position,this.transform.forward,Magnitude);
+		//UnityEditor.Handles.DrawWireDisc(ga, Owner.transform.up, magnitude.Value);
+	#endif		
+	}
+
+
+
 
 
 

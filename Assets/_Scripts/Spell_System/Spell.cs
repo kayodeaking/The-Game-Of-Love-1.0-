@@ -1,41 +1,48 @@
 ﻿using UnityEngine;
 using System.Collections;
-//[ExecuteInEditMode]
+[RequireComponent(typeof(CircleCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class Spell : MonoBehaviour {
 
 	public int Damage;
 	public int Duration;
-	private GameObject child;
+	private Transform child;
 	public GameObject Effect;
 	public GameObject ImpactEffect;
 	private Collider2D col;
 	public float moveSpeed = .05f;
-	 Vector2 direction;
+	private GameObject Player;
+	private Rigidbody2D rb;
+	Vector2 direction;
 	
 
 	// Use this for initialization
 	void OnEnable(){
-		//Effect.transform.SetParent(this.transform);
-		//Instantiate(Effect);
-	}
-	void Start () {
+		Init();
 
 	}
+	void Start () {
+		Init();
+	}
 	void OnAwake(){
-		direction = Player_Control.VecDirection;
-	//Instantiate(Effect);
-	
+		Init();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (Vector2.up * moveSpeed);
+		//transform.Translate (direction * moveSpeed);
+		//transform.Translate (Vector2.up * moveSpeed);
+	//	rb.velocity+= direction*moveSpeed;
+		rb.AddForce(direction*moveSpeed);
+
+		
 		Destroy (this.gameObject,Duration);
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
-	
-		if(col.gameObject.tag =="Enemy"){
+		GameObject enemy = col.gameObject;
+		if(enemy.tag =="Enemy"){
+			 enemy.GetComponent<Enemy>().Hit(Damage);
 			Destroy(this.gameObject);
 
 		}
@@ -43,8 +50,16 @@ public class Spell : MonoBehaviour {
 	void OnTriggerEnter2D(){
 
 	}
+
 	void OnDestroy(){
 		Instantiate(ImpactEffect,this.transform.position,Quaternion.identity);
 	}
 
+	void Init(){
+		Player = GameObject.FindGameObjectWithTag("Player");
+		direction = Player.GetComponent<Player_Control>().VecDirection;
+		rb = gameObject.GetComponent<Rigidbody2D>();
+		rb.AddForce(direction*moveSpeed);
+
+	}
 }
