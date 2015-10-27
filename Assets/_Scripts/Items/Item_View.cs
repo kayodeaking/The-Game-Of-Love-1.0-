@@ -22,6 +22,7 @@ public class Item_View : MonoBehaviour {
 	}
 	*/
 
+	
 	void OnEnable(){
 
 		Get_Data ();
