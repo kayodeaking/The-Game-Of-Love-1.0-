@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour {
 		}
 
 
-		anim.SetBool("Attack",attack);
+		//anim.SetBool("Attack",attack);
 
 
 
