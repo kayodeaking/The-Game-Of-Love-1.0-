@@ -11,17 +11,20 @@ public class Player_Control : MonoBehaviour {
 	public float damage = 10;
 	public LayerMask whatToHit;
 	public GameObject FireSpell;
-	public Transform zSkill;
-	public Transform xSkillPrefab;
-	public Transform cSkillPrefab;
-	Transform skillPrefab;
+	public GameObject zSkill;
+	public GameObject xSkillPrefab;
+	public GameObject cSkillPrefab;
+	GameObject skillPrefab;
 	float timeSpawnSkill = 0;
 	public float skillSpawnRate = 10;
 	float timeToFire = 0;
 	GameObject enemy;
+	[HideInInspector]
 	public Vector2 VecDirection;
+	[HideInInspector]
 	public float SkillRotation;
 	int directionType;
+	public float rayDistince;
 
 	// Use this for initialization
 	void Start () {
@@ -41,11 +44,20 @@ public class Player_Control : MonoBehaviour {
 		
 	}
 	void SendDamage(){
-		if(enemy!=null){
-			enemy.GetComponent<Enemy>().Hit(10);
-			print ("Send dmg");
-		}
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, VecDirection, rayDistince,whatToHit);
+		if(hit){
+			
+			if(hit.collider){
+				if(hit.collider.gameObject.tag=="Enemy"){
+					//	Debug.Log("Hit");
+					//Debug.DrawLine(transform.position,VecDirection*rayDistince, Color.green,1.0f);
+					hit.collider.gameObject.GetComponent<Enemy>().Hit(10);
+					//	print ("Send dmg");
+					
+				}
 		
+	}
+		}
 	}
 	// Update is called once per frame
 	void Update () {
@@ -95,12 +107,12 @@ public class Player_Control : MonoBehaviour {
 
 		//Players Assigned Potion 1
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			UsePotion(1);
+			//UsePotion(1);
 		}
 		
 		//Players Assigned Potion 2
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			UsePotion(2);
+			//UsePotion(2);
 		}
 		
 		//Players Assigned Potion 3
@@ -215,7 +227,7 @@ public class Player_Control : MonoBehaviour {
 
 	}
 
-
+	/*
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Item") {
 			GetComponent<SoundEffects> ().PlaySound (3);
@@ -223,7 +235,8 @@ public class Player_Control : MonoBehaviour {
 		}
 
 	}
-
+	*/
+	/*
 	void UsePotion(int itemID) {
 
 		switch(itemID){
@@ -238,6 +251,7 @@ public class Player_Control : MonoBehaviour {
 		}
 		GetComponent<SoundEffects> ().PlaySound (5);
 	}
+	*/
 	void SetDirection(){
 		
 	switch(direction){

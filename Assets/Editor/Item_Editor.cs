@@ -13,15 +13,19 @@ public class Item_Editor : EditorWindow {
 
 	private int _index = 0;
 	private Vector2 scrollPosition = Vector2.zero;
-
+	private SerializedObject so;
 
 	private ItemDataBase _items;
 
 	
 	void OnEnable(){
+
 		_index= 0;
 	if(_items==null)
 			LoadDataBase ();
+		else{
+			so = new SerializedObject(_items);
+		}
 	
 
 	}
@@ -40,7 +44,7 @@ public class Item_Editor : EditorWindow {
 	}
 
 
-	[MenuItem ("DataEditor/Item")]
+	[MenuItem ("DataEditor/Item Editor")]
 	public static void  ShowWindow () {
 		EditorWindow.GetWindow(typeof(Item_Editor));
 
@@ -124,11 +128,12 @@ public class Item_Editor : EditorWindow {
 	
 		_items.Item(_index).type = (Item_Type)EditorGUILayout.EnumPopup("Type:" , _items.Item(_index).type);
 		_items.Item(_index).name= EditorGUILayout.TextField("Name",_items.Item(_index).name);
-			_items.Item(_index).sprite= (Sprite)EditorGUILayout.ObjectField ("Sprite",_items.Item(_index).sprite, typeof(Sprite), false);
+		_items.Item(_index).sprite= (Sprite)EditorGUILayout.ObjectField ("Sprite",_items.Item(_index).sprite, typeof(Sprite), false);
 //		FindKindType(_items.Item(_index).type);
 	//	Effect_listView();
-		
-	
+			Effect_listView();
+
+
 
 
 		EditorGUILayout.EndVertical ();	
@@ -189,14 +194,14 @@ public class Item_Editor : EditorWindow {
 			Create_GameObjects ();
 		}
 
-
+		*/
 		if (GUILayout.Button ("Create prefabs")) {
-			CreateNewPotionAsset();
+			Create_Prefabs();
 
 		}
-		*/
+
 		if (GUILayout.Button ("Load Selected GameObject")) {
-			//Create_Selected_GameObject ();
+			Create_Selected_GameObject ();
 		
 
 		}	
@@ -218,18 +223,16 @@ public class Item_Editor : EditorWindow {
 	}
 
 	void Create_Prefabs(){
-		/*
-		foreach (Item i in itemList) {
 
-			//GameObject go = new GameObject (i.name+" Game Object");
-			//go.gameObject.AddComponent<Item_View> ().item = i;
+		for (int i = 0; i < _items.COUNT; i++){
+
+			GameObject go = new GameObject (_items.Item (i).name+" Game Object");
+			go.gameObject.AddComponent<Item_View> ().item = _items.Item (i);
 
 
-
-			//Object prefab =PrefabUtility.CreateEmptyPrefab("Assets/"+i.name+".prefab");
-			//EditorUtility.ReplacePrefab(i.gameObject, prefab, ReplacePrefabOptions.ConnectToPrefab);
+			Object prefab =PrefabUtility.CreateEmptyPrefab("Assets/_PreFabs/Items/"+_items.Item (i).name+".prefab");
+			PrefabUtility.ReplacePrefab(go.gameObject, prefab, ReplacePrefabOptions.ConnectToPrefab);
 		}
-		*/
 
 	}
 	void Create_GameObjects(){
@@ -245,23 +248,31 @@ public class Item_Editor : EditorWindow {
 
 	void Create_Selected_GameObject(){
 		GameObject go = new GameObject (_items.Item(_index).name + "-Object");
-		go.gameObject.AddComponent<Item_View> ().item = _items.Item(_index);
+		go.gameObject.AddComponent<Item_View> ().itemID = _index;
+
+
 	}
-	/*
+
 	void Effect_listView(){
-		//EditorGUILayout.LabelField("EFFECTS");
+		so.Update();
+		EditorGUILayout.LabelField("EFFECTS");
 	//SerializedObject so = new SerializedObject(_items.Item(_index));
+		SerializedProperty db = so.FindProperty("database");
+		SerializedProperty indexObject = db.GetArrayElementAtIndex(_index);
+		SerializedProperty effects = indexObject.FindPropertyRelative("Effects");
+
 	//SerializedProperty sp  = so.FindProperty("Effects");
-		//Show(sp,true);
-		//so.ApplyModifiedProperties();
+		Show(effects,true);
+		so.ApplyModifiedProperties();
 	}
-*/
-	/*
+
+
 	public static void Show (SerializedProperty list, bool showListSize = true) {
 		EditorGUILayout.PropertyField(list);
 		EditorGUI.indentLevel += 1;
 		if (list.isExpanded) {
 			if (showListSize) {
+
 				EditorGUILayout.PropertyField(list.FindPropertyRelative("Array.size"));
 			}
 			for (int i = 0; i < list.arraySize; i++) {
@@ -276,7 +287,7 @@ public class Item_Editor : EditorWindow {
 		}
 		EditorGUI.indentLevel -= 1;
 	}
-	*/
+
 	void OnInspectorUpdate(){
 		Repaint ();
 	}

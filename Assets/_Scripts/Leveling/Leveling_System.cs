@@ -3,12 +3,16 @@ using System.Collections;
 [ExecuteInEditMode]
 public class Leveling_System : MonoBehaviour {
 	private Levels levels;
+	[HideInInspector]
 	public Level currentLevel;
+	[HideInInspector]
 	public Level NextLevel;
+	[HideInInspector]
 	public int currentXp;
-	public int currentLevelID;
+	[HideInInspector]
 	public int nextLevelID;
 	int maxLevel;
+	public int currentLevelID;
 	void OnEnable(){
 		levels = (Levels)Resources.Load<Levels>("Levels");
 		maxLevel = levels.COUNT;
@@ -60,5 +64,8 @@ public class Leveling_System : MonoBehaviour {
 		SetNext_Level();
 
 	}
+
+
+
 
 }

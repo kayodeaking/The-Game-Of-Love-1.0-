@@ -2,49 +2,55 @@
 using System.Collections;
 
 public class Player_Stats : MonoBehaviour {
+	public GameObject Blood;
+	Stats stat;
+	Leveling_System ls;
+	public static int max_Blood;
+	public static int currBlood = 0;
 
-	public static float max_Blood = 500;
-	public static float currBlood = 0f;
+	public static int max_Love;
+	public static int currLove = 0;
 
-	public static float max_Love = 250;
-	public static float currLove = 0f;
-
-	public static float max_Exp = 50;
-	public static float currExp = 0;
-
+	public static int max_Exp;
+	public static int currExp =0;
 	public GameObject bloodBar;
 	public GameObject loveBar;
 	public GameObject expBar;
 
+
 	// Use this for initialization
 	void Start () {
+		stat = gameObject.GetComponent<Stats>();
+		ls = gameObject.GetComponent<Leveling_System>();
+		max_Blood = ls.currentLevel.Blood;
+		max_Love  = ls.currentLevel.Love;
+		print(max_Blood);
 
-		currBlood = max_Blood;
-		InvokeRepeating ("DecreaseHealth", 1f, 1f);
-
-		currLove = max_Love;
-		InvokeRepeating ("DecreaseMagic", 1f, 1f);
-
-		InvokeRepeating ("IncreaseExp", 1f, 1f);
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
+	[ContextMenu("Blood")]
+	public void BloodEffect(){
+		float rot = Random.Range(0,360);
+		GameObject go =  Instantiate(Blood,transform.position,Quaternion.Euler(0, 0,rot)) as GameObject;
+		go.transform.SetParent(this.transform);
+	}
 	public void DecreaseHealth() {
 		if (currBlood <= 0) {
 			currBlood = 0;
 			//GetComponent<SoundEffects>().PlaySound (2);
 			CancelInvoke();
 		} else {
-			currBlood -= 25f;
+			currBlood -= 25;
 			if(currBlood <= (max_Blood/2)) {
 				//GetComponent<SoundEffects>().PlaySound (1);
 			}
 		}
-		float tempBlood = currBlood / max_Blood;
+		int tempBlood = currBlood / max_Blood;
 		SetBloodBar (tempBlood);
 	}
 
@@ -52,9 +58,9 @@ public class Player_Stats : MonoBehaviour {
 		if (currLove <= 0) {
 			currLove = 0;
 		} else {
-			currLove -= 25f;
+			currLove -= 25;
 		}
-		float tempLove = currLove / max_Love;
+		int tempLove = currLove / max_Love;
 		SetLoveBar (tempLove);
 	}
 
@@ -64,21 +70,21 @@ public class Player_Stats : MonoBehaviour {
 		} else {
 			currExp += 10;
 		}
-		float tempExp = currExp / max_Exp;
+		int tempExp = currExp / max_Exp;
 		SetExpBar (tempExp);
 	}
 
-	public void SetBloodBar (float health) {
+	public void SetBloodBar (int health) {
 
 		bloodBar.transform.localScale = new Vector3 (health, bloodBar.transform.localScale.y, bloodBar.transform.localScale.z);
 	}
 
-	public void SetLoveBar (float magic) {
+	public void SetLoveBar (int magic) {
 		
 		loveBar.transform.localScale = new Vector3 (magic, loveBar.transform.localScale.y, loveBar.transform.localScale.z);
 	}
 
-	public void SetExpBar (float exp) {
+	public void SetExpBar (int exp) {
 		
 		expBar.transform.localScale = new Vector3 (exp, expBar.transform.localScale.y, expBar.transform.localScale.z);
 	}
@@ -88,11 +94,12 @@ public class Player_Stats : MonoBehaviour {
 		if (currBlood <= 0) {
 			currBlood = 0;
 		} else {
-			currBlood -= (float)dmg;
+			currBlood -= dmg;
 		}
-		float tempBlood = currBlood / max_Blood;
+	int tempBlood = currBlood / max_Blood;
 		SetBloodBar (tempBlood);
 
 	}
+
 
 }

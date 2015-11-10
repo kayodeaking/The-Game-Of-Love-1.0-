@@ -14,6 +14,7 @@ public  class Item {
 	public int stock;
 	public int duration;
 	public Item_Type type;
+	public int ID;
 	public Item (){
 
 	}

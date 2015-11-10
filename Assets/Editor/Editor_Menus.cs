@@ -13,16 +13,6 @@ public class Editor_Menus: EditorWindow {
 
 
 	}
-	public static void AddItem(){
 
-	}
-	[MenuItem("DataEditor/Create Levels")]
-	public static void CreateLevels(){
 
-		Levels lvls = ScriptableObject.CreateInstance<Levels>();
-		AssetDatabase.CreateAsset(lvls,"Assets/Resources/Levels.asset");
-		AssetDatabase.SaveAssets ();
-		AssetDatabase.Refresh();
-
-	}
 }

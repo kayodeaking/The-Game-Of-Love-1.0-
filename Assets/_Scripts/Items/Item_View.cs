@@ -30,7 +30,7 @@ public class Item_View : MonoBehaviour {
 	}
 	void Start () {
 		
-
+		Get_Data();
 	
 	}
 	
@@ -42,12 +42,18 @@ public class Item_View : MonoBehaviour {
 	}
 
 	void Get_Data(){
-		db = (ItemDataBase)Resources.Load<ItemDataBase> ("ItemDataBase");
+		gameObject.tag = "Item";
+		db = (ItemDataBase)Resources.Load<ItemDataBase> ("ItemDatBase");
 		item = db.Item (itemID);
 		_renderer = gameObject.GetComponent<SpriteRenderer> ();
 		_renderer.sprite = item.sprite;
 		_collider = gameObject.GetComponent<BoxCollider2D> ();
 		_collider.isTrigger = true;
 
+	}
+
+	public void ChangeData(int ID){
+		itemID = ID;
+		item = db.Item (itemID);
 	}
 }

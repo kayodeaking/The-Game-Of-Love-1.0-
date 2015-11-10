@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-
+[System.Serializable]
 public class Inventory : MonoBehaviour {
+	[SerializeField]
 	public GameObject Slot;
 	[SerializeField]
-	private List<Item> inventory;
+	private List<Inventory_item> inventory;
 	public List<GameObject> inventoryUI;
 	// Use this for initialization
 	void Start () {
@@ -17,10 +18,10 @@ public class Inventory : MonoBehaviour {
 	void Update () {
 	
 	}
-	public void Add(Item item){
+	public void Add(Inventory_item item){
 		inventory.Add(item);
 	}
-	public void Remove(Item item){
+	public void Remove(Inventory_item item){
 		inventory.Remove (item);
 		
 	}
@@ -32,7 +33,7 @@ public class Inventory : MonoBehaviour {
 		get { return inventory.Count; }
 		
 	}
-	public Item Item(int index){
+	public Inventory_item Item(int index){
 		return inventory.ElementAt( index );
 	}
 	[ContextMenu("MakeSlots")]
@@ -42,7 +43,7 @@ public class Inventory : MonoBehaviour {
 
 			GameObject go  =  Instantiate(Slot) as GameObject;
 			go.transform.SetParent(gameObject.transform);
-			go.GetComponent<Inventory_slot>().itemView.item= inventory[i];
+			go.GetComponent<Inventory_slot>().itemView.item= inventory[i].item;
 			inventoryUI.Add (go);
 
 		}
@@ -63,16 +64,15 @@ public class Inventory : MonoBehaviour {
 		inventoryUI.Clear();
 
 
-
-
 	}
+
 	void OnEnable(){
-		//MakeSlots();
+		MakeSlots();
 
 	}
 
 	void OnDisable (){
-		//DeleteSlots();
+		DeleteSlots();
 
 	}
 }

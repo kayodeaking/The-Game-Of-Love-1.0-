@@ -12,9 +12,14 @@ public class ItemDataBase:ScriptableObject{
 	[SerializeField]
 	private List<Item> database;
 
+
 	void OnEnable(){
 		if(database==null ){
 			database = new List<Item>();
+		}
+		else {
+
+
 		}
 
 
@@ -37,6 +42,10 @@ public class ItemDataBase:ScriptableObject{
 	public Item Item(int index){
 		return database.ElementAt( index );
 	}
+	public static ItemDataBase GetDataBase(){
+		return (ItemDataBase)Resources.Load<ItemDataBase> ("ItemDatBase");
+	}
+
 	/*
 	public void Load_ItemsXML(string filepath){
 		TextAsset _xml = Resources.Load<TextAsset>(filepath);
