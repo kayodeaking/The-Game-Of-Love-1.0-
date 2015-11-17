@@ -18,6 +18,10 @@ public class ItemDataBase:ScriptableObject{
 			database = new List<Item>();
 		}
 		else {
+			for(int i = 0;i<database.Count;i++){
+				
+				database[i].ID = i;
+			}
 
 
 		}
@@ -44,6 +48,16 @@ public class ItemDataBase:ScriptableObject{
 	}
 	public static ItemDataBase GetDataBase(){
 		return (ItemDataBase)Resources.Load<ItemDataBase> ("ItemDatBase");
+	}
+	public Item GetItemByID(int id){
+		
+		for(int i =0; i<database.Count;i++){
+			if(database[i].ID == id)
+				return database[i];
+			
+		}
+		return null;
+		
 	}
 
 	/*

@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 0e6fcd5bbd719db48b1d3670fdfda035
+timeCreated: 1447787982
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Buttons_0
@@ -43,6 +45,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -63,7 +66,7 @@ TextureImporter:
         width: 358
         height: 137
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_1
       rect:
@@ -73,8 +76,8 @@ TextureImporter:
         width: 389
         height: 206
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 126, y: 70, z: 126, w: 65}
     - name: Buttons_2
       rect:
         serializedVersion: 2
@@ -83,7 +86,7 @@ TextureImporter:
         width: 375
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_3
       rect:
@@ -93,7 +96,7 @@ TextureImporter:
         width: 328
         height: 199
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_4
       rect:
@@ -103,7 +106,7 @@ TextureImporter:
         width: 358
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_5
       rect:
@@ -113,7 +116,7 @@ TextureImporter:
         width: 389
         height: 207
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_6
       rect:
@@ -123,7 +126,7 @@ TextureImporter:
         width: 375
         height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Buttons_7
       rect:
@@ -133,7 +136,7 @@ TextureImporter:
         width: 329
         height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

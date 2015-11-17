@@ -1,7 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
 
 public class KeyboardControls : MonoBehaviour {
+
+
+	//public List<GameObject> Panels;
+
+	public KeyCode PauseKey;
+	public KeyCode InventoryKey;
+	public KeyCode statKey;
+
+
 
 
 	public GameObject pausePanel;
@@ -26,9 +37,11 @@ public class KeyboardControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Application.loadedLevel == 5) {
+
+		/*if (Application.loadedLevel == 5) {
 			Game_Play_Only ();
-		}
+		}*/
+		Game_Play_Only();
 	}
 
 	void Game_Play_Only() {
@@ -37,6 +50,7 @@ public class KeyboardControls : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.P)) {
 			openPauseMenu = pausePanel.activeSelf;
 			openPauseMenu = !openPauseMenu;
+		
 			pausePanel.SetActive (openPauseMenu);
 		}
 
