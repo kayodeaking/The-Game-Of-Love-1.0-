@@ -68,6 +68,7 @@ public class Level_Editor :EditorWindow {
 		lvls.Level(_index).Strength = EditorGUILayout.IntField("Stregnth",lvls.Level(_index).Strength);
 		lvls.Level(_index).Intelligence = EditorGUILayout.IntField("Intelligence",lvls.Level(_index).Intelligence);
 		lvls.Level(_index).Dexterity = EditorGUILayout.IntField("Dexterity",lvls.Level(_index).Dexterity);
+		lvls.Level(_index).Luck = EditorGUILayout.IntField("Luck",lvls.Level(_index).Luck);
 		EditorGUILayout.EndVertical();
 		EditorGUILayout.EndHorizontal();
 
