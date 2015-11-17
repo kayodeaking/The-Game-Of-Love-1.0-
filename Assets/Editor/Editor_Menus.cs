@@ -13,6 +13,16 @@ public class Editor_Menus: EditorWindow {
 
 
 	}
+	[MenuItem("DataEditor/Spells")]
+	public static void CreateSpells(){
+
+		Spells _spells = ScriptableObject.CreateInstance<Spells>();
+
+		AssetDatabase.CreateAsset(_spells,"Assets/Resources/Spells.asset");
+		AssetDatabase.SaveAssets();
+		AssetDatabase.Refresh();
+
+	}
 
 
 }

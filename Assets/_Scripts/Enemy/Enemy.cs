@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour {
 	void Init(){
 		ls = gameObject.GetComponent<Leveling_System>();
 		image = gameObject.transform.GetComponentInChildren<Image>();
-		ls.currentLevelID = age;
+	//	ls.currentLevelID = age;
 		player = GameObject.FindGameObjectWithTag("Player");
 
 	}

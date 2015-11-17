@@ -15,8 +15,9 @@ public  class Item {
 	public int duration;
 	public Item_Type type;
 	public int ID;
+	public bool Stackable;
 	public Item (){
-
+		this.ID = -1;
 	}
 	public Item(string name){
 		this.name = name;

@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Spell : MonoBehaviour {
 
+	public int ID;
 	public int Damage;
 	public int Duration;
 	private Transform child;

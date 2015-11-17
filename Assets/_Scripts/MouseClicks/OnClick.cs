@@ -91,12 +91,6 @@ public class OnClick : MonoBehaviour {
 			loadScene.LoadLevel (5);
 	}
 
-	public void MoveSet1 () {
-		Player_Control.moveSet = 1;
-	}
-	
-	public void MoveSet2 () {
-		Player_Control.moveSet = 2;
-	}
+
 
 }
