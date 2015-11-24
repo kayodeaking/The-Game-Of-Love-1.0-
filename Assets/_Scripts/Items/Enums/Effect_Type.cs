@@ -15,6 +15,7 @@ public enum Effect_Type{
 	Pump,
 	Cardio,
 	Shell,
+	Affection,
 	Age,
 	none,
 

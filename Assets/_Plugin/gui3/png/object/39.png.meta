@@ -31,7 +31,11 @@ TextureImporter:
     aniso: 16
     mipBias: -1
     wrapMode: 1
+<<<<<<< HEAD
+  nPOTScale: 1
+=======
   nPOTScale: 0
+>>>>>>> origin/master
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
@@ -43,8 +47,13 @@ TextureImporter:
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+<<<<<<< HEAD
+  alphaIsTransparency: 0
+  textureType: 0
+=======
   alphaIsTransparency: 1
   textureType: 8
+>>>>>>> origin/master
   buildTargetSettings: []
   spriteSheet:
     sprites: []
