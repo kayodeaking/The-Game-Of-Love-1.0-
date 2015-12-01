@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: b97c6717e5cab4803a4176eb991e40a3
+labels:
+- Inventory
 timeCreated: 1447532932
 licenseType: Free
 NativeFormatImporter:

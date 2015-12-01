@@ -6,25 +6,22 @@ using BehaviorDesigner.Runtime;
 [RequireComponent(typeof(CircleCollider2D))]
 
 public class Attacker : MonoBehaviour {
-	//public string Name;
-	//public int ID;
-	//public EnemyType type;
+
 	public float Magnitude = 3.0f;
-	public int health =100;
-	public int maxHealth = 100;
-	public int damage= 10;
-	public GameObject effect;
-	Image image;
+	
 	GameObject player;
 	float sqrMagnitude;
 	bool attack = false;
 	private Animator anim;
 
+	Enemy enemy;
 	Vector3 direction;
 	float distance;
+	public float timeBetweenAttacks = 0.15f;  
+	float timer;
 	void Init(){
+		enemy = gameObject.GetComponent<Enemy>();
 		anim = gameObject.GetComponent<Animator>();
-		image = gameObject.transform.GetComponentInChildren<Image>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		sqrMagnitude = Magnitude*Magnitude;
 		
@@ -38,10 +35,12 @@ public class Attacker : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		timer += Time.deltaTime;
 		direction = player.transform.position - transform.position;
 		if(Vector3.SqrMagnitude(direction) < sqrMagnitude){
+			if(timer >= timeBetweenAttacks && Time.timeScale != 0){
 			attack = true;
-			
+			}
 			//Attack(damage);
 			//anim.SetBool("Attack",attack);
 			
@@ -56,36 +55,21 @@ public class Attacker : MonoBehaviour {
 		
 		
 		
-		if(health<=0){
-			Destroy(this.gameObject);
-		}
+
 	}
 	
-	public void Shoot(){
-		
-		
-	}
+
 	void OnDestory(){
 		print ("DIE");
 	}
 	
-	public void Hit(int dmg){
-		//print ("Hit");
-		
-		health-= dmg;
-		GameObject go =  Instantiate(effect, transform.position, Quaternion.identity) as GameObject;
-		Destroy(go, 1.0f);
-		image.fillAmount =(float)health/(float)maxHealth;
-		
-	}
+
 	
 	
 	[ContextMenu("Damage")]
 	public void TestDMG(){
-		//player.gameObject.GetComponent<Player_Stats>().Hit (damage);
-		//Hit(damage);
-		
-		
+		player.gameObject.GetComponent<UI_Player>().Hit (enemy.damage);
+
 	}
 	void  OnCollisionEnter2D(Collision2D coll){
 		
@@ -95,7 +79,7 @@ public class Attacker : MonoBehaviour {
 	void OnDrawGizmos(){
 		#if UNITY_EDITOR
 		UnityEditor.Handles.color = Color.yellow;
-		//UnityEditor.Handles.DrawWireDisc(this.transform.position,this.transform.forward,Magnitude);
+		UnityEditor.Handles.DrawWireDisc(this.transform.position,this.transform.forward,Magnitude);
 		
 		//Debug.DrawLine(this.transform.position,player.transform.position);
 		

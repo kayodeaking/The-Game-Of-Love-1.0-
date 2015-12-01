@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 615fd8d926d41d9449f144dea1ccf160
+labels:
+- Gui
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2

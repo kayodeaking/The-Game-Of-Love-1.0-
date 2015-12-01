@@ -13,7 +13,7 @@ public class CFXEasyEditor : EditorWindow
 		if(SingleWindow == null)
 		{
 			SingleWindow = (CFXEasyEditor)ScriptableObject.CreateInstance(typeof(CFXEasyEditor));
-			SingleWindow.title = "CartoonFX Easy Editor";
+			SingleWindow.titleContent = new GUIContent("CartoonFX Easy Editor");
 			SingleWindow.minSize = new Vector2(300,8);
 			SingleWindow.maxSize = new Vector2(300,8);
 			SingleWindow.position = new Rect(200,200,300,8);

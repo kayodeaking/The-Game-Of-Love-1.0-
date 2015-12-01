@@ -48,7 +48,14 @@ public class Spell : MonoBehaviour {
 
 		}
 	}
-	void OnTriggerEnter2D(){
+void OnTriggerEnter2D(Collider2D  col){
+
+		GameObject enemy = col.gameObject;
+		if(enemy.tag =="Enemy"){
+			enemy.GetComponent<Enemy>().Hit(Damage);
+			Destroy(this.gameObject);
+			
+		}
 
 	}
 

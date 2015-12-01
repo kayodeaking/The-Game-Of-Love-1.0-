@@ -8,13 +8,13 @@ public class UI_Spell : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragH
 	public GameObject spell;
 	public int slot;
 	private Vector2 offset;
-	private Spells spellList;
+//	private Spells spellList;
 	//public Tooltip tooltip;
 	public Transform orginalParent;
 	// Use this for initialization
 	void Start () {
 
-	spellList =	Spells.GetDataBase();
+	//spellList =	Spells.GetDataBase();
 	orginalParent = this.transform.parent;
 	}
 	

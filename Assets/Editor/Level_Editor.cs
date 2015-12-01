@@ -23,7 +23,10 @@ public class Level_Editor :EditorWindow {
 		GUILayout.Label ("Level Editor", EditorStyles.boldLabel);
 
 		EditorGUILayout.BeginVertical();
-	
+		if(GUILayout.Button ("Save DataBase")){
+			AssetDatabase.SaveAssets();
+			
+		}
 		EditorGUILayout.BeginHorizontal ();
 		ScrollArea();
 		Body();

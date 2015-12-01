@@ -23,6 +23,13 @@ namespace UnityStandardAssets._2D
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
         }
+		public static float RoundToNearestPixel(float unityUnits)  
+		{	
+			float valueInPixels = unityUnits * 32;
+			valueInPixels = Mathf.Round(valueInPixels);
+			float roundedUnityUnits = valueInPixels * (1 / 32);
+			return roundedUnityUnits;
+		}
 
 
         // Update is called once per frame
@@ -46,6 +53,8 @@ namespace UnityStandardAssets._2D
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 
             transform.position = newPos;
+			//print (transform.position.x);
+			//print(RoundToNearestPixel(target.position.x));
 
             m_LastTargetPosition = target.position;
         }

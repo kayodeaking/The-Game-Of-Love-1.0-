@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 1a48ccf428491af489de046e7ad43f0a
+labels:
+- Gui
 TextureImporter:
   fileIDToRecycleName:
     21300000: Buttons Clicked_0
@@ -43,6 +45,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1

@@ -184,6 +184,10 @@ public class Item_Editor : EditorWindow {
 			LoadDataBase ();
 
 		}
+		if(GUILayout.Button ("Save DataBase")){
+			AssetDatabase.SaveAssets();
+
+		}
 		if(GUILayout.Button("New Item")){
 
 			EditorWindow.GetWindow(typeof(NewItemWindow));

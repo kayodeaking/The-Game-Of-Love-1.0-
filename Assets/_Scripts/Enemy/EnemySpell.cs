@@ -11,7 +11,7 @@ public class EnemySpell : MonoBehaviour {
 	public GameObject ImpactEffect;
 	private Collider2D col;
 	public float moveSpeed = .05f;
-	private GameObject Player;
+//	private GameObject Player;
 	private Rigidbody2D rb;
 	GameObject enemy;
 	
@@ -43,21 +43,23 @@ public class EnemySpell : MonoBehaviour {
 	
 	
 	void OnCollisionEnter2D(Collision2D col){
-		// enemy = col.gameObject;
-		/*
-		if(enemy.tag =="Enemy"){
-			 enemy.GetComponent<Enemy>().Hit(Damage);
+		enemy = col.gameObject;
+	
+		if(enemy.tag =="Player"){
+
+			enemy.GetComponent<UI_Player>().Hit(Damage);
 			Destroy(this.gameObject);
 
 		}
-		*/
+
 	}
 	void OnTriggerEnter2D(Collider2D  col){
 		enemy = col.gameObject;
-		if(enemy == Player){
-			// enemy.GetComponent<Enemy>().Hit(Damage);
-			Destroy(this.gameObject);
+		if(enemy.tag =="Player"){
 
+			enemy.GetComponent<UI_Player>().Hit(Damage);
+			Destroy(this.gameObject);
+			
 		}
 
 		
@@ -79,7 +81,7 @@ public class EnemySpell : MonoBehaviour {
 	
 	
 	void Init(){
-		Player = GameObject.FindGameObjectWithTag("Player");
+		//Player = GameObject.FindGameObjectWithTag("Player");
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		//rb.AddForce(direction*moveSpeed);
 		

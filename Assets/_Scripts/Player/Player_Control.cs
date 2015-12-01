@@ -2,22 +2,16 @@
 using System.Collections;
 
 public class Player_Control : MonoBehaviour {
-
-	public GameObject s_Hotbar;
-	public GameObject ItemHotbar;
+	
 	private PlayerDirection direction;
 	public float playerSpeed = 10.0f;
 	private Animator anim;
 	private bool canAttack = false;
-	public float fireRate = 5;
+
 	public float damage = 10;
 	public LayerMask whatToHit;
-	float timeSpawnSkill = 0;
-	public float skillSpawnRate = 10;
-	float timeToFire = 0;
 	GameObject enemy;
 	Spell_Hotbar spellHotbar;
-	HotBar itemhotbar;
 	[HideInInspector]
 	public Vector2 VecDirection;
 	[HideInInspector]
@@ -27,8 +21,7 @@ public class Player_Control : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		spellHotbar = s_Hotbar.GetComponent<Spell_Hotbar>();
-		itemhotbar = ItemHotbar.GetComponent<HotBar>();
+
 		anim = GetComponent<Animator> ();
 	}
 
@@ -37,7 +30,7 @@ public class Player_Control : MonoBehaviour {
 
 			Player_Option_Set_1 ();
 
-			HotbarInput();
+		///	HotbarInput();
 
 			SetDirection();
 	}
@@ -113,88 +106,22 @@ public class Player_Control : MonoBehaviour {
 		}
 	}
 
-	void HotbarInput(){
+
+
+
+
+
 
 		
-		if (fireRate == 0) {
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				
-				Shoot (spellHotbar.slots[0].GetChild(0));
-				
-			}
-			if (Input.GetKeyDown (KeyCode.X)) {
-				
-				Shoot (spellHotbar.slots[1].GetChild(0));
-			}
-			if (Input.GetKeyDown (KeyCode.C)) {
-				
-				Shoot (spellHotbar.slots[2].GetChild(0));
-			}
-		} 
-		else {
-			if (Input.GetKey (KeyCode.Z) && Time.time > timeToFire) {
-				timeToFire = Time.time + 1/fireRate;
-				
-				
-				Shoot (spellHotbar.slots[0].GetChild(0));
-				
-			}
-			if (Input.GetKey (KeyCode.X) && Time.time > timeToFire) {
-				timeToFire = Time.time + 1/fireRate;
-				
-				Shoot (spellHotbar.slots[1].GetChild(0));
-			}
-			if (Input.GetKey (KeyCode.C) && Time.time > timeToFire) {
-				timeToFire = Time.time + 1/fireRate;
-				
-				Shoot (spellHotbar.slots[2].GetChild(0));
-			}
-		}
+	public void Shoot (Transform Spell) {
 		
-
-		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			itemhotbar.slots[0].GetChild(0).GetComponent<UI_Item>().ConsumeItem();
-
-		}
-
-		
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			itemhotbar.slots[1].GetChild(0).GetComponent<UI_Item>().ConsumeItem();
-
-		}
-		
-		
-		if (Input.GetKeyDown (KeyCode.Alpha3)) {
-			itemhotbar.slots[2].GetChild(0).GetComponent<UI_Item>().ConsumeItem();
-
-		
-		}
-
-		if (Input.GetKeyDown (KeyCode.Alpha4)) {
-			itemhotbar.slots[3].GetChild(0).GetComponent<UI_Item>().ConsumeItem();
-
-
-		}
-		
-
-		if (Input.GetKeyDown (KeyCode.Alpha5)) {
-			itemhotbar.slots[4].GetChild(0).GetComponent<UI_Item>().ConsumeItem();
-
-
-		}
-
-
-	}
-		
-	void Shoot (Transform Spell) {
-		
-		if (Time.time > timeSpawnSkill) {
+		//if (Time.time > timeSpawnSkill) {
 			
 			
 			Instantiate(Spell.GetComponent<UI_Spell>().spell,this.transform.position,Quaternion.Euler(0,0,SkillRotation));
 			
-			timeSpawnSkill = Time.time + 1/skillSpawnRate;
-		}
+			//timeSpawnSkill = Time.time + 1/skillSpawnRate;
+		//}
 		
 	}
 

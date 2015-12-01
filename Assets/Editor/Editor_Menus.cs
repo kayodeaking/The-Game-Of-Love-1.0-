@@ -13,7 +13,7 @@ public class Editor_Menus: EditorWindow {
 
 
 	}
-	[MenuItem("DataEditor/Spells")]
+	//[MenuItem("DataEditor/Spells")]
 	public static void CreateSpells(){
 
 		Spells _spells = ScriptableObject.CreateInstance<Spells>();
@@ -23,6 +23,7 @@ public class Editor_Menus: EditorWindow {
 		AssetDatabase.Refresh();
 
 	}
+
 
 
 }

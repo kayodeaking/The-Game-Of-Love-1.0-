@@ -93,6 +93,15 @@ public class Inventory : MonoBehaviour {
 		
 		
 	}
+	public void Remove(Item item){
+		items.Remove (item);
+		
+	}
+
+	public void RemoveAt(int index){
+		items.RemoveAt (index);
+	}
+
 	
 }
 

@@ -6,7 +6,7 @@ using BehaviorDesigner.Runtime;
 [RequireComponent(typeof(CircleCollider2D))]
 //[ExecuteInEditMode]
 public class Enemy : MonoBehaviour {
-	Leveling_System ls;
+//	Leveling_System ls;
 	public EnemyType type;
 	public int age;
 	[HideInInspector]
@@ -19,7 +19,8 @@ public class Enemy : MonoBehaviour {
 
 
 	void Init(){
-		ls = gameObject.GetComponent<Leveling_System>();
+
+	//	ls = gameObject.GetComponent<Leveling_System>();
 		image = gameObject.transform.GetComponentInChildren<Image>();
 	//	ls.currentLevelID = age;
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -40,16 +41,12 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 
-	public void Shoot(){
 
-
-	}
 	void OnDestory(){
 		player.GetComponent<Leveling_System>().AddXP(10);
 	}
 
 	public void Hit(int dmg){
-		//print ("Hit");
 
 		health-= dmg;
 		GameObject go =  Instantiate(effect, transform.position, Quaternion.identity) as GameObject;
