@@ -59,6 +59,14 @@ public class ItemDataBase:ScriptableObject{
 		return null;
 		
 	}
+	public Item GetItemByName(string name){
+
+		for (int i =0; i < database.Count; i++) {
+			if(database[i].name == name)
+				return database[i];
+		}
+		return null;
+	}
 
 	/*
 	public void Load_ItemsXML(string filepath){
