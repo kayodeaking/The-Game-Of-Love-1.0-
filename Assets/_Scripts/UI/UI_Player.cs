@@ -81,4 +81,26 @@ public class UI_Player : MonoBehaviour {
 		
 	}
 
+	public void AddHealth(int Amount){
+
+		if(Current_Blood<=ls.currentLevel.Blood){
+
+			if(Amount>=ls.currentLevel.Blood || Current_Blood+Amount>=ls.currentLevel.Blood){
+				int temp = ls.currentLevel.Blood;
+			
+				Current_Blood = temp;
+			
+			}
+
+			else {
+
+				Current_Blood+=Amount;
+
+			}
+			health.BarAmount = (float)Current_Blood/(float)max_Blood;
+			health.BarText = Current_Blood.ToString();
+
+		}
+	}
+
 }

@@ -108,7 +108,9 @@ public class UI_Item : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragHa
 		switch(effect.e_type){
 
 		case Effect_Type.Blood:
-			player.GetComponent<UI_Player>().Current_Blood+=(int) effect.amount;
+			//player.GetComponent<UI_Player>().Current_Blood+=(int) effect.amount;
+			player.GetComponent<UI_Player>().AddHealth((int)effect.amount);
+
 			print ("use :"+"Blood "+effect.amount);
 
 			break;
