@@ -43,4 +43,8 @@ public class OnClickLevels : MonoBehaviour {
 
 	public void Level10() {
 	}
+
+	public void Demo() {
+		Application.LoadLevel (7);
+	}
 }
