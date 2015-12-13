@@ -7,10 +7,12 @@ public class OnClickShop : MonoBehaviour {
 
 	ItemDataBase database;
 	GameObject chosenArea;
+	GameObject inventory;
 
 	// Use this for initialization
 	void Start () {
 		database = ItemDataBase.GetDataBase ();
+		inventory = GameObject.FindGameObjectWithTag ("Inventory");
 		chosenArea = transform.parent.gameObject.transform.parent.gameObject.transform.parent.gameObject.transform.parent.gameObject.transform.parent.GetChild (9).GetChild (0).GetChild (0).GetChild (1).gameObject;
 	}
 	
@@ -22,6 +24,7 @@ public class OnClickShop : MonoBehaviour {
 	public void Buy() {
 
 		Item itemToBuy = database.GetItemByName (gameObject.transform.parent.name);
+		inventory.GetComponent<Inventory>().AddItem (itemToBuy.ID);
 		print (itemToBuy.name + " added to inventory");
 	}
 

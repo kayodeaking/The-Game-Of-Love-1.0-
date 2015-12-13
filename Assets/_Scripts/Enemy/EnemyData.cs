@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-[System.Serializable]
+using System;
+[Serializable]
 public class EnemyData{
 
 	[SerializeField] public int ID;

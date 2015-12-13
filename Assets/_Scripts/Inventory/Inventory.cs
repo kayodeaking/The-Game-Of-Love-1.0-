@@ -37,11 +37,14 @@ public class Inventory : MonoBehaviour {
 			slots[i].transform.SetParent(slotPanel.transform);
 
 		}
+
+		for (int i=0; i<slotAmount; i++) {
+			print (items[i].name);
+		}
 		AddItem(0);
 		AddItem(1);
 		AddItem(1);
 		AddItem(1);
-	
 	
 	}
 	

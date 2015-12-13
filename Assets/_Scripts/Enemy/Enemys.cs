@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using System.Linq;
-[System.Serializable]
+using System;
+[Serializable]
 public class Enemys :ScriptableObject{
 	[SerializeField]
 	private List<EnemyData> database;

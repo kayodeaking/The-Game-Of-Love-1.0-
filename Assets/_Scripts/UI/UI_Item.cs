@@ -15,6 +15,8 @@ public class UI_Item : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragHa
 	GameObject player;
 	public int amount;
 
+	public GameObject sounds;
+
 	void Start(){ 
         orginalParent = this.transform.parent;
 		player = 	GameObject.FindGameObjectWithTag("Player");
@@ -100,7 +102,7 @@ public class UI_Item : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragHa
 
 
         }
-        
+		sounds.GetComponent<SoundEffects>().PlaySound (5);
         
     }
 
