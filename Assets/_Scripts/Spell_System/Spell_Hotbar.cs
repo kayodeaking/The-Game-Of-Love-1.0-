@@ -9,10 +9,12 @@ public class Spell_Hotbar : MonoBehaviour {
 	Player_Control pc;
 	public float timeBetweenBullets = 0.15f;  
 	float timer;
+
 	// Use this for initialization
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Control>();
-	
+		timer += Time.deltaTime;
+		useSlots();
 		/*
 		slots = new Transform[this.transform.childCount];
 		for(int i =0;i<slots.Length;i++){

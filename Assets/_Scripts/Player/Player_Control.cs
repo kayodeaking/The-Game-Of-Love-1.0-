@@ -18,11 +18,12 @@ public class Player_Control : MonoBehaviour {
 	public float SkillRotation;
 	int directionType;
 	public float rayDistince;
+	public UI_Player uiPlayer;
 
 	public GameObject sounds;
 	// Use this for initialization
 	void Start () {
-
+		uiPlayer = GetComponent<UI_Player>();
 		anim = GetComponent<Animator> ();
 	}
 
@@ -37,14 +38,14 @@ public class Player_Control : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Item") {
-<<<<<<< HEAD
+			
 			GetComponentInChildren<Inventory>().AddItem(col.gameObject.GetComponent<Item_View>().itemID);
 			GetComponent<SoundEffects> ().PlaySound (3);
-=======
-			sounds.GetComponent<SoundEffects> ().PlaySound (3);
->>>>>>> origin/master
+
+
 			Destroy (col.gameObject);
 		}
+
 		
 	}
 	
@@ -102,13 +103,13 @@ public class Player_Control : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			sounds.GetComponent<SoundEffects>().PlaySound (0);
+			GetComponent<SoundEffects>().PlaySound (0);
 			canAttack = true;
 			anim.SetBool ("Attack", canAttack);
 		}
 		
 		if (Input.GetKeyUp (KeyCode.Space)) {
-			sounds.GetComponent<SoundEffects>().PlaySound (0);
+			GetComponent<SoundEffects>().PlaySound (0);
 			canAttack = false;
 			anim.SetBool ("Attack", canAttack);
 		}
@@ -124,12 +125,13 @@ public class Player_Control : MonoBehaviour {
 	public void Shoot (Transform Spell) {
 		
 		//if (Time.time > timeSpawnSkill) {
-			
+		if(uiPlayer.Current_Love>0){
 			
 			Instantiate(Spell.GetComponent<UI_Spell>().spell,this.transform.position,Quaternion.Euler(0,0,SkillRotation));
-			
+			uiPlayer.DecreaseLove(50);
 			//timeSpawnSkill = Time.time + 1/skillSpawnRate;
 		//}
+		}
 		
 	}
 

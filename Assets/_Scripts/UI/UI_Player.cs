@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI_Player : MonoBehaviour {
 
@@ -31,6 +32,7 @@ public class UI_Player : MonoBehaviour {
 		health.BarText = max_Blood.ToString();
 		power.BarText = max_Love.ToString();
 		Current_Blood = ls.currentLevel.Blood;
+		Current_Love = ls.currentLevel.Love;
 		
 
 		UI_Stats.Blood_Text = ls.currentLevel.Blood.ToString();
@@ -47,7 +49,9 @@ public class UI_Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+		if(Current_Blood<=0){
+			SceneManager.LoadScene(7);
+		}
 
 	}
 	[ContextMenu("Blood")]
@@ -59,13 +63,36 @@ public class UI_Player : MonoBehaviour {
 
 	public void DecreaseLove(int Amount){
 
-		if (Current_Love <= 0) {
+		if (Current_Love<= 0){
+			
 			Current_Love= 0;
 		} else {
 			Current_Love -= Amount;
 		}
-		power.BarAmount = Current_Love/ max_Love;
+		power.BarAmount =(float) Current_Love/(float) max_Love;
+		power.BarText = Current_Love.ToString();
 
+	}
+	public void IncreaseLove(int Amount){
+		if(Current_Love<=ls.currentLevel.Love){
+
+			if(Amount>=ls.currentLevel.Love || Current_Love+Amount>=ls.currentLevel.Love){
+				int temp = ls.currentLevel.Love;
+
+				Current_Love= temp;
+
+			}
+
+			else {
+
+				Current_Love+=Amount;
+
+			}
+			power.BarAmount = (float)Current_Love/ (float)max_Love;
+			power.BarText =  Current_Love.ToString();
+				
+		
+	}
 	}
 
 	public void Hit(int dmg){

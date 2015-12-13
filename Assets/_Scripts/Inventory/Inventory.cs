@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.IO;
-using UnityEditor;
+
 using LitJson;
 
 [System.Serializable]
@@ -18,9 +18,8 @@ public class Inventory : MonoBehaviour {
 	public int slotAmount =8;
 	private List<Item> items = new List<Item>();
 
-	private List<GameObject> slots = new List<GameObject>();
-	public List<Item> inventory  = new List<Item>();
-
+	private List<GameObject> slots = new List<GameObject>();	
+	public List<GameObject> inventory = new List<GameObject>();
 	// Use this for initialization
 	void Start () {
 		
@@ -38,9 +37,7 @@ public class Inventory : MonoBehaviour {
 
 		}
 
-		for (int i=0; i<slotAmount; i++) {
-			print (items[i].name);
-		}
+
 		AddItem(0);
 		AddItem(1);
 		AddItem(1);
@@ -52,13 +49,16 @@ public class Inventory : MonoBehaviour {
 	public void AddItem(int id){
 
 		Item itemtoAdd = database.GetItemByID(id);
-		inventory.Add(itemtoAdd);
+
 	
 		if(itemtoAdd.Stackable && CheckifItemisInInventory(itemtoAdd)){
 			
-			for(int i =0;i<items.Count;i++){
-				if(items[i].ID == id){
-					UI_Item data = slots[i].transform.GetChild(0).GetComponent<UI_Item>();
+			for(int i =0;i<inventory.Count;i++){
+				
+				if(inventory[i].GetComponent<UI_Item>().item.ID ==id){
+					UI_Item data = inventory[i].GetComponent<UI_Item>();
+					//UI_Item data = slots[i].transform.GetChild(0).GetComponent<UI_Item>();
+
 					data.amount++;
 					data.transform.GetChild(0).GetComponent<Text>().text = data.amount.ToString();
 					break;
@@ -67,11 +67,13 @@ public class Inventory : MonoBehaviour {
 			}
 		}
 		else{
+			
 			for(int i =0;i<items.Count;i++){
 				
 				if(items[i].ID ==-1){
 					items[i] = itemtoAdd;
 					GameObject itemObj = Instantiate(inventoryItem) as GameObject;
+					inventory.Add(itemObj);
 					itemObj.GetComponent<UI_Item>().item = itemtoAdd;
 					itemObj.GetComponent<UI_Item>().slot = i;
 					itemObj.GetComponent<UI_Item>().amount = 1;

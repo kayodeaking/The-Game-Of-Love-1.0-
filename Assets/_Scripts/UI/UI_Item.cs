@@ -128,6 +128,7 @@ public class UI_Item : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragHa
 				break;
 		case Effect_Type.Love:
 			print ("use :"+"Love "+effect.amount);
+			player.GetComponent<UI_Player>().IncreaseLove((int)effect.amount);
 			break;
 
 		case Effect_Type.Strength:
