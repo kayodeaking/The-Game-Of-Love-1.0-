@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
+[System.Serializable]
 public class UI_Item : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragHandler,IPointerDownHandler,IPointerEnterHandler,IPointerExitHandler {
 
 
@@ -94,6 +94,7 @@ public class UI_Item : MonoBehaviour,IBeginDragHandler , IDragHandler,IEndDragHa
         else {
             amount=0;
 			inv.Remove(item);
+
             print("Destroyed "+item.name);
 			DestroyObject(this.gameObject);
 

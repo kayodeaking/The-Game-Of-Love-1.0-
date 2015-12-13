@@ -902,7 +902,7 @@ namespace TileEditor
                         Rect r = new Rect(x, y, w, h);
                         x += (w + gap);
                         //bg
-                        GUI.Box(r, GUIContent.none, GUI.skin.box);
+                      	GUI.Box(r, GUIContent.none, GUI.skin.box);
                         GUI.DrawTexture(r, texture);
                         if (GUI.Button(r, GUIContent.none, style))
                         {

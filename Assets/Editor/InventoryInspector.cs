@@ -32,7 +32,7 @@ public class InventoryInspector : Editor {
 		if (list.isExpanded) {
 			for (int i = 0; i < list.arraySize; i++) {
 				SerializedProperty so_Object =  list.GetArrayElementAtIndex(i);
-				EditorGUILayout.PropertyField(so_Object.FindPropertyRelative("name"));
+
 			
 
 			

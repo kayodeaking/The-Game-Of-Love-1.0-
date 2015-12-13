@@ -7,6 +7,7 @@ using System.Xml.Serialization;
 using System.Linq;
 using System.IO;
 
+
 [System.Serializable]
 public class Item_Editor : EditorWindow {
 
@@ -21,16 +22,24 @@ public class Item_Editor : EditorWindow {
 	void OnEnable(){
 
 		_index= 0;
-	if(_items==null)
+		if(_items==null){
 			LoadDataBase ();
+		}
 		else{
 			so = new SerializedObject(_items);
 		}
+	}
+
+
 	
 
-	}
+
+
+
 	void LoadDataBase(){
 		_items = (ItemDataBase)AssetDatabase.LoadAssetAtPath<ItemDataBase> ("Assets/Resources/ItemDatBase.asset");
+		so = new SerializedObject(_items);
+	
 		if(_items==null)
 			CreateDataBase();
 
@@ -46,9 +55,13 @@ public class Item_Editor : EditorWindow {
 
 	[MenuItem ("DataEditor/Item Editor")]
 	public static void  ShowWindow () {
+
+
 		EditorWindow.GetWindow(typeof(Item_Editor));
+		
+	
 
-
+	
 	}
 	/*
 	[MenuItem ("DataEditor/Base_item")]
@@ -153,7 +166,7 @@ public class Item_Editor : EditorWindow {
 			}
 		catch(System.NullReferenceException ex){
 			Debug.Log(ex.ToString());
-			this.Close();
+			//this.Close();
 		}
 
 	}
@@ -184,10 +197,12 @@ public class Item_Editor : EditorWindow {
 			LoadDataBase ();
 
 		}
+		/*
 		if(GUILayout.Button ("Save DataBase")){
 			AssetDatabase.SaveAssets();
 
 		}
+	*/
 		if(GUILayout.Button("New Item")){
 
 			EditorWindow.GetWindow(typeof(NewItemWindow));
@@ -252,7 +267,7 @@ public class Item_Editor : EditorWindow {
 
 	void Create_Selected_GameObject(){
 		GameObject go = new GameObject (_items.Item(_index).name + "-Object");
-		go.gameObject.AddComponent<Item_View> ().itemID = _index;
+		go.gameObject.AddComponent<Item_View> ().item =_items.Item(_index);
 
 
 	}

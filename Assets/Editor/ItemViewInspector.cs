@@ -11,23 +11,21 @@ public class ItemViewInspector :Editor {
 
 
 	// Use this for initialization
-	void Start () {
-		Init ();
-	
-	}
+
 	void OnEnable(){
 		Init();
 	}
 	void Init(){
 	
 		itemView = (Item_View)target;
-		choice = itemView.itemID;
-	
+		//choice = itemView.itemID;
+	/*
 		nameArr = new string[ItemDataBase.GetDataBase().COUNT];
 		for(int i = 0; i< nameArr.Length;i++){
 
 			nameArr[i] = ItemDataBase.GetDataBase().Item(i).name;
 		}
+*/
 	}
 	
 	// Update is called once per frame
@@ -36,13 +34,13 @@ public class ItemViewInspector :Editor {
 	}
 
 	public override void OnInspectorGUI () {
+		itemView = (Item_View)target;
 		//DrawDefaultInspector();
 
-		choice = EditorGUILayout.Popup(choice,nameArr);
-		itemView.ChangeData(choice);
-		EditorGUILayout.LabelField(itemView.item.name);
-		EditorGUILayout.LabelField(itemView.item.type.ToString());
-		EditorUtility.SetDirty(target);
+
+		//choice = EditorGUILayout.Popup(choice,nameArr);
+		//itemView.ChangeData(choice);
+		EditorGUILayout.LabelField("Item",itemView.name.ToString());
 
 		
 	}

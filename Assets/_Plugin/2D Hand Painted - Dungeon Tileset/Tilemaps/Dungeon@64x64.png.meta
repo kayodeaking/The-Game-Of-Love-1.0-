@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f2b79cde9ec2df5418915866044e79bf
-timeCreated: 1448572377
+timeCreated: 1449976782
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -523,7 +523,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 1
   grayScaleToAlpha: 0
@@ -548,7 +548,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
   alphaIsTransparency: 1
@@ -564,8 +564,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_1
       rect:
         serializedVersion: 2
@@ -574,8 +579,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_2
       rect:
         serializedVersion: 2
@@ -584,8 +594,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_3
       rect:
         serializedVersion: 2
@@ -594,8 +609,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_4
       rect:
         serializedVersion: 2
@@ -604,8 +624,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_5
       rect:
         serializedVersion: 2
@@ -614,8 +639,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_6
       rect:
         serializedVersion: 2
@@ -624,8 +654,23 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 27}
+        - {x: -32, y: -13}
+        - {x: -31, y: -17}
+        - {x: -26, y: -22}
+        - {x: -20, y: -26}
+        - {x: 14, y: -26}
+        - {x: 16, y: -21}
+        - {x: 16, y: 27}
+      - - {x: 23, y: 11}
+        - {x: 23, y: 0}
+        - {x: 26, y: -7}
+        - {x: 31, y: -7}
+        - {x: 31, y: 8}
+        - {x: 27, y: 11}
     - name: Dungeon_7
       rect:
         serializedVersion: 2
@@ -634,8 +679,28 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: -24}
+        - {x: -4, y: -28}
+        - {x: -3, y: -30}
+        - {x: 11, y: -30}
+        - {x: 13, y: -26}
+        - {x: 12, y: -23}
+        - {x: -3, y: -23}
+      - - {x: -12, y: -23}
+        - {x: -9, y: -22}
+        - {x: -9, y: -19}
+        - {x: -12, y: -18}
+        - {x: -14, y: -20}
+      - - {x: -24, y: 32}
+        - {x: -24, y: -17}
+        - {x: -22, y: -18}
+        - {x: 15, y: -18}
+        - {x: 28, y: -12}
+        - {x: 28, y: 27}
+        - {x: 22, y: 32}
     - name: Dungeon_8
       rect:
         serializedVersion: 2
@@ -644,8 +709,29 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 28}
+        - {x: -19, y: 15}
+        - {x: -19, y: -16}
+        - {x: -15, y: -25}
+        - {x: 32, y: -25}
+        - {x: 32, y: 19}
+        - {x: 25, y: 28}
+      - - {x: -30, y: 8}
+        - {x: -31, y: 6}
+        - {x: -31, y: -5}
+        - {x: -28, y: -9}
+        - {x: -26, y: -9}
+        - {x: -24, y: -8}
+        - {x: -24, y: 7}
+        - {x: -27, y: 8}
+      - - {x: -22, y: 13}
+        - {x: -19, y: 14}
+        - {x: -19, y: 17}
+        - {x: -22, y: 18}
+        - {x: -24, y: 16}
     - name: Dungeon_9
       rect:
         serializedVersion: 2
@@ -654,8 +740,31 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 17}
+        - {x: -14, y: 17}
+        - {x: -27, y: 6}
+        - {x: -27, y: -24}
+        - {x: -16, y: -32}
+        - {x: 11, y: -32}
+        - {x: 22, y: -29}
+        - {x: 27, y: -23}
+        - {x: 27, y: 3}
+      - - {x: 15, y: 18}
+        - {x: 18, y: 19}
+        - {x: 18, y: 22}
+        - {x: 15, y: 23}
+        - {x: 13, y: 21}
+      - - {x: -11, y: 29}
+        - {x: -13, y: 28}
+        - {x: -13, y: 25}
+        - {x: -12, y: 24}
+        - {x: -5, y: 24}
+        - {x: -3, y: 25}
+        - {x: -3, y: 28}
+        - {x: -5, y: 29}
     - name: Dungeon_10
       rect:
         serializedVersion: 2
@@ -664,8 +773,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 3}
+        - {x: 25, y: 1}
+        - {x: 25, y: -24}
+        - {x: 27, y: -26}
+        - {x: 31, y: -26}
+        - {x: 31, y: 3}
     - name: Dungeon_11
       rect:
         serializedVersion: 2
@@ -674,8 +790,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 3}
+        - {x: -26, y: -24}
+        - {x: -16, y: -31}
+        - {x: 21, y: -31}
+        - {x: 21, y: -6}
+        - {x: 7, y: 3}
     - name: Dungeon_12
       rect:
         serializedVersion: 2
@@ -684,8 +807,25 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 25}
+        - {x: -32, y: 22}
+        - {x: -32, y: -27}
+        - {x: -22, y: -29}
+        - {x: 25, y: -29}
+        - {x: 28, y: -22}
+        - {x: 28, y: 1}
+        - {x: 20, y: 25}
+      - - {x: 18, y: 29}
+        - {x: 14, y: 28}
+        - {x: 14, y: 16}
+        - {x: 17, y: 15}
+        - {x: 28, y: 15}
+        - {x: 29, y: 19}
+        - {x: 29, y: 28}
+        - {x: 28, y: 29}
     - name: Dungeon_13
       rect:
         serializedVersion: 2
@@ -694,8 +834,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: -16, y: -32}
+        - {x: 32, y: 16}
+        - {x: 32, y: 32}
     - name: Dungeon_14
       rect:
         serializedVersion: 2
@@ -704,8 +850,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 16}
+        - {x: 32, y: 16}
+        - {x: 32, y: 32}
     - name: Dungeon_15
       rect:
         serializedVersion: 2
@@ -714,8 +865,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 16}
+        - {x: 16, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_16
       rect:
         serializedVersion: 2
@@ -724,8 +881,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_17
       rect:
         serializedVersion: 2
@@ -734,8 +896,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_18
       rect:
         serializedVersion: 2
@@ -744,8 +911,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_19
       rect:
         serializedVersion: 2
@@ -754,8 +926,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_20
       rect:
         serializedVersion: 2
@@ -764,8 +941,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_21
       rect:
         serializedVersion: 2
@@ -774,8 +956,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_22
       rect:
         serializedVersion: 2
@@ -784,8 +971,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_23
       rect:
         serializedVersion: 2
@@ -794,8 +986,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_24
       rect:
         serializedVersion: 2
@@ -804,8 +1001,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_25
       rect:
         serializedVersion: 2
@@ -814,8 +1016,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_26
       rect:
         serializedVersion: 2
@@ -824,8 +1031,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_27
       rect:
         serializedVersion: 2
@@ -834,8 +1046,29 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -18}
+        - {x: 16, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -16}
+        - {x: 18, y: -16}
+      - - {x: -22, y: 17}
+        - {x: -27, y: 17}
+        - {x: -27, y: -4}
+        - {x: -25, y: -4}
+        - {x: -22, y: -3}
+        - {x: -19, y: 5}
+        - {x: -18, y: 11}
+        - {x: -18, y: 13}
+      - - {x: -7, y: 32}
+        - {x: -14, y: 28}
+        - {x: -14, y: 24}
+        - {x: 19, y: 24}
+        - {x: 21, y: 25}
+        - {x: 21, y: 30}
+        - {x: 19, y: 32}
     - name: Dungeon_28
       rect:
         serializedVersion: 2
@@ -844,8 +1077,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: -16, y: -32}
+        - {x: -16, y: -18}
+        - {x: -18, y: -16}
+        - {x: -32, y: -16}
     - name: Dungeon_29
       rect:
         serializedVersion: 2
@@ -854,8 +1093,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -16, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
     - name: Dungeon_30
       rect:
         serializedVersion: 2
@@ -864,8 +1108,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 32}
+        - {x: -23, y: 30}
+        - {x: -23, y: -20}
+        - {x: -14, y: -29}
+        - {x: 30, y: -29}
+        - {x: 30, y: 21}
+        - {x: 21, y: 32}
     - name: Dungeon_31
       rect:
         serializedVersion: 2
@@ -874,8 +1126,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 32}
+        - {x: 16, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_32
       rect:
         serializedVersion: 2
@@ -884,8 +1141,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_33
       rect:
         serializedVersion: 2
@@ -894,8 +1156,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_34
       rect:
         serializedVersion: 2
@@ -904,8 +1171,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_35
       rect:
         serializedVersion: 2
@@ -914,8 +1186,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_36
       rect:
         serializedVersion: 2
@@ -924,8 +1201,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_37
       rect:
         serializedVersion: 2
@@ -934,8 +1216,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_38
       rect:
         serializedVersion: 2
@@ -944,8 +1231,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_39
       rect:
         serializedVersion: 2
@@ -954,8 +1246,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_40
       rect:
         serializedVersion: 2
@@ -964,8 +1261,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_41
       rect:
         serializedVersion: 2
@@ -974,8 +1276,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_42
       rect:
         serializedVersion: 2
@@ -984,8 +1291,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_43
       rect:
         serializedVersion: 2
@@ -994,8 +1306,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 32}
+        - {x: 16, y: 18}
+        - {x: 18, y: 16}
+        - {x: 32, y: 16}
+        - {x: 32, y: 32}
     - name: Dungeon_44
       rect:
         serializedVersion: 2
@@ -1004,8 +1322,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 16}
+        - {x: -18, y: 16}
+        - {x: -16, y: 18}
+        - {x: -16, y: 32}
     - name: Dungeon_45
       rect:
         serializedVersion: 2
@@ -1014,8 +1338,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -16}
+        - {x: -16, y: 32}
     - name: Dungeon_46
       rect:
         serializedVersion: 2
@@ -1024,8 +1354,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -16}
+        - {x: -32, y: -16}
     - name: Dungeon_47
       rect:
         serializedVersion: 2
@@ -1034,8 +1369,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 32}
+        - {x: -32, y: -16}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_48
       rect:
         serializedVersion: 2
@@ -1044,8 +1385,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_49
       rect:
         serializedVersion: 2
@@ -1054,8 +1400,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_50
       rect:
         serializedVersion: 2
@@ -1064,8 +1415,17 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 31}
+        - {x: -23, y: 25}
+        - {x: -23, y: -5}
+        - {x: -20, y: -20}
+        - {x: 13, y: -20}
+        - {x: 25, y: -4}
+        - {x: 25, y: 25}
+        - {x: 11, y: 31}
     - name: Dungeon_51
       rect:
         serializedVersion: 2
@@ -1074,8 +1434,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23}
+        - {x: -18, y: 10}
+        - {x: -18, y: -15}
+        - {x: -10, y: -22}
+        - {x: -2, y: -24}
+        - {x: 26, y: -24}
+        - {x: 32, y: -15}
+        - {x: 32, y: 6}
+        - {x: 24, y: 23}
     - name: Dungeon_52
       rect:
         serializedVersion: 2
@@ -1084,8 +1454,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 24}
+        - {x: -18, y: 24}
+        - {x: -25, y: 21}
+        - {x: -28, y: 8}
+        - {x: -28, y: -13}
+        - {x: -21, y: -24}
+        - {x: 9, y: -24}
+        - {x: 22, y: -11}
+        - {x: 22, y: 10}
+        - {x: 18, y: 19}
     - name: Dungeon_53
       rect:
         serializedVersion: 2
@@ -1094,8 +1475,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_54
       rect:
         serializedVersion: 2
@@ -1104,8 +1490,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_55
       rect:
         serializedVersion: 2
@@ -1114,8 +1505,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_56
       rect:
         serializedVersion: 2
@@ -1124,8 +1520,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_57
       rect:
         serializedVersion: 2
@@ -1134,8 +1535,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_58
       rect:
         serializedVersion: 2
@@ -1144,8 +1550,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_59
       rect:
         serializedVersion: 2
@@ -1154,8 +1565,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: -6}
+        - {x: 4, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -4}
+        - {x: 6, y: -4}
     - name: Dungeon_60
       rect:
         serializedVersion: 2
@@ -1164,8 +1581,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: -4, y: -32}
+        - {x: -4, y: -6}
+        - {x: -6, y: -4}
+        - {x: -32, y: -4}
     - name: Dungeon_61
       rect:
         serializedVersion: 2
@@ -1174,8 +1597,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: -4, y: -32}
+        - {x: 32, y: 4}
+        - {x: 32, y: 32}
     - name: Dungeon_62
       rect:
         serializedVersion: 2
@@ -1184,8 +1613,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 4}
+        - {x: 32, y: 4}
+        - {x: 32, y: 32}
     - name: Dungeon_63
       rect:
         serializedVersion: 2
@@ -1194,8 +1628,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 4}
+        - {x: 4, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_64
       rect:
         serializedVersion: 2
@@ -1204,8 +1644,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_65
       rect:
         serializedVersion: 2
@@ -1214,8 +1659,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_66
       rect:
         serializedVersion: 2
@@ -1224,8 +1674,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 19}
+        - {x: -18, y: 16}
+        - {x: -23, y: -7}
+        - {x: -23, y: -24}
+        - {x: -16, y: -32}
+        - {x: 17, y: -32}
+        - {x: 24, y: -22}
+        - {x: 24, y: 4}
+        - {x: 9, y: 19}
     - name: Dungeon_67
       rect:
         serializedVersion: 2
@@ -1234,8 +1694,17 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 22}
+        - {x: -23, y: 19}
+        - {x: -23, y: -5}
+        - {x: -17, y: -21}
+        - {x: 20, y: -21}
+        - {x: 25, y: -20}
+        - {x: 28, y: -2}
+        - {x: 28, y: 22}
     - name: Dungeon_68
       rect:
         serializedVersion: 2
@@ -1244,8 +1713,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 27}
+        - {x: -18, y: 21}
+        - {x: -20, y: 18}
+        - {x: -20, y: -11}
+        - {x: -19, y: -20}
+        - {x: 0, y: -24}
+        - {x: 20, y: -24}
+        - {x: 23, y: -23}
+        - {x: 23, y: 27}
     - name: Dungeon_69
       rect:
         serializedVersion: 2
@@ -1254,8 +1733,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_70
       rect:
         serializedVersion: 2
@@ -1264,8 +1748,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_71
       rect:
         serializedVersion: 2
@@ -1274,8 +1763,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_72
       rect:
         serializedVersion: 2
@@ -1284,8 +1778,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_73
       rect:
         serializedVersion: 2
@@ -1294,8 +1793,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_74
       rect:
         serializedVersion: 2
@@ -1304,8 +1808,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_75
       rect:
         serializedVersion: 2
@@ -1314,8 +1823,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 32}
+        - {x: 4, y: 6}
+        - {x: 6, y: 4}
+        - {x: 32, y: 4}
+        - {x: 32, y: 32}
     - name: Dungeon_76
       rect:
         serializedVersion: 2
@@ -1324,8 +1839,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 4}
+        - {x: -6, y: 4}
+        - {x: -4, y: 6}
+        - {x: -4, y: 32}
     - name: Dungeon_77
       rect:
         serializedVersion: 2
@@ -1334,8 +1855,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: -32}
+        - {x: -4, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
     - name: Dungeon_78
       rect:
         serializedVersion: 2
@@ -1344,8 +1870,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 32}
+        - {x: -26, y: 31}
+        - {x: -26, y: -25}
+        - {x: -18, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 25}
+        - {x: 26, y: 32}
     - name: Dungeon_79
       rect:
         serializedVersion: 2
@@ -1354,8 +1888,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 32}
+        - {x: 4, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_80
       rect:
         serializedVersion: 2
@@ -1364,8 +1903,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_81
       rect:
         serializedVersion: 2
@@ -1374,8 +1918,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_82
       rect:
         serializedVersion: 2
@@ -1384,8 +1933,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 21}
+        - {x: 23, y: 32}
+        - {x: -19, y: 32}
+        - {x: -32, y: 25}
+        - {x: -32, y: -30}
+        - {x: -26, y: -32}
+        - {x: 32, y: -32}
     - name: Dungeon_83
       rect:
         serializedVersion: 2
@@ -1394,8 +1951,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 18}
+        - {x: -24, y: 0}
+        - {x: -24, y: -24}
+        - {x: 27, y: -24}
+        - {x: 27, y: 18}
     - name: Dungeon_84
       rect:
         serializedVersion: 2
@@ -1404,8 +1967,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: -20}
+        - {x: 19, y: -22}
+        - {x: 21, y: -21}
+        - {x: 21, y: 20}
+        - {x: 19, y: 24}
+        - {x: -21, y: 24}
+        - {x: -21, y: -27}
+        - {x: -9, y: -27}
+        - {x: 3, y: -18}
+        - {x: 4, y: -13}
+        - {x: 9, y: -19}
     - name: Dungeon_85
       rect:
         serializedVersion: 2
@@ -1414,8 +1989,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_86
       rect:
         serializedVersion: 2
@@ -1424,8 +2004,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_87
       rect:
         serializedVersion: 2
@@ -1434,8 +2019,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_88
       rect:
         serializedVersion: 2
@@ -1444,8 +2034,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_89
       rect:
         serializedVersion: 2
@@ -1454,8 +2049,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_90
       rect:
         serializedVersion: 2
@@ -1464,8 +2064,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_91
       rect:
         serializedVersion: 2
@@ -1474,8 +2079,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 25}
+        - {x: -32, y: 24}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 24}
+        - {x: 29, y: 25}
     - name: Dungeon_92
       rect:
         serializedVersion: 2
@@ -1484,8 +2096,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -4}
+        - {x: -4, y: 32}
     - name: Dungeon_93
       rect:
         serializedVersion: 2
@@ -1494,8 +2112,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -4}
+        - {x: -32, y: -4}
     - name: Dungeon_94
       rect:
         serializedVersion: 2
@@ -1504,8 +2127,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 32}
+        - {x: -32, y: -4}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_95
       rect:
         serializedVersion: 2
@@ -1514,8 +2143,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_96
       rect:
         serializedVersion: 2
@@ -1524,8 +2158,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_97
       rect:
         serializedVersion: 2
@@ -1534,8 +2173,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_98
       rect:
         serializedVersion: 2
@@ -1544,8 +2188,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_99
       rect:
         serializedVersion: 2
@@ -1554,8 +2203,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_100
       rect:
         serializedVersion: 2
@@ -1564,8 +2218,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_101
       rect:
         serializedVersion: 2
@@ -1574,8 +2233,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_102
       rect:
         serializedVersion: 2
@@ -1584,8 +2248,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_103
       rect:
         serializedVersion: 2
@@ -1594,8 +2263,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_104
       rect:
         serializedVersion: 2
@@ -1604,8 +2278,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_105
       rect:
         serializedVersion: 2
@@ -1614,8 +2293,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_106
       rect:
         serializedVersion: 2
@@ -1624,8 +2308,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -29}
+        - {x: -29, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_107
       rect:
         serializedVersion: 2
@@ -1634,8 +2324,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_108
       rect:
         serializedVersion: 2
@@ -1644,8 +2339,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_109
       rect:
         serializedVersion: 2
@@ -1654,8 +2354,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_110
       rect:
         serializedVersion: 2
@@ -1664,8 +2369,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_111
       rect:
         serializedVersion: 2
@@ -1674,8 +2384,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_112
       rect:
         serializedVersion: 2
@@ -1684,8 +2399,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_113
       rect:
         serializedVersion: 2
@@ -1694,8 +2414,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_114
       rect:
         serializedVersion: 2
@@ -1704,8 +2429,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_115
       rect:
         serializedVersion: 2
@@ -1714,8 +2444,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_116
       rect:
         serializedVersion: 2
@@ -1724,8 +2459,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_117
       rect:
         serializedVersion: 2
@@ -1734,8 +2474,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_118
       rect:
         serializedVersion: 2
@@ -1744,8 +2489,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_119
       rect:
         serializedVersion: 2
@@ -1754,8 +2504,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_120
       rect:
         serializedVersion: 2
@@ -1764,8 +2519,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_121
       rect:
         serializedVersion: 2
@@ -1774,8 +2534,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_122
       rect:
         serializedVersion: 2
@@ -1784,8 +2549,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_123
       rect:
         serializedVersion: 2
@@ -1794,8 +2564,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_124
       rect:
         serializedVersion: 2
@@ -1804,8 +2579,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_125
       rect:
         serializedVersion: 2
@@ -1814,8 +2594,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_126
       rect:
         serializedVersion: 2
@@ -1824,8 +2609,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_127
       rect:
         serializedVersion: 2
@@ -1834,8 +2624,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_128
       rect:
         serializedVersion: 2
@@ -1844,8 +2639,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_129
       rect:
         serializedVersion: 2
@@ -1854,8 +2654,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_130
       rect:
         serializedVersion: 2
@@ -1864,8 +2669,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_131
       rect:
         serializedVersion: 2
@@ -1874,8 +2684,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_132
       rect:
         serializedVersion: 2
@@ -1884,8 +2699,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_133
       rect:
         serializedVersion: 2
@@ -1894,8 +2714,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_134
       rect:
         serializedVersion: 2
@@ -1904,8 +2729,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_135
       rect:
         serializedVersion: 2
@@ -1914,8 +2744,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_136
       rect:
         serializedVersion: 2
@@ -1924,8 +2759,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_137
       rect:
         serializedVersion: 2
@@ -1934,8 +2774,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_138
       rect:
         serializedVersion: 2
@@ -1944,8 +2789,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_139
       rect:
         serializedVersion: 2
@@ -1954,8 +2804,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_140
       rect:
         serializedVersion: 2
@@ -1964,8 +2819,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_141
       rect:
         serializedVersion: 2
@@ -1974,8 +2834,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_142
       rect:
         serializedVersion: 2
@@ -1984,8 +2849,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_143
       rect:
         serializedVersion: 2
@@ -1994,8 +2864,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_144
       rect:
         serializedVersion: 2
@@ -2004,8 +2879,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -24}
+        - {x: 32, y: -24}
+        - {x: 32, y: 32}
     - name: Dungeon_145
       rect:
         serializedVersion: 2
@@ -2014,8 +2894,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_146
       rect:
         serializedVersion: 2
@@ -2024,8 +2909,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_147
       rect:
         serializedVersion: 2
@@ -2034,8 +2924,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: -32}
+        - {x: 24, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
     - name: Dungeon_148
       rect:
         serializedVersion: 2
@@ -2044,8 +2939,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 32}
+        - {x: -24, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_149
       rect:
         serializedVersion: 2
@@ -2054,8 +2954,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_150
       rect:
         serializedVersion: 2
@@ -2064,8 +2969,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_151
       rect:
         serializedVersion: 2
@@ -2074,8 +2984,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_152
       rect:
         serializedVersion: 2
@@ -2084,8 +2999,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_153
       rect:
         serializedVersion: 2
@@ -2094,8 +3014,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 32}
+        - {x: -19, y: 8}
+        - {x: -13, y: -9}
+        - {x: 0, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_154
       rect:
         serializedVersion: 2
@@ -2104,8 +3031,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_155
       rect:
         serializedVersion: 2
@@ -2114,8 +3046,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 0, y: -32}
+        - {x: 17, y: -12}
+        - {x: 17, y: 32}
     - name: Dungeon_156
       rect:
         serializedVersion: 2
@@ -2124,8 +3062,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_157
       rect:
         serializedVersion: 2
@@ -2134,8 +3077,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_158
       rect:
         serializedVersion: 2
@@ -2144,8 +3092,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_159
       rect:
         serializedVersion: 2
@@ -2154,8 +3107,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_160
       rect:
         serializedVersion: 2
@@ -2164,8 +3122,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 27}
+        - {x: 4, y: 27}
+        - {x: -32, y: 25}
     - name: Dungeon_161
       rect:
         serializedVersion: 2
@@ -2174,8 +3138,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_162
       rect:
         serializedVersion: 2
@@ -2184,8 +3153,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_163
       rect:
         serializedVersion: 2
@@ -2194,8 +3168,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_164
       rect:
         serializedVersion: 2
@@ -2204,8 +3183,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_165
       rect:
         serializedVersion: 2
@@ -2214,8 +3198,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_166
       rect:
         serializedVersion: 2
@@ -2224,8 +3213,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_167
       rect:
         serializedVersion: 2
@@ -2234,8 +3228,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_168
       rect:
         serializedVersion: 2
@@ -2244,8 +3243,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_169
       rect:
         serializedVersion: 2
@@ -2254,8 +3258,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: -4, y: 19}
+        - {x: -4, y: 3}
+        - {x: 11, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_170
       rect:
         serializedVersion: 2
@@ -2264,8 +3275,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_171
       rect:
         serializedVersion: 2
@@ -2274,8 +3290,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 5, y: -32}
+        - {x: 5, y: 32}
     - name: Dungeon_172
       rect:
         serializedVersion: 2
@@ -2284,8 +3305,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_173
       rect:
         serializedVersion: 2
@@ -2294,8 +3320,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_174
       rect:
         serializedVersion: 2
@@ -2304,8 +3335,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_175
       rect:
         serializedVersion: 2
@@ -2314,8 +3350,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_176
       rect:
         serializedVersion: 2
@@ -2324,8 +3365,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_177
       rect:
         serializedVersion: 2
@@ -2334,8 +3380,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_178
       rect:
         serializedVersion: 2
@@ -2344,8 +3395,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -19}
+        - {x: -32, y: -32}
+        - {x: 24, y: -32}
+        - {x: 23, y: -29}
+        - {x: 15, y: -23}
+        - {x: -20, y: -19}
+      - - {x: -32, y: 32}
+        - {x: -32, y: 23}
+        - {x: 31, y: 23}
+        - {x: 32, y: 24}
+        - {x: 32, y: 32}
     - name: Dungeon_179
       rect:
         serializedVersion: 2
@@ -2354,8 +3417,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: -29}
+        - {x: -24, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -19}
+        - {x: 20, y: -19}
+        - {x: -20, y: -24}
     - name: Dungeon_180
       rect:
         serializedVersion: 2
@@ -2364,8 +3434,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_181
       rect:
         serializedVersion: 2
@@ -2374,8 +3449,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -21, y: 22}
+        - {x: -21, y: -22}
+        - {x: -18, y: -29}
+        - {x: -17, y: -31}
+        - {x: 20, y: -31}
+        - {x: 21, y: -25}
+        - {x: 21, y: 24}
+        - {x: 15, y: 29}
     - name: Dungeon_182
       rect:
         serializedVersion: 2
@@ -2384,8 +3469,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 32}
+        - {x: -2, y: 4}
+        - {x: -5, y: -3}
+        - {x: -5, y: -16}
+        - {x: -1, y: -20}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
     - name: Dungeon_183
       rect:
         serializedVersion: 2
@@ -2394,8 +3487,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -20}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
     - name: Dungeon_184
       rect:
         serializedVersion: 2
@@ -2404,8 +3502,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -20}
+        - {x: 3, y: -20}
+        - {x: 4, y: -16}
+        - {x: 4, y: 0}
+        - {x: -29, y: 32}
     - name: Dungeon_185
       rect:
         serializedVersion: 2
@@ -2414,8 +3519,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 32}
+        - {x: 7, y: 28}
+        - {x: 0, y: -21}
+        - {x: 0, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_186
       rect:
         serializedVersion: 2
@@ -2424,8 +3536,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_187
       rect:
         serializedVersion: 2
@@ -2434,8 +3551,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: -1, y: -32}
+        - {x: -1, y: -24}
+        - {x: -2, y: -7}
+        - {x: -11, y: 32}
     - name: Dungeon_188
       rect:
         serializedVersion: 2
@@ -2444,8 +3568,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_189
       rect:
         serializedVersion: 2
@@ -2454,8 +3583,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_190
       rect:
         serializedVersion: 2
@@ -2464,8 +3598,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_191
       rect:
         serializedVersion: 2
@@ -2474,8 +3613,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32}
+        - {x: -9, y: -19}
+        - {x: 15, y: -24}
+        - {x: 32, y: -24}
+        - {x: 32, y: 32}
     - name: Dungeon_192
       rect:
         serializedVersion: 2
@@ -2484,8 +3629,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -24}
+        - {x: 32, y: -24}
+        - {x: 32, y: 32}
     - name: Dungeon_193
       rect:
         serializedVersion: 2
@@ -2494,8 +3644,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -23}
+        - {x: -29, y: -22}
+        - {x: -10, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -14}
+        - {x: -5, y: 32}
     - name: Dungeon_194
       rect:
         serializedVersion: 2
@@ -2504,8 +3662,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: -32}
+        - {x: 24, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
     - name: Dungeon_195
       rect:
         serializedVersion: 2
@@ -2514,8 +3677,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 32}
+        - {x: -25, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_196
       rect:
         serializedVersion: 2
@@ -2524,8 +3692,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_197
       rect:
         serializedVersion: 2
@@ -2534,8 +3707,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_198
       rect:
         serializedVersion: 2
@@ -2544,8 +3722,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 21}
+        - {x: -5, y: 20}
+        - {x: -5, y: 2}
+        - {x: 27, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 21}
     - name: Dungeon_199
       rect:
         serializedVersion: 2
@@ -2554,8 +3739,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 21}
+        - {x: -32, y: 20}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 21}
     - name: Dungeon_200
       rect:
         serializedVersion: 2
@@ -2564,8 +3755,17 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 21}
+        - {x: -29, y: 21}
+        - {x: -32, y: 20}
+        - {x: -32, y: -32}
+        - {x: -29, y: -32}
+        - {x: 2, y: -2}
+        - {x: 4, y: 1}
+        - {x: 4, y: 17}
     - name: Dungeon_201
       rect:
         serializedVersion: 2
@@ -2574,8 +3774,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32}
+        - {x: -18, y: 3}
+        - {x: -18, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_202
       rect:
         serializedVersion: 2
@@ -2584,8 +3790,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_203
       rect:
         serializedVersion: 2
@@ -2594,8 +3805,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 17, y: -32}
+        - {x: 17, y: 4}
+        - {x: 0, y: 32}
     - name: Dungeon_204
       rect:
         serializedVersion: 2
@@ -2604,8 +3821,29 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -1}
+        - {x: -29, y: -28}
+        - {x: -27, y: -32}
+        - {x: 30, y: -32}
+        - {x: 31, y: -29}
+        - {x: 31, y: -1}
+      - - {x: -6, y: -3}
+        - {x: -7, y: -4}
+        - {x: -7, y: -6}
+        - {x: -5, y: -9}
+        - {x: 0, y: -9}
+        - {x: 2, y: -8}
+        - {x: 2, y: -4}
+        - {x: 0, y: -3}
+      - - {x: -15, y: -3}
+        - {x: -14, y: -6}
+        - {x: -11, y: -6}
+        - {x: -9, y: -4}
+        - {x: -10, y: -1}
+        - {x: -13, y: -1}
     - name: Dungeon_205
       rect:
         serializedVersion: 2
@@ -2614,8 +3852,25 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -26, y: 10}
+        - {x: -27, y: 5}
+        - {x: -27, y: 6}
+        - {x: -30, y: 9}
+        - {x: -32, y: 8}
+        - {x: -32, y: -32}
+        - {x: 27, y: -32}
+        - {x: 31, y: -14}
+        - {x: 31, y: 19}
+      - - {x: -32, y: 11}
+        - {x: -28, y: 11}
+        - {x: -26, y: 12}
+        - {x: -26, y: 16}
+        - {x: -28, y: 18}
+        - {x: -32, y: 16}
     - name: Dungeon_206
       rect:
         serializedVersion: 2
@@ -2624,8 +3879,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 10}
+        - {x: 19, y: -22}
+        - {x: 19, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 25}
+        - {x: 29, y: 24}
     - name: Dungeon_207
       rect:
         serializedVersion: 2
@@ -2634,8 +3896,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 25}
+        - {x: -32, y: 25}
     - name: Dungeon_208
       rect:
         serializedVersion: 2
@@ -2644,8 +3911,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 24}
+        - {x: -32, y: 24}
+        - {x: -32, y: -32}
+        - {x: -19, y: -32}
+        - {x: -19, y: -16}
+        - {x: -29, y: 22}
+      - - {x: -9, y: 32}
+        - {x: -9, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_209
       rect:
         serializedVersion: 2
@@ -2654,8 +3932,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: -5, y: -32}
+        - {x: 23, y: 31}
+        - {x: 23, y: 32}
     - name: Dungeon_210
       rect:
         serializedVersion: 2
@@ -2664,8 +3948,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 32}
+        - {x: -22, y: 29}
+        - {x: 17, y: 21}
+        - {x: 28, y: 19}
+        - {x: 32, y: 19}
+        - {x: 32, y: 32}
     - name: Dungeon_211
       rect:
         serializedVersion: 2
@@ -2674,8 +3965,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 32}
+        - {x: -21, y: -28}
+        - {x: -20, y: -29}
+        - {x: 17, y: -29}
+        - {x: 20, y: -28}
+        - {x: 20, y: 29}
+        - {x: 19, y: 32}
     - name: Dungeon_212
       rect:
         serializedVersion: 2
@@ -2684,8 +3983,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_213
       rect:
         serializedVersion: 2
@@ -2694,8 +3998,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_214
       rect:
         serializedVersion: 2
@@ -2704,8 +4013,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_215
       rect:
         serializedVersion: 2
@@ -2714,8 +4028,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_216
       rect:
         serializedVersion: 2
@@ -2724,8 +4043,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 18}
+        - {x: -32, y: 15}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 0}
+        - {x: 0, y: 18}
     - name: Dungeon_217
       rect:
         serializedVersion: 2
@@ -2734,8 +4060,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 0}
+        - {x: -32, y: 0}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -11}
+        - {x: 27, y: -8}
     - name: Dungeon_218
       rect:
         serializedVersion: 2
@@ -2744,8 +4077,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: -28, y: -5}
+        - {x: -32, y: -10}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 0}
     - name: Dungeon_219
       rect:
         serializedVersion: 2
@@ -2754,8 +4094,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 18}
+        - {x: -9, y: 18}
+        - {x: -32, y: 10}
     - name: Dungeon_220
       rect:
         serializedVersion: 2
@@ -2764,8 +4110,65 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: -25}
+        - {x: -28, y: -26}
+        - {x: -28, y: -32}
+        - {x: -14, y: -32}
+        - {x: -14, y: -27}
+        - {x: -17, y: -25}
+      - - {x: -9, y: -25}
+        - {x: -9, y: -32}
+        - {x: 1, y: -32}
+        - {x: 1, y: -25}
+      - - {x: 12, y: -25}
+        - {x: 5, y: -30}
+        - {x: 5, y: -32}
+        - {x: 25, y: -32}
+        - {x: 26, y: -30}
+        - {x: 26, y: -25}
+      - - {x: 28, y: -28}
+        - {x: 28, y: -31}
+        - {x: 29, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -28}
+        - {x: 31, y: -27}
+      - - {x: -4, y: -16}
+        - {x: -5, y: -17}
+        - {x: -5, y: -22}
+        - {x: -1, y: -24}
+        - {x: 15, y: -24}
+        - {x: 32, y: -17}
+        - {x: 32, y: 32}
+        - {x: -28, y: 32}
+        - {x: -31, y: 6}
+        - {x: -31, y: -24}
+        - {x: -7, y: -24}
+        - {x: -6, y: -22}
+        - {x: -7, y: -19}
+        - {x: -5, y: -15}
+      - - {x: 14, y: -21}
+        - {x: 15, y: -24}
+        - {x: 18, y: -24}
+        - {x: 20, y: -22}
+        - {x: 19, y: -19}
+        - {x: 16, y: -19}
+      - - {x: 29, y: -14}
+        - {x: 27, y: -16}
+        - {x: 27, y: -20}
+        - {x: 29, y: -21}
+        - {x: 31, y: -21}
+        - {x: 32, y: -20}
+        - {x: 32, y: -16}
+        - {x: 30, y: -14}
+      - - {x: 27, y: -10}
+        - {x: 29, y: -12}
+        - {x: 32, y: -11}
+        - {x: 32, y: -8}
+        - {x: 30, y: -6}
+        - {x: 27, y: -7}
     - name: Dungeon_221
       rect:
         serializedVersion: 2
@@ -2774,8 +4177,27 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -2}
+        - {x: 27, y: -2}
+        - {x: 29, y: -1}
+        - {x: 29, y: 25}
+        - {x: 27, y: 32}
+      - - {x: 10, y: 1}
+        - {x: 11, y: -2}
+        - {x: 14, y: -2}
+        - {x: 16, y: 0}
+        - {x: 15, y: 3}
+        - {x: 12, y: 3}
+      - - {x: -2, y: 3}
+        - {x: 0, y: 0}
+        - {x: 5, y: 0}
+        - {x: 8, y: 2}
+        - {x: 7, y: 5}
+        - {x: 2, y: 6}
     - name: Dungeon_222
       rect:
         serializedVersion: 2
@@ -2784,8 +4206,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -1}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -1}
     - name: Dungeon_223
       rect:
         serializedVersion: 2
@@ -2794,8 +4221,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -15}
+        - {x: -29, y: -32}
+        - {x: 29, y: -32}
+        - {x: 29, y: -15}
+        - {x: 27, y: -13}
+        - {x: -27, y: -13}
     - name: Dungeon_224
       rect:
         serializedVersion: 2
@@ -2804,8 +4238,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32}
+        - {x: -32, y: -14}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_225
       rect:
         serializedVersion: 2
@@ -2814,8 +4254,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -31}
+        - {x: -31, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: 32}
     - name: Dungeon_226
       rect:
         serializedVersion: 2
@@ -2824,8 +4271,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_227
       rect:
         serializedVersion: 2
@@ -2834,8 +4286,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_228
       rect:
         serializedVersion: 2
@@ -2844,8 +4301,36 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: -32}
+        - {x: -26, y: -25}
+        - {x: -27, y: -20}
+        - {x: -32, y: -20}
+        - {x: -32, y: -32}
+      - - {x: -14, y: -32}
+        - {x: -15, y: -29}
+        - {x: -19, y: -29}
+        - {x: -20, y: -32}
+      - - {x: 19, y: -32}
+        - {x: 18, y: -29}
+        - {x: 14, y: -29}
+        - {x: 13, y: -32}
+      - - {x: 27, y: -27}
+        - {x: 25, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -23}
+        - {x: 29, y: -24}
+      - - {x: -26, y: 21}
+        - {x: -32, y: 20}
+        - {x: -32, y: -15}
+        - {x: -26, y: -20}
+        - {x: -17, y: -21}
+        - {x: 21, y: -21}
+        - {x: 29, y: -15}
+        - {x: 29, y: 12}
+        - {x: 26, y: 21}
     - name: Dungeon_229
       rect:
         serializedVersion: 2
@@ -2854,8 +4339,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_230
       rect:
         serializedVersion: 2
@@ -2864,8 +4354,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_231
       rect:
         serializedVersion: 2
@@ -2874,8 +4369,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_232
       rect:
         serializedVersion: 2
@@ -2884,8 +4384,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_233
       rect:
         serializedVersion: 2
@@ -2894,8 +4399,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_234
       rect:
         serializedVersion: 2
@@ -2904,8 +4414,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_235
       rect:
         serializedVersion: 2
@@ -2914,8 +4429,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_236
       rect:
         serializedVersion: 2
@@ -2924,8 +4444,27 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: -26}
+        - {x: -20, y: -28}
+        - {x: -18, y: -32}
+        - {x: -14, y: -32}
+        - {x: -12, y: -30}
+        - {x: -12, y: -26}
+      - - {x: 0, y: 30}
+        - {x: -20, y: 30}
+        - {x: -20, y: -13}
+        - {x: -16, y: -23}
+        - {x: -12, y: -26}
+        - {x: -6, y: -27}
+        - {x: -7, y: -27}
+        - {x: -10, y: -28}
+        - {x: -11, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 27}
+        - {x: 23, y: 27}
     - name: Dungeon_237
       rect:
         serializedVersion: 2
@@ -2934,8 +4473,27 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 29}
+        - {x: -32, y: 27}
+        - {x: -32, y: -32}
+        - {x: 1, y: -32}
+        - {x: 1, y: 29}
+      - - {x: -6, y: 8}
+        - {x: -8, y: 6}
+        - {x: -8, y: -1}
+        - {x: -5, y: -2}
+        - {x: -1, y: -2}
+        - {x: -1, y: 5}
+        - {x: -2, y: 8}
+      - - {x: -5, y: 12}
+        - {x: -3, y: 10}
+        - {x: 0, y: 11}
+        - {x: 0, y: 14}
+        - {x: -2, y: 16}
+        - {x: -5, y: 15}
     - name: Dungeon_238
       rect:
         serializedVersion: 2
@@ -2944,8 +4502,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -22}
+        - {x: -21, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_239
       rect:
         serializedVersion: 2
@@ -2954,8 +4518,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 32}
+        - {x: -32, y: 31}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_240
       rect:
         serializedVersion: 2
@@ -2964,8 +4534,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -30}
+        - {x: -30, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -30}
+        - {x: 32, y: 32}
     - name: Dungeon_241
       rect:
         serializedVersion: 2
@@ -2974,8 +4551,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 21}
+        - {x: -29, y: -20}
+        - {x: 31, y: -20}
+        - {x: 31, y: 21}
     - name: Dungeon_242
       rect:
         serializedVersion: 2
@@ -2984,8 +4566,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_243
       rect:
         serializedVersion: 2
@@ -2994,8 +4581,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_244
       rect:
         serializedVersion: 2
@@ -3004,8 +4596,18 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -22}
+        - {x: -21, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+      - - {x: -29, y: -28}
+        - {x: -29, y: -25}
+        - {x: -32, y: -24}
+        - {x: -32, y: -29}
     - name: Dungeon_245
       rect:
         serializedVersion: 2
@@ -3014,8 +4616,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: Dungeon_246
       rect:
         serializedVersion: 2
@@ -3024,8 +4631,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: -32, y: 32}
     - name: Dungeon_247
       rect:
         serializedVersion: 2
@@ -3034,8 +4646,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -17}
+        - {x: 0, y: -17}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
     - name: Dungeon_248
       rect:
         serializedVersion: 2
@@ -3044,8 +4662,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 1}
+        - {x: -5, y: 1}
+        - {x: 32, y: 11}
+        - {x: 32, y: 32}
     - name: Dungeon_249
       rect:
         serializedVersion: 2
@@ -3054,8 +4678,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 12}
+        - {x: -28, y: 8}
+        - {x: 19, y: 1}
+        - {x: 32, y: 1}
+        - {x: 32, y: 32}
     - name: Dungeon_250
       rect:
         serializedVersion: 2
@@ -3064,8 +4695,16 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 1}
+        - {x: -7, y: -16}
+        - {x: 2, y: -17}
+        - {x: 31, y: -17}
+        - {x: 32, y: -15}
+        - {x: 32, y: 32}
     - name: Dungeon_251
       rect:
         serializedVersion: 2
@@ -3074,8 +4713,26 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 31}
+        - {x: 2, y: 27}
+        - {x: 2, y: -29}
+        - {x: 32, y: -29}
+        - {x: 32, y: 31}
+      - - {x: 2, y: -13}
+        - {x: 4, y: -15}
+        - {x: 7, y: -14}
+        - {x: 7, y: -11}
+        - {x: 5, y: -9}
+        - {x: 2, y: -10}
+      - - {x: 4, y: 2}
+        - {x: 4, y: -6}
+        - {x: 6, y: -7}
+        - {x: 9, y: -6}
+        - {x: 10, y: -1}
+        - {x: 7, y: 2}
     - name: Dungeon_252
       rect:
         serializedVersion: 2
@@ -3084,8 +4741,63 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -7}
+        - {x: 16, y: -5}
+        - {x: 17, y: -4}
+        - {x: 18, y: -5}
+        - {x: 23, y: -5}
+        - {x: 25, y: -1}
+        - {x: 25, y: 13}
+        - {x: 15, y: 32}
+        - {x: -29, y: 32}
+        - {x: -32, y: 31}
+        - {x: -32, y: -28}
+        - {x: 6, y: -31}
+        - {x: 24, y: -31}
+        - {x: 25, y: -27}
+        - {x: 25, y: -8}
+        - {x: 23, y: -6}
+      - - {x: 29, y: -14}
+        - {x: 26, y: -18}
+        - {x: 26, y: -26}
+        - {x: 28, y: -27}
+        - {x: 32, y: -27}
+        - {x: 32, y: -14}
+      - - {x: 28, y: 1}
+        - {x: 26, y: -3}
+        - {x: 26, y: -8}
+        - {x: 28, y: -9}
+        - {x: 32, y: -7}
+        - {x: 32, y: 1}
+      - - {x: 26, y: 32}
+        - {x: 26, y: 10}
+        - {x: 31, y: 5}
+        - {x: 32, y: 5}
+        - {x: 32, y: 32}
+      - - {x: 20, y: 16}
+        - {x: 22, y: 14}
+        - {x: 25, y: 15}
+        - {x: 25, y: 18}
+        - {x: 23, y: 20}
+        - {x: 20, y: 19}
+      - - {x: 7, y: 30}
+        - {x: 8, y: 27}
+        - {x: 11, y: 27}
+        - {x: 13, y: 29}
+        - {x: 12, y: 32}
+        - {x: 9, y: 32}
+      - - {x: 16, y: 32}
+        - {x: 15, y: 31}
+        - {x: 15, y: 29}
+        - {x: 16, y: 27}
+        - {x: 21, y: 27}
+        - {x: 22, y: 29}
+        - {x: 22, y: 31}
+        - {x: 21, y: 32}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

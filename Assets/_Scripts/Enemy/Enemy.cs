@@ -15,15 +15,15 @@ public class Enemy : MonoBehaviour {
 	public int damage= 10;
 	 Image image;
 	public GameObject effect;
-	GameObject player;
+	public GameObject player;
 
 
 	void Init(){
-
+		GameObject.FindGameObjectWithTag("Player");
 	//	ls = gameObject.GetComponent<Leveling_System>();
 		image = gameObject.transform.GetComponentInChildren<Image>();
 	//	ls.currentLevelID = age;
-		player = GameObject.FindGameObjectWithTag("Player");
+		//player = GameObject.FindGameObjectWithTag("Player");
 
 	}
 	// Use this for initialization
@@ -37,13 +37,21 @@ public class Enemy : MonoBehaviour {
 	{
 
 		if(health<=0){
-			Destroy(this.gameObject);
+			
+			Death();
 		}
+	}
+	void Death(){
+
+		GetComponent<Loot>().DropLoot();
+		GameObject.FindGameObjectWithTag("Player").GetComponent<Leveling_System>().AddXP(10);
+		Destroy(this.gameObject);
+
 	}
 
 
 	void OnDestory(){
-		player.GetComponent<Leveling_System>().AddXP(10);
+	//player.GetComponent<Leveling_System>().AddXP(10);
 	}
 
 	public void Hit(int dmg){

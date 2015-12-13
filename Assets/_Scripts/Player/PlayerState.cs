@@ -4,8 +4,9 @@ using System.Collections;
 public class PlayerState : MonoBehaviour {
 	private Leveling_System ls;
 	public int PlayerLevel;
-	//private Player_Stats ps;
-	//private Player_Control pc;
+	public static int letters;
+
+
 
 	void Start () {
 		ls = gameObject.GetComponent<Leveling_System>();
@@ -18,7 +19,8 @@ public class PlayerState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		PlayerLevel = ls.currentLevelID;
+
 	
 	}
+
 }
