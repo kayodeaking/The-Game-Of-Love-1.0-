@@ -38,6 +38,7 @@ public class SoundEffects : MonoBehaviour {
 			audio.clip = sfxArray [clip];
 			audio.priority = 120;
 			audio.Play ();
+			print ("Played");
 			break;
 		}
 	}

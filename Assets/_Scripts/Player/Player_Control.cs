@@ -19,6 +19,7 @@ public class Player_Control : MonoBehaviour {
 	int directionType;
 	public float rayDistince;
 
+	public GameObject sounds;
 	// Use this for initialization
 	void Start () {
 
@@ -36,7 +37,7 @@ public class Player_Control : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Item") {
-			GetComponent<SoundEffects> ().PlaySound (3);
+			sounds.GetComponent<SoundEffects> ().PlaySound (3);
 			Destroy (col.gameObject);
 		}
 		
@@ -48,6 +49,8 @@ public class Player_Control : MonoBehaviour {
 			
 			if(hit.collider){
 				if(hit.collider.gameObject.tag=="Enemy"){
+
+					//GetComponent<SoundEffects> ().PlaySound (3);
 					//	Debug.Log("Hit");
 					//Debug.DrawLine(transform.position,VecDirection*rayDistince, Color.green,1.0f);
 					hit.collider.gameObject.GetComponent<Enemy>().Hit(10);
@@ -94,13 +97,13 @@ public class Player_Control : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			GetComponent<SoundEffects>().PlaySound (0);
+			sounds.GetComponent<SoundEffects>().PlaySound (0);
 			canAttack = true;
 			anim.SetBool ("Attack", canAttack);
 		}
 		
 		if (Input.GetKeyUp (KeyCode.Space)) {
-			GetComponent<SoundEffects>().PlaySound (0);
+			sounds.GetComponent<SoundEffects>().PlaySound (0);
 			canAttack = false;
 			anim.SetBool ("Attack", canAttack);
 		}
