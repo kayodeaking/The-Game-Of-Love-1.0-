@@ -37,15 +37,12 @@ public class Player_Control : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Item") {
-<<<<<<< HEAD
 			GetComponentInChildren<Inventory>().AddItem(col.gameObject.GetComponent<Item_View>().itemID);
-			GetComponent<SoundEffects> ().PlaySound (3);
-=======
 			sounds.GetComponent<SoundEffects> ().PlaySound (3);
->>>>>>> origin/master
+			sounds.GetComponent<SoundEffects> ().PlaySound (3);
 			Destroy (col.gameObject);
 		}
-		
+
 	}
 	
 	void SendDamage(){
